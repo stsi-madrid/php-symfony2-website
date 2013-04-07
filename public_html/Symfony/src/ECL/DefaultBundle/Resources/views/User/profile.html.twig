@@ -1,0 +1,18 @@
+{% extends 'ECLDefaultBundle::base_backoffice.html.twig' %}
+{% block title %}S.T.S.I. Backoffice | Perfil{% endblock %}
+{% block body_backoffice %}
+<article id="new">
+    <nav id="nav">
+        <ul>
+            <li><a href="{{url('ECLHomeBundle_backoffice')}}">Backoffice</a></li>
+            <li>></li>
+            <li><strong>Perfil de Usuario</strong></li>
+        </ul>
+    </nav>
+    <h1 id="title">Tu perfil de usuario</h1>
+    <form action="{{ url('ECLDefaultBundle_users_update_profile', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>
+        {{ form_widget(edit_form) }}
+        <button type="submit" class="button">Guardar</button>
+    </form>
+</article>
+{% endblock %}

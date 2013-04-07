@@ -1,0 +1,25 @@
+{% extends 'ECLDefaultBundle::base_front.html.twig' %}
+{% block title %}Sección de Telecomunicaciones y Servicios Informáticos{%if page is not null %} | Noticias {{page}}{%endif%}{% endblock %}
+{% block description %}El sindicato de les trabajadores y trabajadoras del
+sector de las telecomunicaciones y los servicios informáticos de Madrid. Sector
+de las TIC (Tecnologías de la Información y Comunicación). Confederación
+Nacional del Trabajo. CNT Madrid.{% endblock %}
+{% block stylesheets %}
+<link href="{{ asset('bundles/eclhome/css/home.css') }}" rel="stylesheet">
+{% endblock %}
+{% block javascriptsheets %}
+<script src="{{asset('bundles/eclblog/js/front/articles.js')}}"></script>
+{% endblock %}
+{% block body_front %}
+<section class="main">
+    {% for article in articles %}
+    <article>
+        <h2><a href="{{ url('ECLArticlesBundle_homepage', { date: article.date|date('d-m-Y'), uri: article.uri } ) }}">{{ article.title }}</a></h2>
+        <p class="article_info"><time datetime="{{ article.date|date('c') }}">{{ article.date | long_date }}</time></p>
+        <p class="article_summary">{{ article.summary }}</p>
+    </article>
+    {% endfor %}
+    {% render "ECLHomeBundle:Default:nav" with {'page': page} %}        
+</section>
+{% render "ECLHomeBundle:Layout:sidebar" %}
+{% endblock %}

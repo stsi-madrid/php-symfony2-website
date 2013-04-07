@@ -1,0 +1,44 @@
+{% extends 'ECLDefaultBundle::base_front.html.twig' %}
+{% block title %}Algunos Hitos del Conocimiento Libre{% endblock %}
+{% block description %}Un breve repaso por nuestro historia en el que señalamos
+los momentos más importantes y decisivos.{% endblock %}
+{% block stylesheets %}
+<link href="{{ asset('bundles/eclsocial/css/social.css') }}" rel="stylesheet">
+{% endblock %}
+{% block body_front %}
+<article class="main" id="dossier">
+    <ul id="menu">
+        <li><a href="{{url('ECLSocialBundle_homepage')}}">Acción Social</a></li>
+        <li><a href="{{url('ECLSocialBundle_softwarelibre')}}">Software Libre</a></li>	
+    </ul>    
+    <header>
+        <h1>Algunos Hitos del Conocimiento Libre</h1>
+    </header>
+    <p>No se sabe exactamente ni cómo ni cuándo empezó todo pero parece ser que fue un homínido llamado homo habilis quien tuvo la idea al ponerse de pie y empezar a usar sus manos de recoger objetos y usarlos como herramientas.</p>
+    <p>Estas herramientas se usaron de diversas formas y se enseñó a usarlas o mejorarlas a lo largo de los años pasándose el conocimiento de generación en generación de forma libre y autónoma.</p>
+    <p>Es en la Edad Media, cuando el conocimiento se concentra en las iglesias y éste debe adecuarse a los dogmas de fe, se dan los primeros intentos de restringir el libre acceso a la cultura.</p>
+    <figure>
+        <img src="{{ asset('bundles/eclsocial/imagenes/censura-iglesia.jpg') }}" alt="conocimiento censura iglesia">
+    <figcaption>La Iglesia Católica mantuvo el monopolio cultural a lo largo de la edad media en todo Europa.</figcaption>
+    </figure>
+    <p>En 1440 Gutemberg creó un invento llamado imprenta que quitaría el monopolio del clero sobre el saber y se lo daría a universidades y otros centros de enseñanza. Y ya en el Siglo XVIII se inventarían las primeras formulaciones del copyright. En ese mismo siglo Diderot crea la Enciclopedia, siendo un libro que buscar recoger todo el conocimiento humano.</p>
+    <figure>
+        <img src="{{ asset('bundles/eclsocial/imagenes/imprenta-guttenberg.jpg') }}" alt="imprenta Gutenberg">
+    <figcaption>Gutenberg, herrero alemán, es considerado actualmente en occidente como el promotor de la imprentea moderna. Sin embargo, la civilización China ya había impreso libros seis siglos antes que Gutenberg y dos siglos antes que él ya habían usado tipos móviles de metal en sus imprentas.</figcaption>
+    </figure>
+    <p>Los primeros ordenadores digitales se crearon en la Segunda Guerra Mundial, dichos dispositivos se usaban para hacer miles y miles de cálculos y hoy es una herramienta tan potente que todavía no sabemos todo el provecho que se puede sacar de ella. Todo el mundo contribuía con sus cálculos para hacer que esa herramienta fuera mejor y mejor.</p>
+    <p>Sin embargo, en 1972 el gobierno norteamericano obligó a la empresa IBM a distinguir entre software y hardware. Esto supuso el germen del software privativo ya que esos cálculos no se podrían mejorar más que por informáticos de la propia compañía que lo había creado. Es decir, que un ordenador pasaría a ser una herramienta igual que lo es un martillo ¡pero sólo el fabricante podría cambiar el funcionamiento! A Apple y a Microsoft les encantó la idea y compitieron por construir sistemas fáciles de usar con los que ejercer un monopolio sobre el resto de los mortales.</p>
+    <figure>
+        <img src="{{ asset('bundles/eclsocial/imagenes/primeros-ordenadores.jpg') }}" alt="los primeros ordenadores">
+    <figcaption>Foto del que se considera el primer ordenador digital totalmente electrónico: el Colossus. Fue construido en Londres en 1943 e incorporaba 1.500 Válvulas.</figcaption>
+    </figure>
+    <p>Casi al mismo tiempo, Richard Stallman, un programador de aquel entonces, se encontró realmente frustrado cuando quiso arreglar su impresora y vió que le denegaban el código para poder hacerlo. Tener que rogarle a la corporación para que modificara ese comportamiento defectuoso hería su dignidad como programador y comprendió entonces que este modelo impedía la libre cooperación entre programadores.</p>
+    <p>Fue entonces cuando decidieron realizar GNU (acrónimo recursivo que significa "GNU No es Unix"), un sistema operativo libre como lo fueron los usos distintos de una piedra (lanza, cuchillo, etc.) donde cada cual adapta la piedra a su antojo, pues hoy cada cual modifica GNU/Linux a su antojo. La clave es una formulación del copyright para permitir el uso, la copia, la modificación y la redistribución de lo modificado.</p>
+    <figure>
+        <img src="{{ asset('bundles/eclsocial/imagenes/gnu.jpeg') }}" alt="GNU logo">
+    <figcaption>Logo del proyecto GNU. Este proyecto fue iniciado por Richard Stallman con el objetivo de crear un sistema operativo completamente libre: el sistema GNU. El 27 de septiembre de 1983 se anunció públicamente dicho proyecto.</figcaption>
+    </figure>
+    <p>En 2001, se crearía wikipedia con la intención de que cualquiera pudiera copiar, modificar y redistribuir el conocimiento de tipo enciclopédico. ¡La filosofía del software libre aplicada al conocimiento!</p>
+</article>
+{% render "ECLSocialBundle:Layout:sidebar" %}
+{% endblock %}

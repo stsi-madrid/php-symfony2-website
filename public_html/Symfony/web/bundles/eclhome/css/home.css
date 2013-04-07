@@ -1,0 +1,161 @@
+/* --------------- main --------------- */
+
+.main h2
+{
+    font-size: 0.9em;
+}
+.article_info
+{
+    font-size: 0.8em;
+    margin: 5px 0 5px;;
+}
+.article_summary
+{
+    font-size: 0.8em;
+}
+#pages
+{
+    margin: 30px 0 50px;
+    padding-top: 20px;
+    text-align: center;
+}
+    #pages li
+    {
+        display: inline-block;
+        margin: 0 10px;
+        width: 30px;
+    }
+        li#pages_info
+        {
+            margin-left: 25px;
+            text-align: center;
+            width: 100px;
+        }
+        #pages a
+        {
+            background: #ffffff; /* Old browsers */
+            /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+            background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2FkYWRhZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+            background: -moz-linear-gradient(top,  #ffffff 0%, #adadad 75%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(75%,#adadad)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  #ffffff 0%,#adadad 75%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #ffffff 0%,#adadad 75%); /* Opera 11.10+ */
+            background: linear-gradient(to bottom,  #ffffff 0%,#adadad 75%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#adadad',GradientType=0 ); /* IE6-8 */
+            box-shadow:0 0 4px #313131;
+            border:1px solid #000;
+            border-radius: 3px;
+            box-shadow: 0 0 4px #313131;
+            color: #000;
+            display: inline-block;
+            text-align: center;
+            padding: 3px 6px 3px 6px;
+            text-shadow: 0.1em 0.1em 0.2em #fff;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+            width: 100%;
+        }
+            #pages a:hover
+            {
+                background: #dfdfdf;
+                box-shadow: none;
+                text-decoration: none;
+            }
+
+/* --------------- sidebar --------------- */
+
+#logo
+{
+    background: url(../../../imagenes/logo-stsi.png) no-repeat;
+    display: block;
+    height: 199px;
+    margin: 0 auto;
+    opacity: 0.9;
+    width: 200px;
+}
+#sov
+{
+    font-size: 0.9em;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+#sidebar h3
+{
+    font-size: 0.9em;
+    margin: 20px 0 10px;
+}
+#sidebar ul
+{
+    font-size: 0.8em;
+    padding-left: 20px;
+}
+    #sidebar li
+    {
+        margin: 5px 0;
+    }
+.campanas
+{
+    background-color: #eee;
+    border-radius: 8px;
+    color: #333333;
+    display: block;
+    font-size: 0.80em;
+    line-height: 130%;
+    padding: 10px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;    
+}
+    .campanas:hover
+    {
+        box-shadow: inset 0 0 10px #000;
+        text-decoration: none;
+    }
+    .campanas strong
+    {
+        display: block;
+        margin-bottom: 10px;
+    }
+#final
+{
+    font-size: 0.8em;
+    margin: 20px 0 10px;
+    text-align: center;    
+}
+#sidebar #followus
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+    #followus li
+    {
+        display: inline-block;
+        margin-right: 10px;
+    }
+        #followus a
+        {
+            background-image: url(../imagenes/social.png);
+            background-repeat: no-repeat;
+            display: block;
+            height: 40px;
+            width: 40px;
+        }
+            .rss
+            {
+                background-position: -80px 0;
+            }
+            .twitter
+            {
+                background-position: 0 0;
+            }
+            .identica
+            {
+                background-position: -200px 0;
+            }
+            .facebook
+            {
+                background-position: -240px 0;
+            }

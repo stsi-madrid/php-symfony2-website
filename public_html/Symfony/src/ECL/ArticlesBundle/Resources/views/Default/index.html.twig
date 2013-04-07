@@ -1,0 +1,27 @@
+{% extends 'ECLDefaultBundle::base_front.html.twig' %}
+{% block title %}{{ article.title }}{% endblock %}
+{% block description %}{{ article.summary }}{% endblock %}
+{% block stylesheets %}
+<link href="{{ asset('bundles/eclhome/css/home.css') }}" rel="stylesheet">
+<link href="{{ asset('bundles/eclarticles/css/articles.css') }}" rel="stylesheet">
+{% endblock %}
+{% block body_front %}
+<article class="main">
+    <h1>{{ article.title }}</h1>
+    <p id="article_data"><time datetime="{{ article.date|date('c') }}">{{ article.date | long_date }}</time>
+    <div id="article_content">{{ article.text | raw }}</div>
+    <ul id="article_info">
+        <li><a target="_blank" href="http://meneame.net/submit.php?url={{ app.request.uri }}" id="meneame_share" title="Compartir en meneame"></a></li>
+        <li><a target="_blank" href="http://www.facebook.com/share.php?u={{ app.request.uri }}" id="facebook_share" title="Compartir en facebook"></a></li>
+        <li><a target="_blank" href="http://twitter.com/share?text={{ article.title}}&amp;url={{ app.request.uri }}" id="twitter_share" title="Compartir en twitter"></a></li>
+        <li><a target="_blank" href="http://www.tuenti.com/share?url={{ app.request.uri }}" id="tuenti_share" title="Compartir en tuenti"></a></li>
+        <li><a target="_blank" href="http://digg.com/submit?partner=addthis&amp;url={{ app.request.uri }}" id="digg_share" title="Compartir en digg"></a></li>
+        <li><a target="_blank" href="http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url={{ app.request.uri }}" id="delicious_share" title="Compartir en delicious"></a></li>
+    </ul>
+    <div id="more_articles">
+        | <a href="{{ url('ECLArticlesBundle_rss') }}">Suscríbete</a>
+        | <a href="{{ url('ECLHomeBundle_homepage') }}">Más noticias</a>
+    </div>
+</article>
+{% render "ECLHomeBundle:Layout:sidebar" %}
+{% endblock %}

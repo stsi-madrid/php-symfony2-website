@@ -1,0 +1,36 @@
+security:
+
+    encoders:
+        ECL\DefaultBundle\Entity\User:
+            algorithm: sha512
+            encode-as-base64: true
+            iterations: 10
+
+    providers:
+        user_db:
+            entity: { class: ECL\DefaultBundle\Entity\User, property: username }
+
+    firewalls:
+        dev:
+            pattern:  ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        login:
+            pattern:  ^/backoffice/login$
+            security: false
+
+        secured_area:
+            pattern:    ^/backoffice
+#            http_basic:
+#                realm: "Introduzca Usuario y Contraseña"
+            form_login:
+                login_path: /backoffice/login
+                check_path: /backoffice/login_check
+                default_target_path: /backoffice
+            logout:
+                path: /backoffice/logout
+                target: /backoffice/login
+
+    access_control:
+      - { path: ^/backoffice/usuarios, roles: ROLE_ADMIN }
+      - { path: ^/backoffice, roles: ROLE_USER }

@@ -1,0 +1,20 @@
+{% extends '::header.html.twig' %}
+{% set bundle = app.request.attributes.get('_route')|split('_')[0] %}
+{%block body_header%}
+<nav id="nav">
+    <ul>
+        <li>{%if bundle == 'ECLHomeBundle' %}<strong>Portada</strong>{%else%}
+        <a href="{{url('ECLHomeBundle_homepage')}}">Portada</a>{%endif%}</li>
+        <li>{%if bundle == 'ECLLaboralBundle' %}<strong>Laboral</strong>{%else%}
+        <a href="{{url('ECLLaboralBundle_homepage')}}">Laboral</a>{%endif%}</li>
+        <li>{%if bundle == 'ECLSocialBundle' %}<strong>Social</strong>{%else%}
+        <a href="{{url('ECLSocialBundle_homepage')}}">Social</a>{%endif%}</li>
+        <li>{%if bundle == 'ECLCultureBundle' %}<strong>Cultura</strong>{%else%}
+        <a href="{{url('ECLCultureBundle_homepage')}}">Cultura</a>{%endif%}</li>
+        <li>{%if bundle == 'ECLAboutBundle' %}<strong>Conocenos</strong>{%else%}
+        <a href="{{url('ECLAboutBundle_homepage')}}">Conocenos</a>{%endif%}</li>
+        <li>{%if bundle == 'ECLContactBundle' %}<strong>Contacto</strong>{%else%}
+        <a href="{{url('ECLContactBundle_homepage')}}">Contacto</a>{%endif%}</li>
+    </ul>
+</nav>
+{%endblock%}

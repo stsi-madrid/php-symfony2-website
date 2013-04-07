@@ -1,0 +1,7 @@
+parameters:
+#    ecl_contact.example.class: ECL\ContactBundle\Example
+
+services:
+#    ecl_contact.example:
+#        class: %ecl_contact.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

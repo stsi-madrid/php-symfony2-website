@@ -1,0 +1,21 @@
+{% extends 'ECLDefaultBundle::base_backoffice.html.twig' %}
+{% block title %}Login{% endblock %}
+{% block body_backoffice %}
+<section id="login">
+{% if error %}
+    <div>{{ error.message }}</div>
+{% endif %}
+    <form action="{{ path('login_check') }}" method="post">
+        <fieldset>
+            <label for="username">usuario:</label>
+            <input id="username" type="text" name="_username"
+            value="{{ last_username }}" autofocus="autofocus">
+        </fieldset>
+        <fieldset>
+            <label for="password">contraseña:</label>
+            <input id="password" type="password" name="_password">
+        </fieldset>
+        <input type="submit" name="login" value="entrar" class="button">
+    </form>
+</section>
+{% endblock %}

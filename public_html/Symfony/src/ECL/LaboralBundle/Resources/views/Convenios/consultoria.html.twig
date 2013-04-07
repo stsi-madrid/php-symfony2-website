@@ -1,0 +1,3258 @@
+{% extends 'ECLDefaultBundle::base_front.html.twig' %}
+{% block title %}Convenio de Consultoria para la Comunidad de Madrid{% endblock %}
+{% block description %}Convenio Colectivo 2011 de Consultoria para la Comunidad
+de Madrid. Tablas Salariales y legislación laboral.{% endblock %}
+{% block stylesheets %}
+    <link href="{{ asset('bundles/ecllaboral/css/laboral.css') }}" rel="stylesheet">
+{% endblock %}
+{% block body_front %}
+<article class="main">
+    <ul id="menu">
+        <li><a href="{{ url('ECLLaboralBundle_homepage')}}">Acción Sindical</a></li>
+        <li><a href="{{ url('ECLLaboralBundle_convenios')}}">Convenios Colectivos</a></li>
+    </ul>    
+    <header>
+        <hgroup>
+            <h1>XVI Convenio Colectivo Estatal de Empresas de Consultoría y Estudios de Mercados y de la Opinión Pública</h1>
+            <h2>1 de enero de 2009 - Se renueva en Diciembre automáticamente hasta aparición del XVII Convenio</h2>
+        </hgroup>
+    </header> 
+    <ul>
+        <li><a href="#pre">Preámbulo.</a></li>
+        <li><a href="#art1">Art. 1º Ámbito Territorial.</a></li>
+        <li><a href="#art2">Art. 2º Ámbito Funcional.</a></li>
+        <li><a href="#art3">Art. 3º Ámbito Personal.</a></li>
+        <li><a href="#art4">Art. 4º Ámbito Temporal.</a></li>
+        <li><a href="#art5">Art. 5º Denuncia y Revisión.</a></li>
+        <li><a href="#art6">Art. 6º Vinculación a la Totalidad.</a></li>
+        <li><a href="#art7">Art. 7º Compensación. Abosorción.</a></li>
+        <li><a href="#art8">Art. 8º Respecto de las Mejoras Adquiridas.</a></li>
+        <li><a href="#art9">Art. 9º Comité de Vigilancia, Interpretación y Solución de Conflictos Colectivos.</a></li>
+        <li><a href="#art10">Art. 10º Período de Prueba de Ingreso.</a></li>
+        <li><a href="#art11">Art. 11º Promoción Profesional de los Trabajadores. Ascensos.</a></li>
+        <li><a href="#art12">Art. 12º Nuevas Contrataciones.</a></li>
+        <li><a href="#art13">Art. 13º Organización del Trabajo.</a></li>
+        <li><a href="#art14">Art. 14º Bolsa de Estudios.</a></li>
+        <li><a href="#art15">Art. 15º Clasificación Profesional.</a></li>
+        <li><a href="#art16">Art. 16º Contratos en el Sector de Empresas de Investigación de Mercados y de la Opinión Pública.</a></li>
+        <li><a href="#art17">Art. 17º Contratos de Duración Determinada por Circunstancias de la Producción.</a></li>
+        <li><a href="#art18">Art. 18º Trabajos de Categoría Superior.</a></li>
+        <li><a href="#art19">Art. 19º Trabajos de Categoría Inferior.</a></li>
+        <li><a href="#art20">Art. 20º Jornada Laboral.</a></li>
+        <li><a href="#art21">Art. 21º Vacaciones.</a></li>
+        <li><a href="#art22">Art. 22º Permisos Retribuidos.</a></li>
+        <li><a href="#art23">Art. 23º Permisos sin Sueldo.</a></li>
+        <li><a href="#art24">Art. 24º Faltas y Sanciones.</a></li>
+        <li><a href="#art25">Art. 25º Complementos de Antigüedad.</a></li>
+        <li><a href="#art26">Art. 26º Prestaciones por Enfermedad y Accidentes de Trabajo.</a></li>
+        <li><a href="#art27">Art. 27º Tablas Salariales.</a></li>
+        <li><a href="#art28">Art. 28º Distribución del Salario Anual y Pagas Extraordinarias.</a></li>
+        <li><a href="#art29">Art. 29º Horas Extraordinarias.</a></li>
+        <li><a href="#art30">Art. 30º Dietas y Desplazamientos.</a></li>
+        <li><a href="#art31">Art. 31º Plus de Convenio.</a></li>
+        <li><a href="#art32">Art. 32º Dimisión del Trabajador.</a></li>
+        <li><a href="#art33">Art. 33º Excedencias.</a></li>
+        <li><a href="#art34">Art. 34º Derechos de Reunion y de Libre Sindicación.</a></li>
+        <li><a href="#art35">Art. 35º Derechos y Obligaciones de los Sindicatos de Trabajadores.</a></li>
+        <li><a href="#art36">Art. 36º Comités de Empresa o de Centro de Trabajo.</a></li>
+        <li><a href="#art37">Art. 37º Garantías de los Representantes de los Trabajadore.</a></li>
+        <li><a href="#art38">Art. 38º Prácticas Antisindicales.</a></li>
+        <li><a href="#art39">Art. 39º Trabajos en Pantallas. Prevención de Riesgos</a></li>
+        <li><a href="#art40">Art. 40º Armonización de la Vida Laboral y Familiar. Planes de Igualdad.</a></li>
+        <li><a href="#art41">Art. 41º Derecho Supletorio y Prelación de Normas.</a></li>
+        <li><a href="#disp1">Disposición Adicional Primera. Formación a Nivel del Sector.</a></li>
+        <li><a href="#disp2">Disposición Adicional Segunda.- Adhesión al A.S.E.C.</a></li>
+        <li><a href="#dispf1">Disposición Final Primera. Eficacia y Concurrencia. Adhesión</a></li>
+        <li><a href="#dispf2">Disposición Final Segunda. Pacto Derogatorio.</a></li>
+        <li><a href="#dispf3">Disposición Final Tercera.</a></li>
+        <li><a href="#dispf4">Disposición Final Cuarta.</a></li>
+    </ul>
+    <a id="pre"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Preámbulo.</h4>
+    <p class="capitulo">Determinación de las partes que lo conciertan, legitimación y eficacia.</p>
+    <p class="parrafo">El presente XVI Convenio Colectivo Estatal de Empresas de Consultoría y Estudios de mercado y de la opinión pública, que viene a sustituir el precedente XV Convenio Colectivo de empresas consultoras de planificación, organización de empresa y contable, empresas de servicios de informática y de estudios de mercado y de la opinión pública, se suscribe, por parte patronal, por la Asociación Española de Empresas de Consultoría (AEC), por sí y, en virtud de su acuerdo de colaboración con ella, en nombre de la Asociación Catalana de Empresas de Consultoría (ACEC), y por la Asociación Nacional de Empresas de Investigación de Mercados y de la Opinión Pública (ANEIMO), y por la parte social, por la Federación Estatal de Servicios Financieros y Administrativos de CC.OO. (COMFIA), la cual ostenta la mayoría absoluta de la referida parte en la Mesa Negociadora, lo que otorga al presente Convenio plena eficacia estatutaria.</p>
+    <p class="parrafo">Las mencionadas partes ostentan y se reconocen recíprocamente la representatividad requerida en el Título III del texto refundido de la Ley del Estatuto de los Trabajadores y, por tanto, con plena legitimidad para suscribir un Convenio Colectivo de carácter regular.</p>
+    <p class="parrafo">En este sentido este Convenio Colectivo está dotado de la eficacia jurídica y fuerza de obligar que la Constitución y la Ley le confieren, incorporando, con tal carácter, la regulación de las condiciones laborales básicas para todas las empresas y trabajadores incluidos en su ámbito de aplicación.</p>
+    <a id="art1"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 1º Ámbito Funcional.</h4>
+    <p class="parrafo">1. El presente Convenio será de obligada observancia en todas las empresas consultoras de planificación, organización de empresas y contable, cuyas actividades de servicios de consultoría en selección y formación de recursos humanos, técnicas de organización y dirección de empresas, auditoría, y cualesquiera otras de orden similar, vinieran rigiéndose por el XV Convenio de Empresas Consultoras de Planificación, Organización de Empresas y Contable, al que sustituye íntegramente en dicho ámbito.</p>
+    <p class="parrafo">2. También están incluidas en el ámbito funcional del presente Convenio, y obligadas por él, las empresas de servicios de informática, así como las de investigación de mercados y de la opinión pública que vinieran rigiéndose por el antes citado Convenio Colectivo.</p>
+    <a id="art2"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 2º Ámbito territorial.</h4>
+    <p class="parrafo">Este Convenio Colectivo será de aplicación en todo el territorio del Estado español.</p>
+    <a id="art3"></a>
+    <h4>Art. 3º Ámbito Personal.</h4>
+    <a class="indice" href="">Índice</a>
+    <p class="parrafo">1. El presente Convenio afecta a todos los trabajadores adscritos a las empresas indicadas en el artículo 1.</p>
+    <p class="parrafo">2. En todo caso, queda excluido del ámbito de aplicación del presente Convenio el personal de alta dirección al que se refiere el artículo 2.1. a), del texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <a id="art4"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 4º Ámbito Temporal.</h4>
+    <p class="parrafo">La duración del presente Convenio Colectivo será de tres años, iniciando su vigencia en materia salarial, así como respecto del plus de Convenio, una vez registrado y publicado, el 1 de enero de 2007 hasta el 31 de diciembre de 2009, para los mismos conceptos indicados anteriormente, para los trabajadores en activo en la fecha de su publicación en el «Boletín Oficial del Estado» y para los que se incorporen a las empresas con posterioridad a la misma, prorrogándose, tras el 31.12.2009, anualmente por tácita aceptación y en sus propios términos, en tanto no inicie su vigencia el XVII Convenio Colectivo Estatal, en los términos del artículo 5.</p>
+    <a id="art5"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 5º Denuncia y Revisión.</h4>
+    <p>El presente Convenio Colectivo entrará en vigor a partir del dia siguiente de su publicación en el Boletín Oficial de la Comunidad de Madrid, retrotrayéndose sus efectos económicos al día 1 de enero de 2009 para los trabajadores que en la fecha de su publicación esté en vigor su contrato de trabajo. Para aquellos trabajadores que en aquella fecha hubiesen causado baja, se les abonará por la empresa en la que prestaron sus servicios una indemnización alzada. de carácter no salarial, igual a la revisión que les pudiera corresponder por la aplicación de la subida pactada en este Convenio. El trabajador que firme el finiquito debe hacer constar que queda pendiente de pago esta indemnización. En caso de no hacer esta salvedad, el finiquito surtirá efectos liberatorios.</p>
+    <a id="art6"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 6º Vinculación a la Totalidad.</h4>
+    <p class="parrafo">Siendo las condiciones pactadas un todo orgánico e indivisible, el presente Convenio será nulo y no surtirá efecto alguno en el supuesto de que la autoridad o jurisdicción competente, en el ejercicio de las facultades que le sean propias, objetase o invalidase alguno de sus pactos o no aprobara la totalidad del contenido, que deberá ser uno e indivisible en su aplicación.</p>
+    <a id="art7"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 7º Compensación y Absorción.</h4>
+    <p class="parrafo">1. Todas las condiciones económicas que se establecen en el presente Convenio, sean o no de naturaleza salarial, son compensables en su conjunto y computo anual con las mejoras de cualquier tipo que vinieran anteriormente satisfaciendo las empresas, bien sea por imperativo legal, Convenio Colectivo, laudo, contrato individual, uso o costumbre, concesión voluntaria de las empresas o por cualesquiera otras causas.</p>
+    <p class="parrafo">2. Dichas condiciones también serán absorbibles, hasta donde alcancen y en computo anual, por los aumentos que en el futuro pudieran establecerse en virtud de preceptos legales, Convenios Colectivos, contratos individuales de trabajo y por cualesquiera otras causas, con la única excepción de aquellos conceptos que expresamente fuesen excluidos de absorción en el texto del presente Convenio.</p>
+    <a id="art8"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 8º Respeto de las mejoras adquiridas.</h4>
+    <p class="parrafo">1. Se respetarán como derechos adquiridos, a título personal, las situaciones que pudieran existir a la fecha de la firma de este Convenio que, computadas en conjunto y anualmente, resultasen superiores a las establecidas en el mismo.</p>
+    <p class="parrafo">2. Asimismo, se mantendrán como derechos adquiridos a título colectivo las situaciones que pudieran existir a la fecha de la firma de este Convenio que, computadas en conjunto y anualmente, resultasen superiores a los establecidas en el mismo, siempre que no estén expresamente modificadas en el articulado de este Convenio.</p>
+    <a id="art9"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 9º Comité de vigilancia, interpretación y solución de conflictos colectivos.</h4>
+    <p class="parrafo">1. Queda encomendada la vigilancia e interpretación de los pactos contenidos en el presente Convenio a un Comité Paritario, que se dará por constituido el mismo día de su publicación en el «Boletín Oficial del Estado».</p>
+    <p class="parrafo">2. El Comité Paritario quedará integrado por cuatro representantes titulares y dos suplentes de cada una de las partes social y empresarial signatarias del Convenio, siendo designados como Vocales, por la parte empresarial, tres miembros designados por la Asociación de Empresas Consultoras, y otro por ANEIMO, y, por la parte sindical, cuatro por CC.OO.</p>
+    <p class="parrafo">3. Los integrantes del Comité Paritario por mandato de las partes firmantes actuarán conforme al Reglamento de funcionamiento del Comité Paritario, publicado en el B.O.E. de 25 de mayo de 2005, prorrogado el 16 de febrero de 2007, homologado por Resolución de la Dirección General de Trabajo de 21 de marzo de 2007.</p>
+    <p class="parrafo">4. Además de las funciones de vigilancia e interpretación del Convenio, en supuestos de conflicto de carácter colectivo suscitados por aplicación de preceptos del presente Convenio, cualquiera de las dos partes firmantes del mismo solicitará la inmediata reunión del Comité Paritario a efectos de ofrecer su mediación, interpretar el Convenio con carácter previo a cualquier otro órgano administrativo o jurisdiccional, y ofrecer su arbitraje en su caso. Los promotores del conflicto colectivo deberán, en todo caso, remitir por escrito a una de las dos partes firmantes el detalle de la controversia o duda suscitada e, intentado sin efecto el obligado trámite interpretativo ante el Comité o transcurridos quince días hábiles desde su solicitud sin que se haya celebrado, quedará expedita la vía administrativa o jurisdiccional correspondiente. Los acuerdos del Comité, interpretativos de este Convenio, tendrán la misma eficacia que la de la cláusula que haya sido interpretada.</p>
+    <p class="parrafo">5. Pese a ser ésta una cláusula obligacional en lo que concierne a los firmantes, y normativa para los afectados por el ámbito de obligar del Convenio, las partes la establecen también para ellas con carácter normativo a los solos efectos de lo dispuesto en el artículo 86.3 del texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <p class="parrafo">6. El Comité regulado en esta cláusula decidirá, mediante resolución motivada en el plazo máximo de treinta días, y previa audiencia por escrito de ambas partes, los supuestos de discrepancia que se susciten en el ámbito de la empresa entre los representantes legales de los trabajadores y la propia empresa en los casos de posible inaplicación salarial del Convenio, previstos en el apartado 3 del artículo 82 del texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <p class="parrafo">En defecto de representación legal de los trabajadores, éstos y la empresa podrán encomendar la fijación de las condiciones salariales al Comité Paritario regulado en el presente artículo.</p>
+    <p class="parrafo">7. Asimismo, se atribuye al Comité Paritario la mediación en la implantación y desenvolvimiento de los Planes de Igualdad que se establezcan conforme a la Ley O. 3/2007, de 22 de marzo, así como en materia de aplicación efectiva del principio de igualdad de trato y no discriminación.</p>
+    <a id="art10"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 10º Período de Prueba de Ingreso</h4>
+    <p class="parrafo">1. Podrá concertarse por escrito un período de prueba que, en ningún caso podrá exceder de seis meses para los técnicos titulados, ni de tres meses para los demás trabajadores, excepto para los no cualificados, en cuyo caso la duración máxima será de quince días laborables.</p>
+    <p class="parrafo">El empresario y el trabajador están, respectivamente, obligados a realizar las experiencias que constituyen el objeto de la prueba.</p>
+    <p class="parrafo">2. Durante el período de prueba el trabajador tendrá los derechos y obligaciones correspondientes a su categoría profesional y al puesto de trabajo que desempeñe, como si fuera de la plantilla, excepto los derivados de la resolución de la relación laboral, que podrá producirse a instancias de cualquiera de las partes durante su transcurso.</p>
+    <p class="parrafo">3. Transcurrido el período de prueba sin que se haya producido el desistimiento, el contrato producirá plenos efectos, computándose el tiempo de los servicios prestados en la antig&#xFC;edad del trabajador en la empresa. Siempre que se produzca acuerdo expreso entre las partes, la situación de incapacidad temporal que afecte al trabajador durante el período de prueba interrumpirá el computo del mismo.</p>
+    <a id="art11"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 11º Promoción profesional de los trabajadores. Ascensos.</h4>
+    <p class="parrafo">1. Conforme al art, 24 del T.R.L.E.T., los ascensos y promociones del personal se producirán en todo caso teniendo en cuenta la formación, méritos y experiencia del trabajador, así como las facultades organizativas del empresario.</p>
+    <p class="parrafo">2. En todo caso, los criterios de ascensos y promociones serán comunes para los trabajadores de uno y otro sexo, y deberá respetar asimismo el imperativo de no discriminación por las demás circunstancias referidas en el art. 17.1 del T.R.L.E.T.</p>
+    <p class="parrafo">3. Para el ascenso o promoción profesional de los trabajadores se requerirá poseer las aptitudes exigidas para el desempeño de los nuevos puestos de trabajo, valorándose a estos efectos la asistencia de los trabajadores, con aprovechamiento acreditado, a cursos de formación directamente relacionados con el puesto a ocupar.</p>
+    <a id="art12"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 12º Nuevas Contrataciones.</h4>
+    <p class="parrafo">1. Cuando se prevea la realización de nuevas contrataciones, éstas se harán públicas mediante comunicación al Comité de Empresa y mediante el correspondiente aviso en el tablón de anuncios, con al menos cinco días laborables de antelación al inicio del proceso de selección, salvo casos de razonable urgencia.</p>
+    <p class="parrafo">2. Dichas comunicaciones y avisos harán constar el Grupo profesional y la Categoría, del nuevo o nuevos contratos, así como los requisitos exigidos que deberán adecuarse a las funciones descritas para su categoría profesional.</p>
+    <p class="parrafo">3. Los procesos de selección asegurarán la objetividad y no discriminación de la misma, y en ellos tendrán preferencia para ocupar el puesto o puestos de trabajo que se pretendan cubrir con el nuevo o nuevos contratos, el personal de la empresa, siempre que obtenga igual evaluación en el proceso selectivo que los aspirantes a ingresar en la plantilla de la empresa.</p>
+    <p class="parrafo">La empresa informará por escrito al inicio del proceso de selección a la representación legal de los trabajadores del tipo de proceso, filtros y actividades relacionadas con la selección.</p>
+    <p class="parrafo">En caso de reclamación contra la selección efectuada formulada por algún trabajador de la empresa que se estime injustamente pospuesto a favor de otro candidato, el Comité de Empresa tendrá acceso a las Actas o Informes de evaluación y demás documentación del proceso selectivo relativas al empleado reclamante y al aspirante seleccionado.</p>
+    <p class="parrafo">4. Las normas del presente artículo no serán de aplicación a las empresas que empleen menos de 50 trabajadores, sin contar el personal discontinuo, las cuales seguirán observando las normas o procedimientos que existieran o vinieran aplicando con anterioridad en cada centro o empresa.</p>
+    <p class="parrafo">Tampoco se aplicarán las reglas de los tres primeros apartados de este artículo a los siguientes procesos o actos de contratación:</p>
+    <p class="parrafo_2">a) Los puestos de trabajo de Codificador/a, Perforista, Verificador/a, Clasificador/a, Grabador/a y Entrevistador/a-encuestador/a.</p>
+    <p class="parrafo">b) Los dirigidos a cubrir puestos de trabajo de mando, tanto intermedios como de Dirección, o de confianza por razón de su naturaleza específica, o se trate de puestos directamente dependientes de cargos de especial responsabilidad, o que conlleven un especial grado de confidencialidad y reserva.</p>
+    <p class="parrafo_2">Las circunstancias excluyentes del sistema general previsto en los tres primeros números de este artículo, serán comunicados al Comité de Empresa.</p>
+    <a id="art13"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 13º Organización del Trabajo</h4>
+    <p class="parrafo">1. La organización práctica del trabajo, con sujeción a la legislación vigente, es facultad exclusiva de la Dirección de empresa.</p>
+    <p class="parrafo">2. Sin merma de la autoridad que corresponde a la Dirección de la empresa o a sus representantes legales, los Comités de empresa o, en su caso, Delegados de Personal, tendrán las funciones de información, orientación y propuesta en lo relacionado con la organización y racionalización del trabajo, de conformidad con su legislación específica y el presente Convenio.</p>
+    <a id="art14"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 14º Bolsa de estudios.</h4>
+    <p class="parrafo">Todos los trabajadores podrán solicitar a la empresa una bolsa anual de 218,10 euros, para su formación profesional, que les será reconocida en función del aprovechamiento anterior y del interés de los estudios para la empresa.</p>
+    <a id="art15"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 15º Clasificación profesional.</h4>
+    <p class="parrafo">1. Los grupos profesionales y las definiciones de las categorías que se recogen en la tabla salarial por niveles del presente Convenio, según las funciones o actividades del personal dentro de la empresa, serán los siguientes:</p>
+    <p class="parrafo_2">I. Titulados:</p>
+    <p class="parrafo_2">Personal titulado: Es el que se halla en posesión de un título o diploma oficial de grado superior o medio, que está unido a la empresa por un vínculo de relación laboral concertado en razón del título que posee, para ejercer funciones específicas para las que el mismo le habilita y siempre que preste sus servicios en la empresa con carácter exclusivo o preferente por un sueldo o tanto alzado, sin sujeción a la escala habitual de honorarios de su profesión.</p>
+    <p class="parrafo_2">II. Personal Administrativo:</p>
+    <p class="parrafo_2">Jefes/as superiores: Son aquellos, provistos o no de poderes, que bajo la dependencia directa de la Dirección o Gerencia llevan la responsabilidad directa de dos o más departamentos o de una sucursal, delegación o agencia.</p>
+    <p class="parrafo">Jefe/a de primera: Es el empleado capacitado, provisto o no de poderes, que actúa a las ordenes inmediatas del jefe superior, si lo hubiere, y lleva la responsabilidad directa de uno o más servicios.</p>
+    <p class="parrafo">Están incluidas también aquellas personas que organizan o construyen la contabilidad de la empresa. Se asimilarán a esta misma categoría los Cajeros/as con firma que, con o sin empleados a sus órdenes, realizan, bajo su responsabilidad, los cobros y pagos generales de la empresa.</p>
+    <p class="parrafo">Jefe/a de segunda: Es el empleado, provisto o no de poderes, que a las órdenes inmediatas del Jefe de primera, si lo hubiere, está encargado de orientar, dirigir y dar unidad a una sección, distribuyendo los trabajos entre Oficiales, Auxiliares y demás personal que de él dependa. Quedan adscritos a esta categoría los Traductores e Intérpretes jurados de más de un idioma y los Cajeros sin firma reconocida en entidades bancarias o de crédito.</p>
+    <p class="parrafo">Oficial/a de primera: Es el empleado que actúa a las órdenes de un jefe, si lo hubiere, y que bajo su propia responsabilidad realiza, con la máxima perfección burocrática, trabajos que requieren iniciativa.</p>
+    <p class="parrafo">Se adscriben a esta categoría: Interpretes jurados de un idioma, Operadores/a de Máquinas contables, Taquimecanógrafos/as en idioma nacional que toman al dictado 130 palabras por minuto, traduciéndolas correcta y directamente a la máquina, así como las Telefonistas-Recepcionistas capacitadas para expresarse en dos o más idiomas extranjeros.</p>
+    <p class="parrafo">Oficial/a de segunda: Es el empleado que con iniciativa y responsabilidad restringida y subordinado a un Jefe u Oficial de primera, si los hubiere, realiza trabajos de carácter secundario que solo exigen conocimientos generales de la técnica administrativa.</p>
+    <p class="parrafo">Se adscriben a esta categoría las Telefonistas-Recepcionistas y los Traductores/as e Interpretes no jurados.</p>
+    <p class="parrafo">Auxiliar: Es el empleado, mayor de dieciocho años, que se dedica a operaciones elementales administrativas y en general a las puramente mecánicas inherentes al trabajo de la oficina o despacho.</p>
+    <p class="parrafo">Quedan adscritas a esta categoría las Telefonistas.</p>
+    <p class="parrafo">Aspirantes: Se entenderá por aspirante al empleado menor de dieciocho años que trabaja en funciones propias de oficina, dispuesto a iniciarse en las funciones de ésta.</p>
+    <p class="parrafo_2">III. Técnicos de oficina:</p>
+    <p class="parrafo_2">Analista: Verifica análisis orgánicos de aplicaciones complejas para obtener la solución mecanizada de la misma en cuanto se refiere a:</p>
+    <p class="parrafo_2">Cadenas de operaciones a seguir.</p>
+    <p class="parrafo">Diseño de documentos base.</p>
+    <p class="parrafo">Documentos a obtener.</p>
+    <p class="parrafo">Diseño de los mismos.</p>
+    <p class="parrafo">Ficheros a tratar: Su definición.</p>
+    <p class="parrafo">Puesta a punto de las aplicaciones.</p>
+    <p class="parrafo">Creación de juegos de ensayo.</p>
+    <p class="parrafo">Enumeración de anomalías que puedan producirse y definición de su tratamiento.</p>
+    <p class="parrafo">Colaboración al programa de las pruebas de «lógica» de cada programa.</p>
+    <p class="parrafo">Finalización de los expedientes técnicos de aplicaciones complejas.</p>
+    <p class="parrafo_2">Analista de Sistemas: Le corresponde el diseño, puesta a punto y mantenimiento de los sistemas operativos a utilizar en los procesos de mecanización.</p>
+    <p class="parrafo_2">1.&#xBA; Formarse e informarse de todo lo concerniente al proceso de datos.</p>
+    <p class="parrafo">Componentes físicos («hardware»).</p>
+    <p class="parrafo">Componentes lógicos («software»), aplicaciones, organización.</p>
+    <p class="parrafo">2.&#xBA; Asesorar y coordinar con todo el personal de la empresa sobre las posibilidades de proceso de datos.</p>
+    <p class="parrafo_2">Analista-Programador/a: Es el trabajador que, por una parte, le corresponde, dentro de los procesos a cargo de lo definido como Programador/a, aquellos que por su estudio, confección o tratamiento revistan mayor complejidad y, de otra, aquellos de los definidos entre los del Analista, referentes a aplicaciones sencillas.</p>
+    <p class="parrafo">Diseñador/a de página Web: Es el trabajador/a encargado/a del diseño de página Web desde los aspectos estéticos, de imagen, comercial y de mercadotecnia y no necesariamente desde los aspectos técnicos del diseño en sí.</p>
+    <p class="parrafo">Programador/a Senior: Es el trabajador que debe tener un conocimiento profundo de las técnicas y recursos que maneja, enfocado principalmente a los lenguajes de programación existentes en el ordenador que utiliza así como de las facilidades y ayuda que le presta al «software» para la puesta a punto de programas, correspondiéndole estudiar los problemas complejos definidos por los Analistas, confeccionando organigramas detallados de tratamiento.</p>
+    <p class="parrafo">Le corresponde redactar programas en el lenguaje de programación que le sea indicado. Asimismo, confecciona juegos de ensayo, pone a punto los programas y completa los expedientes técnicos de los mismos.</p>
+    <p class="parrafo">Programador/a en Internet: Es el trabajador/a que, teniendo las mismas características que las correspondientes a un programador/a de gran experiencia, enfoca su trabajo exclusivamente al entorno de Internet.</p>
+    <p class="parrafo">Jefe/a de Operación: Es el trabajador que, con personal a su cargo, tiene bajo su responsabilidad:</p>
+    <p class="parrafo_2">La planificación del trabajo a realizar en cada uno de los ordenadores, turnos y particiones.</p>
+    <p class="parrafo">La asignación de recursos humanos en cada puesto de trabajo y en cada momento.</p>
+    <p class="parrafo">La coordinación con Análisis y Programación para la puesta a punto de las cadenas y para las pruebas que haya que realizar.</p>
+    <p class="parrafo">La coordinación con Técnica de Sistemas para el mejor aprovechamiento del sistema.</p>
+    <p class="parrafo">El conocimiento, en todo momento, del sistema operativo y del trabajo para tomar decisiones en las dudas que se presenten en operación.</p>
+    <p class="parrafo">Llevar estadísticas de averías y control de mantenimiento preventivo en todas las máquinas.</p>
+    <p class="parrafo">La conservación de los manuales de operación.</p>
+    <p class="parrafo_2">Delineante-Proyectista: Es el empleado que, dentro de las especialidades propias de la sección en que trabaje, proyecta o detalla los trabajos del Técnico superior, a cuyas órdenes actúa, o el que, sin superior inmediato, realiza lo que personalmente concibe, según los datos y condiciones técnicas exigidas por los clientes o por la empresa.</p>
+    <p class="parrafo">Programador/a Junior: Es el trabajador que traduce a un lenguaje comprensible por el ordenador las órdenes precisas para la ejecución de un tratamiento a partir de la documentación realizada por un técnico de cualquiera de las categorías profesionales de rango superior.</p>
+    <p class="parrafo">Es responsable de la prueba y puesta a punto de la unidad, de tratamiento que le ha sido asignada.</p>
+    <p class="parrafo">Técnico/a de mantenimiento de página Web: Es el trabajador/a, que con conocimientos de similares características a las que posee un programador/a de experiencia media o media-baja, está encargado/a de mantener en perfecto estado de funcionamiento las páginas Web a su cargo, así como realizar trabajos de mejora y ampliación de las mismas, siempre bajo las instrucciones recibidas de cualquier técnico/a de superior categoría dentro del ámbito de Internet.</p>
+    <p class="parrafo">Operador/a de Ordenador: Es el trabajador que realiza la ejecución en el ordenador de aplicaciones, conociendo los componentes del ordenador, tanto a nivel de «hardware» como en las utilidades necesarias para desarrollar sus funciones. Deberá conocer la problemática que las aplicaciones presentan en el proceso de explotación.</p>
+    <p class="parrafo">Programador/a de Máquinas Auxiliares: Planifica la realización de máquinas básicas, contribuyendo a la creación de los paneles o tarjetas de perforación precisos para la programación de las citadas máquinas auxiliares.</p>
+    <p class="parrafo">Monitor/a de Grabación: Es el trabajador responsable de la planificación organización y control del área de grabación, obteniendo el máximo de rendimiento de los equipos y personal, confeccionando los programas necesarios, tanto de grabación como de utilidades del sistema.</p>
+    <p class="parrafo">Delineante: Es el técnico que está capacitado para el desarrollo de proyectos sencillos, levantamiento e interpretación de planos y trabajos análogos.</p>
+    <p class="parrafo">Administrador/a de Test: Es el empleado que realiza la aplicación de test psicométricos para la calificación del personal. Los corrige y valora de acuerdo con las plantillas y baremos contenidos en los manuales de test o baterías de test y formula el correspondientes informe psicométrico. Es el colaborador directo de los departamentos de psicología establecidos en la empresa y depende del titulado superior en la especialidad.</p>
+    <p class="parrafo_2">IV. Especialistas de oficina:</p>
+    <p class="parrafo_2">Jefe/a de Campo: Es el empleado que dirige y coordina todas las operaciones de recogida de datos del exterior, teniendo a su cargo a Jefes de zona, Inspectores de Entrevistadores y Entrevistadores.</p>
+    <p class="parrafo">Jefe/a de Zona: Realiza las mismas funciones del Jefe de Campo, a las órdenes de éste, en un área definida por la empresa. En caso necesario, realizará funciones de Inspector y Entrevistador.</p>
+    <p class="parrafo">Operador/a Máquinas auxiliares: Es el empleado que tiene perfecto conocimiento de las técnicas destinadas a clasificación, interpretación, reproducción e intercalación de las fichas perforadas.</p>
+    <p class="parrafo">Preparador/a de Trabajos: Es el trabajador responsable de agrupar los elementos necesarios para la ejecución de un trabajo: Documentos básicos, papel, fichas, fichas de control, cintas y discos, todo ello en función de la planificación del equipo. Debe reclamar los documentos necesarios para los servicios interesados si no se han devuelto en tiempo útil y prevenir a su superior en caso de demora.</p>
+    <p class="parrafo">Asimismo, debe asegurarse de que la secuencia de operaciones se ejecuta efectivamente: Controles a la llegada, ejecución, control de los documentos producidos, clasificación y archivo de los materiales utilizados.</p>
+    <p class="parrafo">Operador/a de Periféricos: Es el trabajador que realiza la colocación y retirada de todo tipo de soportes de las unidades periféricas del ordenador, dirigido por su superior, y se preocupa del manejo de máquinas vinculadas al ordenador a través de la obtención de soportes procesables o por conexión directa con el mismo.</p>
+    <p class="parrafo">Inspector/a-Entrevistador/a: Es el empleado mayor de veintiún años, que supervisa el trabajo realizado por los Entrevistadores/as-Encuestadores/as para determinar su corrección en el trabajo y en las normas señaladas por las empresas, realizando incluso entrevistas mediante cuestionario.</p>
+    <p class="parrafo">Dibujante: Es el empleado que confecciona toda clase de rótulos, carteles y dibujos de carácter sencillo, desarrollando trabajos de esta índole bajo la dirección de un Delineante-Proyectista.</p>
+    <p class="parrafo">Calcador/a: Es el que calca dibujos en papel transparente, realiza y acota croquis sencillos y efectúa otras labores análogas.</p>
+    <p class="parrafo">Codificador/a Informático: Es el trabajador cuyo cometido básico consiste en transformar datos, conceptos o definiciones numéricos o alfanuméricos a código y/o viceversa, apoyado en tablas escritas, memorizadas, etc., con el uso de cualquier elemento de informática.</p>
+    <p class="parrafo">Perforista, Verificador/a, Clasificador/a y Grabador/a: Son los trabajadores que realizan el perfecto manejo de las máquinas perforadoras, verificadoras, clasificadoras y grabadoras, conociendo suficientemente la técnica de programación de dichas máquinas, formatos tipos de validación, etc., y debiendo consultar las tablas, listados o documentos necesarios para desarrollar su trabajo.</p>
+    <p class="parrafo">Entrevistador/a-Encuestador/a: Es el empleado que, mediante cuestionarios estandarizados, realiza entrevistas para la recogida de datos elementales.</p>
+    <p class="parrafo">Codificador/a de encuestas: Es el trabajador cuyo cometido básico consistente en transformar datos, conceptos o definiciones numéricos o alfanuméricos a código y/o viceversa, apoyado en tablas escritas, memorizadas, etc.</p>
+    <p class="parrafo_2">V. Subalternos/as:</p>
+    <p class="parrafo_2">Vigilante: Tiene a su cargo el servicio de vigilancia diurna o nocturna de los locales.</p>
+    <p class="parrafo">Conserje: Tiene como misión especial vigilar las puertas y accesos a los locales de la empresa.</p>
+    <p class="parrafo">Ordenanza: Tendrá esta categoría el subalterno mayor de dieciocho años, cuya misión consiste en hacer recados dentro o fuera de la oficina, recoger y entregar correspondencia, así como otros trabajos secundarios ordenados por sus jefes.</p>
+    <p class="parrafo">Personal de limpieza: Está ocupado de la limpieza de los locales de las empresas.</p>
+    <p class="parrafo">Botones: Es el subalterno menor de dieciocho años que realiza recados, repartos y otras funciones de carácter elemental.</p>
+    <p class="parrafo_2">VI. Oficios varios:</p>
+    <p class="parrafo_2">Oficial/a de primera, Oficial/a de segunda y Ayudante: Incluye al personal, como Mecánicos/as, Carpinteros/as, Electricistas, etc., que realizan los trabajos propios de un oficio de cualquiera de las categorías señaladas.</p>
+    <p class="parrafo">Los Conductores/as de automóviles serán considerados Oficiales/as de primera si ejecutan toda clase de reparaciones que no exijan elementos de taller. En los demás casos serán, como mínimo, oficiales de segunda.</p>
+    <p class="parrafo">Quedan asimilados a la categoría de Ayudantes los siguientes profesionales:</p>
+    <p class="parrafo_2">Operador/a de Reproductora de Planos: Es el encargado de la obtención de copias de un original impreso en vegetal u otro papel, graduando la velocidad con el fin de que las copias tengan la máxima nitidez.</p>
+    <p class="parrafo">Operador/a de Fotocopiadora: Está encargado de la obtención de copias de un original, de acuerdo con las especificaciones requeridas, teniendo además la función de la limpieza total de la máquina y la puesta a punto para su buen funcionamiento.</p>
+    <p class="parrafo_2">2. La relación de categorías profesionales incluidas en la tabla salarial del presente Convenio es meramente enunciativa, sin que suponga obligación de tener provistas todas las enumeradas si la importancia de la empresa no lo requiere.</p>
+    <a id="art16"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 16º Contratos en el sector de Empresas de investigación de mercados y de la opinión pública.</h4>
+    <p class="parrafo">1. El Contrato tipo del expresado sector será el Contrato de Trabajo Fijo-Discontinuo, pudiendo utilizarse también la contratación temporal a través de los distintos modelos de dicha contratación existentes para cubrir las puntas de producción así como las campañas tipo prospección de voto.</p>
+    <p class="parrafo">En el contrato fijo discontinuo no se podrá considerar período de inactividad laboral los festivos, fines de semana, vacaciones ni ningún otro supuesto de interrupción o suspensión retribuida de la prestación laboral. En consecuencia, la finalización del periodo de actividad, se producirá siempre el día laborable posterior a los festivos, fines de semana, vacaciones y cualquier otro supuesto de interrupción o suspensión retribuida de la prestación laboral; fecha hasta la cual se devengan los salarios y cotizaciones a la Seguridad Social que correspondan.</p>
+    <p class="parrafo">Cuando se utilice el contrato eventual de circunstancias de la producción, la terminación anticipada de las mismas tendrá la consideración de rescisión del contrato por causas objetivas a efectos indemnizatorios (20 días por año).</p>
+    <p class="parrafo">2. Los trabajadores fijos-discontinuos serán llamados según los siguientes criterios y por el orden que se cita:</p>
+    <p class="parrafo_2">a) Categoría profesional.</p>
+    <p class="parrafo">b) Metodología de captura de datos primarios (Campo Telefónico, Campo Personal FACE to FACE, Campo Personal asistido por ordenador). Este desglose se podrá ampliar por acuerdo entre Empresa y Representación legal de los Trabajadores en las especialidades que ambas partes acuerden.</p>
+    <p class="parrafo">c) Turnos y Jornadas.</p>
+    <p class="parrafo">d) Antig&#xFC;edad.</p>
+    <p class="parrafo_2">Las diferentes listas de orden de llamada deberán ser puestas a disposición de los trabajadores y su representación sindical.</p>
+    <p class="parrafo">Las listas no son excluyentes, pudiendo estar un trabajador en una o mas listas de orden de llamada.</p>
+    <p class="parrafo">3. La no aceptación por un trabajador de la incorporación al puesto de trabajo conforme lo establecido en el precedente párrafo 2, tras algún período de inactividad, determinará la extinción automática de la relación laboral por desistimiento voluntario unilateral del trabajador.</p>
+    <a id="art17"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 17º Contratos de duración determinada por circunstancias de la producción.</h4>
+    <p class="parrafo">Para los trabajadores con las categorías profesionales incluidas en los Grupos II, (Personal Administrativo), y IV, (Especialistas de Oficina), del artículo 15 de este Convenio, se podrán celebrar contratos por circunstancias del mercado, acumulación de tareas o excesos de pedidos, previstos en el artículo 15,1.b), del texto refundido de la Ley del Estatuto de los Trabajadores, dentro del período máximo admitido por dicho precepto de dieciocho meses contados a partir del momento en que se produzcan las causas reseñadas en el expresado precepto, y la duración máxima de los antedichos contratos no podrá superar los doce meses.</p>
+    <p class="parrafo">En el caso de que dichos contratos se concierten por una duración inferior a doce meses, podrán ser prorrogados mediante acuerdo de las partes, sin que la duración total del contrato pueda exceder del límite máximo establecido en el apartado anterior.</p>
+    <a id="art18"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 18º Trabajos de Categoría Superior.</h4>
+    <p class="parrafo">1. Cuando la empresa lo estime necesario, el trabajador podrá realizar cometidos de categoría superior a la que tenga atribuida, percibiendo mensualmente como complemento la doceava parte de la diferencia entre el salario anual correspondiente a la categoría superior y el de la categoría del trabajador.</p>
+    <p class="parrafo">2. Esta situación, podrá prolongarse por un máximo de seis meses, consecutivos o no, al cabo de los cuales deberá reintegrarse al trabajo de su categoría o ser ascendido a la superior.</p>
+    <p class="parrafo">3. El tiempo servido en superior categoría será computado como antig&#xFC;edad en la misma, cuando el empleado ascienda a ella.</p>
+    <p class="parrafo">4. Se exceptúan de lo anteriormente pactado los trabajos de superior categoría que el trabajador realice de acuerdo con la empresa, con objeto de prepararse para el ascenso.</p>
+    <a id="art19"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 19º Trabajos de categoría inferior.</h4>
+    <p class="parrafo">Conforme al tenor literal del vigente artículo 39.2 del Estatuto de los Trabajadores, «En el caso de encomienda de funciones inferiores ésta deberá estar justificada por necesidades perentorias o imprevisibles de la actividad productiva. El empresario deberá comunicar esta situación a los representantes de los trabajadores».</p>
+    <a id="art20"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 20º Jornada laboral.</h4>
+    <p class="parrafo">1. Hasta el 31 de diciembre de 2008, la jornada ordinaria máxima de trabajo efectivo, en cómputo anual, será la resultante de lo establecido en el artículo 34.1 del texto refundido de la Ley del Estatuto de los Trabajadores. Su distribución semanal podrá pactarse con los representantes de los trabajadores en la empresa teniendo en cuenta que en ningún caso, se podrán realizar más de nueve horas ordinarias diarias de trabajo efectivo. De acuerdo con lo establecido en el vigente artículo 37.2 del texto refundido de la Ley del Estatuto de los Trabajadores, ninguna fiesta laboral será recuperable.</p>
+    <p class="parrafo">2. A partir del año 2009, la jornada ordinaria máxima de trabajo efectivo, en cómputo anual, será de 1.800 horas anuales, sin perjuicio, en todo caso, de las jornadas actualmente pactadas más favorables para los trabajadores. Su distribución semanal podrá pactarse con los representantes de los trabajadores en la empresa teniendo en cuenta que en ningún caso, se podrán realizar más de nueve horas ordinarias diarias de trabajo efectivo. De acuerdo con lo establecido en el artículo 37.2 del texto refundido de la Ley del Estatuto de los Trabajadores, ninguna fiesta laboral será recuperable.</p>
+    <p class="parrafo">Las Empresas sujetas a este Convenio disfrutarán de jornada intensiva en el mes de agosto con la duración semanal máxima prevista en el punto 3 siguiente. Las Empresas que ofrezcan a sus trabajadores jornadas intensivas de mayor duración que la pactada en este Convenio, o días no laborables, aunque fueren «recuperables», adicionales a los festivos nacionales, autonómicos y locales aplicables, podrán realizar, en el año 2009, un máximo de 1.808 horas anuales, sin perjuicio, en todo caso, de las jornadas actualmente pactadas más favorables para los trabajadores.</p>
+    <p class="parrafo">3. Las empresas que tengan establecida jornada intensiva durante el verano no podrán rebasar las treinta y seis horas semanales durante el período en que la tengan implantada, salvo pacto con los representantes de los trabajadores.</p>
+    <p class="parrafo">4. En las empresas en que se realice jornada continuada, las condiciones de temporada más beneficiosa se mantendrán tal y como actualmente se realicen en cada empresa, sin superar la distribución semanal existente o la que pudiera pactarse, conforme a lo establecido en los dos apartados precedentes.</p>
+    <p class="parrafo">5. A partir de las catorce horas, salvo en período de jornada intensiva, los sábados tendrán la consideración de laboralmente inhábiles. Se exceptúa el personal que ejerce funciones de vigilancia en los locales de las empresas.</p>
+    <p class="parrafo">6. La Dirección de la empresa, combinando en lo posible los deseos del personal y las necesidades de la producción, fijará los horarios de trabajo conforme a lo establecido en la ley vigente.</p>
+    <p class="parrafo">7. Todo trabajador desplazado a otra empresa por razón de servicio, se atendrá al horario del centro de trabajo de destino, si bien en cuanto al cómputo de las horas trabajadas mensualmente, se respetarán las existentes en su empresa de origen.</p>
+    <a id="art21"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 21º Vacaciones.</h4>
+    <p class="parrafo">1. Desde el 1 de enero de 2009, todos los trabajadores al servicio de las empresas sujetas a este Convenio disfrutarán de veintitrés días laborables de vacaciones anuales retribuidas, salvo lo dispuesto en el párrafo siguiente.</p>
+    <p class="parrafo">No obstante, se mantendrán las mejoras que las Empresas puedan aplicar a sus trabajadores. Por otra parte, las Empresas que disfruten de dos o más meses de jornada intensiva, o bien, que concedan a sus empleados el disfrute de dos o más días no laborables, aunque fueren «recuperables», adicionales a los festivos nacionales, autonómicos y locales aplicables, disfrutarán de veintidós días laborables de vacaciones anuales retribuidas.</p>
+    <p class="parrafo">2. Las vacaciones se iniciarán siempre en día laborable y terminarán el día inmediatamente anterior de reincorporación al trabajo, salvo en las empresas que tengan establecido un período fijo anual para vacar la totalidad de sus trabajadores.</p>
+    <p class="parrafo">3. Conforme al tenor literal del último párrafo del vigente artículo 38 del Estatuto de los Trabajadores, «Cuando el período de vacaciones fijado en el calendario de vacaciones de la empresa al que se refiere el párrafo anterior coincida en el tiempo con una incapacidad temporal derivada del embarazo, el parto o la lactancia natural o con el período de suspensión del contrato de trabajo previsto en el artículo 48.4 de esta Ley, se tendrá derecho a disfrutar las vacaciones en fecha distinta a la de la incapacidad temporal o a la del disfrute del permiso que por aplicación de dicho precepto le correspondiera, al finalizar el período de suspensión, aunque haya terminado el año natural a que correspondan».</p>
+    <a id="art22"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 22º Permisos retribuidos.</h4>
+    <p class="parrafo">Los trabajadores, previo aviso y justificación, podrán ausentarse del trabajo, con derecho a remuneración, por alguno de los motivos y por el tiempo siguiente:</p>
+    <p class="parrafo_2">a) Quince días naturales en caso de matrimonio.</p>
+    <p class="parrafo">b) Conforme al tenor literal del vigente artículo 37.3.b del Estatuto de los Trabajadores, «Dos días por el nacimiento de hijo y por el fallecimiento, accidente o enfermedad graves, hospitalización o intervención quirúrgica sin hospitalización que precise reposo domiciliario, de parientes hasta el segundo grado de consanguinidad o afinidad. Cuando con tal motivo el trabajador necesite hacer un desplazamiento al efecto, el plazo será de cuatro días». En el caso de fallecimiento del cónyuge, padres o hijos el permiso será el establecido en el siguiente inciso c). Cuando por tal motivo el trabajador necesite hacer un desplazamiento al efecto de más de 200 kilómetros por cada uno de los viajes de ida y vuelta, el plazo será de cuatro días.</p>
+    <p class="parrafo">c) Cuatro días en los casos de fallecimiento de cónyuge, padres o hijos, incluyéndose en este tiempo los posibles desplazamientos.</p>
+    <p class="parrafo">d) Un día por traslado de domicilio habitual.</p>
+    <p class="parrafo">e) Por el tiempo indispensable, para el cumplimiento de un deber inexcusable de carácter público y personal. Cuando el cumplimiento del deber antes referido suponga la imposibilidad de la prestación del trabajo en más del 20% de las horas laborables en un período de tres meses, podrá la empresa pasar al trabajador afectado a la situación de excedencia forzosa. En el supuesto de que el trabajador, por cumplimiento del deber o desempeño de cargo, perciba una indemnización, se descontará el importe de la misma del salario a que tuviera derecho en la empresa.</p>
+    <p class="parrafo">f) Para realizar funciones sindicales o de representación del personal en los términos establecidos en la ley y en el presente Convenio.</p>
+    <p class="parrafo">g) Conforme al tenor literal del vigente artículo 37.3.f del Estatuto de los Trabajadores, «Por el tiempo indispensable para la realización de exámenes prenatales y técnicas de preparación al parto que deban realizarse dentro de la jornada de trabajo».</p>
+    <p class="articulo">Artículo 23. Permisos sin sueldo.</p>
+    <a id="art23"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 23º Permisos sin sueldo.</h4>
+    <p class="parrafo">1. Los trabajadores que cuenten con una antig&#xFC;edad mínima de un año en la empresa, tendrán derecho a disfrutar permiso sin sueldo por un máximo de un mes y por una sola vez cada año.</p>
+    <p class="parrafo">2. No obstante, alternativamente, dicho permiso podrá ser fraccionado en dos períodos máximos de quince días naturales, uno en cada semestre del año.</p>
+    <p class="parrafo">3. Las empresas podrán denegar la concesión de estos permisos cuando en las mismas fechas se encuentren disfrutándolos el siguiente número de trabajadores:</p>
+    <p class="parrafo_2">Empresas de uno a 20 trabajadores: Un trabajador.</p>
+    <p class="parrafo">Empresas de 21 a 50 trabajadores: Dos trabajadores.</p>
+    <p class="parrafo">Empresas de 51 a 100 trabajadores: Tres trabajadores.</p>
+    <p class="parrafo">Empresas de mas de 100 trabajadores: Más del 3 por 100 del personal.</p>
+    <p class="parrafo">En estos casos, el número de trabajadores indicados no podrá pertenecer a un mismo departamento de la empresa.</p>
+    <a id="art24"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 24º Faltas y sanciones.</h4>
+    <p class="parrafo">1. Las faltas cometidas por los trabajadores al servicio de las empresas reguladas por este Convenio se clasificarán atendiendo a su importancia, reincidencia e intención, en leves, graves y muy graves, de conformidad con los que se dispone en el presente artículo y en las normas vigentes del ordenamiento jurídico laboral en lo que resulten de pertinente aplicación:</p>
+    <p class="parrafo_2">A) Se consideran faltas leves:</p>
+    <p class="parrafo_2">Tres faltas de puntualidad en un mes, sin que exista causa justificada.</p>
+    <p class="parrafo">La no comunicación con la antelación debida, de su falta al trabajo por causa justificada, a no ser que pruebe la imposibilidad de hacerlo.</p>
+    <p class="parrafo">Falta de aseo y limpieza personal.</p>
+    <p class="parrafo">Falta de atención y diligencia con los clientes.</p>
+    <p class="parrafo">Discusiones que repercutan en la buena marcha de los servicios.</p>
+    <p class="parrafo">Faltar al trabajo un día al mes sin causa justificada.</p>
+    <p class="parrafo">La embriaguez ocasional.</p>
+    <p class="parrafo_2">B) Son faltas graves:</p>
+    <p class="parrafo_2">Faltar al trabajo sin justificación dos días en un mes.</p>
+    <p class="parrafo">La simulación de enfermedad o accidente.</p>
+    <p class="parrafo">Simular la presencia de otro trabajador, valiéndose de su ficha, firma, tarjeta o medio de control.</p>
+    <p class="parrafo">Cambiar, mirar o revolver los armarios y ropas de los compañeros sin la debida autorización.</p>
+    <p class="parrafo">Las cometidas contra la disciplina en el trabajo o contra el respeto debido a sus superiores.</p>
+    <p class="parrafo">La reincidencia en las faltas leves, salvo las de puntualidad, aunque sean de distinta naturaleza, dentro de un trimestre, cuando hayan mediado sanciones.</p>
+    <p class="parrafo">El abandono del trabajo sin causa justificada.</p>
+    <p class="parrafo">La negligencia en el trabajo cuando cause perjuicio grave.</p>
+    <p class="parrafo_2">C) Son faltas muy graves:</p>
+    <p class="parrafo_2">Faltar al trabajo más de dos días al mes sin causa justificada. No se considera causa injustificada la falta al trabajo que derive de la detención del trabajador, mientras no se trate de sanción firme impuesta por la autoridad competente y siempre que el hecho de la detención haya sido puesto en conocimiento de la Dirección de la empresa antes de transcurridos cuatro días hábiles de ausencia al trabajo.</p>
+    <p class="parrafo">El fraude, la deslealtad y abuso de confianza en las gestiones encomendadas.</p>
+    <p class="parrafo">El hurto y el robo tanto a los demás trabajadores como a la empresa o a cualquier persona dentro de los locales de la empresa o fuera de la misma, durante acto de servicio. Quedan incluidos en este inciso, el falsear datos ante la representación legal de los trabajadores, si tales falsedades tienen como finalidad maliciosa el conseguir algún beneficio.</p>
+    <p class="parrafo">El acoso por razón de origen racial o étnico, religión o convicciones, discapacidad, edad u orientación sexual.</p>
+    <p class="parrafo">El acoso sexual o por razón de sexo.</p>
+    <p class="parrafo">La simulación comprobada de enfermedad; inutilizar, destrozar o causar desperfectos en máquinas, aparatos, instalaciones, edificios, enseres y departamentos de la empresa; haber recaído sobre el trabajador sentencia de los Tribunales de Justicia competentes por delito de robo, hurto, estafa y malversación, cometidos fuera de la empresa que pueda motivar desconfianza hacia su autor, la continua falta de aseo y limpieza personal que produzca quejas justificadas de los compañeros; la embriaguez durante el trabajo; dedicarse a trabajos de la misma actividad que impliquen competencia a la empresa, si no media autorización de la misma; los malos tratos de palabra u obra o falta grave de respeto y consideración a los jefes, compañeros o subordinados; abandonar el trabajo en puestos de responsabilidad; la reincidencia en falta grave, aunque sea de distinta naturaleza, dentro del mismo trimestre, siempre que hayan sido objeto de sanción, y demás establecidas en el artículo 54 del texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <p class="parrafo_2">2. Las sanciones que las empresas podrán aplicar, según la gravedad y circunstancias de las faltas cometidas, serán las siguientes:</p>
+    <p class="parrafo_2">A) Faltas leves:</p>
+    <p class="parrafo_2">Amonestación verbal.</p>
+    <p class="parrafo">Amonestación por escrito.</p>
+    <p class="parrafo">Suspensión de empleo y sueldo un día.</p>
+    <p class="parrafo_2">B) Faltas graves:</p>
+    <p class="parrafo_2">Suspensión de empleo y sueldo de uno a diez días.</p>
+    <p class="parrafo">Inhabilitación, por plazo no superior a un año, para el ascenso a la categoría superior.</p>
+    <p class="parrafo_2">C) Faltas muy graves:</p>
+    <p class="parrafo_2">Pérdida temporal o definitiva de la categoría profesional.</p>
+    <p class="parrafo">Suspensión de empleo y sueldo de once días a dos meses.</p>
+    <p class="parrafo">Inhabilitación durante dos años o definitivamente para pasar a otra categoría.</p>
+    <p class="parrafo">Despido.</p>
+    <p class="parrafo_2">Para la aplicación de las sanciones que anteceden se tendrán en cuenta el mayor o menor grado de responsabilidad del que cometa la falta, categoría profesional del mismo y repercusión del hecho en los demás trabajadores y en la empresa.</p>
+    <p class="parrafo">3. La facultad de imponer las sanciones corresponde a la Dirección de la empresa, que pondrá en conocimiento de los representantes legales de los trabajadores las que se refieran a faltas graves o muy graves.</p>
+    <p class="parrafo">Será necesaria la instrucción de expediente en la imposición de sanciones a los trabajadores que ostentan cargos electivos sindicales, y en aquellos casos establecidos en la legislación en vigor o lo decida la empresa. La formación de expediente se ajustará a las siguientes normas:</p>
+    <p class="parrafo_2">a) Se iniciará con una orden escrita del Jefe de la empresa, con la designación del Instructor y del Secretario.</p>
+    <p class="parrafo">Comenzarán las actuaciones tomando declaración al autor de la falta y a los testigos, admitiendo cuantas pruebas aporten. En los casos de falta muy grave, si el instructor lo juzga pertinente, propondrá a la Dirección de la empresa la suspensión de empleo y sueldo del inculpado por el tiempo que dure la incoación del expediente, previa audiencia de los correspondientes representantes legales de los trabajadores.</p>
+    <p class="parrafo">b) La tramitación del expediente, si no es preciso aportar pruebas de cualquier clase que sean de lugares distintos a la localidad que se incoe, se terminará en un plazo no superior a veinte días. En caso contrario, se efectuará con la máxima diligencia, una vez incorporadas las pruebas al expediente.</p>
+    <p class="parrafo">c) La resolución recaída se comunicará por escrito, expresando las causas que la motivaron, debiendo firmar el duplicado el interesado. Caso de que se negase a firmar, se le hará la notificación ante testigos.</p>
+    <p class="parrafo_2">4. Las empresas anotarán en los expedientes personales de sus trabajadores las sanciones por faltas graves o muy graves que se les impongan, anotando también las reincidencias en las faltas leves. La prescripción de las faltas se producirá según lo establecido en el artículo 60.2 del texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <a id="art25"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 25º Complemento de Antig&#xFC;edad.</h4>
+    <p class="parrafo">1. Las bonificaciones por años de servicio, como premio de vinculación a la empresa respectiva, consistirán, en este orden, en cinco trienios del 5 por 100 cada uno del salario base pactado para su categoría en las tablas salariales del presente Convenio; tres trienios siguientes del 10 por 100 cada uno, y un último trienio del 5 por 100 del indicado salario.</p>
+    <p class="parrafo">2. No obstante, de acuerdo con lo pactado en el artículo 7.1, y en sus propios términos, aquellas empresas que vinieren satisfaciendo por el concepto de antig&#xFC;edad un porcentaje por trienio superior a los indicados en el apartado anterior, los trabajadores a ellas vinculados y en activo en la fecha del 12 de febrero de 1981 continuarán manteniendo, a título personal, la condición mas beneficiosa que vinieren disfrutando, sin que, en ningún caso, la acumulación de los incrementos por antig&#xFC;edad pueda suponer más del 10 por ciento a los cinco años, del 25 por ciento a los quince años, del 40 por ciento a los veinte años y del 60 por ciento, como máximo a los veinticinco o mas años.</p>
+    <p class="parrafo">En el supuesto contemplado en el párrafo precedente, para los trabajadores que en el mismo se mencionan, y siempre con las limitaciones en él establecidas, la antig&#xFC;edad no será absorbible en ningún caso.</p>
+    <p class="parrafo">3. Los trienios se devengaran a partir del 1 de enero del año en que se cumplan y todos ellos se abonarán, con arreglo a la última categoría y sueldo base de Convenio que tenga el trabajador.</p>
+    <a id="art26"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 26º Prestaciones por enfermedad y accidente de trabajo.</h4>
+    <p class="parrafo">1. Aparte de lo establecido en la Ley de la Seguridad Social sobre indemnizaciones, se respetarán las condiciones mas beneficiosas que, en virtud de costumbres o concesión espontánea de las empresas, estén establecidas.</p>
+    <p class="parrafo">2. Las empresas afectadas por este Convenio, desde el quinto día de la correspondiente baja, inclusive, en enfermedad de más de treinta días, complementarán las prestaciones de los seguros de enfermedad y accidentes de trabajo, hasta el 100 por 100 del salario durante un plazo máximo de doce meses, a partir de la baja.</p>
+    <p class="parrafo">3. Los empleados están obligados, salvo imposibilidad manifiesta y justificada, a cursar la baja de la Seguridad Social dentro de las cuarenta y ocho horas. Habrán de prestarse también a ser reconocidos por el médico que designe la empresa, al objeto de que este informe sobre la imposibilidad de prestar servicio. La resistencia del empleado a ser reconocido establecerá la presunción de que la enfermedad es simulada. En caso de discrepancia entre el médico de la empresa y el empleado, se someterá la cuestión a la Inspección Médica de la Seguridad Social, cuyo dictamen será decisivo.</p>
+    <a id="art27"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 27º Tablas salariales.</h4>
+
+    <p class="parrafo">1. Los salarios base y el Plus Convenio pactados en el presente Convenio para el año 2007, en cómputo anual, por grupos y categorías profesionales vigentes entonces, serán los establecidos en el Anexo I: Tabla Salarial y Plus Convenio Año 2007, de este Convenio.</p>
+    <p class="parrafo">2. Los salarios base y el Plus Convenio a partir de 1 de enero de 2008, en cómputo anual por grupos y categorías profesionales, serán los fijados en el Anexo II: Tabla Salarial y Plus Convenio Año 2008, de este Convenio.</p>
+    <p class="parrafo">En el caso de que el &#xCD;ndice de Precios al Consumo real (I.P.C.), al 31 de diciembre de 2008, comparado con el I.P.C. al 31.12.2007, resultare superior a éste en más de un dos por ciento (2%), los Salarios Base y el Plus de Convenio de este año 2008, establecidos en el Anexo II de este Convenio, se revisarán al alza, con efecto retroactivo desde el día primero de julio, inclusive, de 2008, de modo que la cuantía mensual revisada de cada uno de dichos conceptos, a partir de la citada fecha 1.07.2008, represente sobre las homólogas del 2007, fijadas en el Anexo I, el mismo incremento total producido al 31.12.2008. Dicha revisión no afectará a la Paga Extraordinaria de Julio y sí a la de Navidad.</p>
+    <p class="parrafo">3. Las empresas dispondrán de cuatro meses para la regularización y abono de las diferencias a que hubiere lugar por aplicación de los sucesivos salarios y revisiones establecidos en este artículo, debiendo efectuar dichos abonos en importes equivalentes, cada mes, a la cuarta parte, al menos, del importe total de las diferencias.</p>
+    <p class="parrafo">4. Los salarios base y el Plus Convenio a partir de 1 de enero de 2009, en cómputo anual por grupos y categorías profesionales, serán los resultantes de aplicar a los finalmente vigentes al 31 de diciembre de 2008, una vez aplicado, si procediere, el segundo párrafo del apartado 2 precedente, un incremento del 2%. Entre tanto no se conozca el I.P.C. real al 31.12.2008, serán los fijados en el Anexo III: Tabla Salarial y Plus Convenio Año 2009, de este Convenio.</p>
+    <p class="parrafo">Al conocerse el IPC al 31.12.2008 y revisarse, si procede, los salarios del segundo semestre del 2008, se revisará igualmente la Tabla Salarial y de Plus Convenio de 2009, abonándose las diferencias resultantes del mismo modo y simultáneamente con las del segundo semestre del 2008.</p>
+    <p class="parrafo">En el caso de que el &#xCD;ndice de Precios al Consumo real, (I.P.C.), al 31 de diciembre de 2009, comparado con el I.P.C. al 31.12.2008, resultare superior a éste en más de un dos por ciento (2%), los Salarios Base y el Plus de Convenio de este año 2009, establecidos según los párrafos precedentes, se revisarán al alza, con efecto retroactivo desde el día primero de julio, inclusive, de 2009, de modo que la cuantía mensual revisada de cada uno de dichos conceptos, a partir de la citada fecha 1.07.2009, represente sobre las homólogas del 2008, fijadas conforme el apartado 2 precedente de este artículo, el mismo incremento total producido al 31.12.2009. Dicha revisión no afectará a la Paga Extraordinaria de Julio y sí a la de Navidad. Las diferencias resultantes se abonarán del modo previsto en el precedente apartado 3.</p>
+    <p class="parrafo">5. En los casos de posible inaplicación salarial del Convenio, previstos en el apartado 3 del artículo 82 del texto refundido de la Ley del Estatuto de los Trabajadores, intervendrá el Comité Paritario regulado en el artículo 9, en los términos en él establecidos en su apartado 6.</p>
+    <a id="art28"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 28º Distribución del salario anual y pagas extraordinarias.</h4>
+    <p class="parrafo">1. Los importes anuales recogidos en las tablas salariales vigentes habrán de distribuirse en doce mensualidades naturales, más una paga extraordinaria en el mes de julio y otra en Navidad, de acuerdo con lo establecido en el presente artículo.</p>
+    <p class="parrafo">2. Las pagas extraordinarias de Julio y Navidad deberán hacerse efectivas entre los días 15 y 20, ambos inclusive, de los respectivos meses y en proporción al tiempo trabajado en el semestre natural anterior a la de Julio y en el segundo semestre del año para la correspondiente a Navidad. La fracción de mes se computará como mes completo.</p>
+    <p class="parrafo">El tiempo trabajado, para el cálculo de la paga extra devengada, dentro de cada uno de los semestres del año, (el primero a efectos de la Paga extra de Julio, y el segundo a los de la Paga extra de Navidad), se medirá del siguiente modo: en primer lugar se sumarán los meses naturales completos (enero, febrero, marzo, abril, mayo y junio en el primer semestre; julio, agosto, septiembre, octubre, noviembre y diciembre, en el segundo), efectivamente trabajados. En segundo lugar, se sumarán los días trabajados de los meses no completos por haber ingresado después del primer día del primer mes y/o por haber causado baja antes del último día del último mes. Si el total de días acumulados es igual o menor de treinta (un mes o una fracción de mes), se sumarán al total de meses completos una unidad; si el total de días asciende a cifra igual o superior a treinta y uno (un mes completo más la fracción de un segundo mes), se sumarán dos unidades al total de meses completos trabajados.</p>
+    <p class="parrafo">Obtenido el total de unidades mensuales computables, la cuantía de la correspondiente paga extra se dividirá entre seis y se multiplicará por el referido total de unidades mensuales computables, siendo dicho producto la cuantía efectivamente devengada por el trabajador.</p>
+    <p class="parrafo">3. Las empresas que vinieran abonando mayor número de pagas al año que las establecidas en el apartado 1 del presente artículo, podrán continuar manteniendo el número de ellas.</p>
+    <a id="art29"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 29º Horas extraordinarias.</h4>
+    <p class="parrafo">1. Las partes firmantes del presente Convenio acuerdan la conveniencia de reducir al mínimo indispensable la realización de las horas extraordinarias ajustándose en esta materia los siguientes criterios:</p>
+    <p class="parrafo_2">a) Horas extraordinarias habituales: Supresión.</p>
+    <p class="parrafo">b) Horas extraordinarias que vengan exigidas por la necesidad de reparar siniestros y otros daños extraordinarios y urgentes, así como en el caso de riesgo de pérdida de materias primas: Realización.</p>
+    <p class="parrafo">c) Horas extraordinarias necesarias para pedidos o períodos punta de producción, ausencias imprevistas, cambios de turno y otras circunstancias de carácter estructural derivadas de la naturaleza de la actividad de que se trate: Mantenimiento, siempre que no quepa la utilización de las distintas modalidades de contratación temporal o parcial previstas en la Ley.</p>
+    <p class="parrafo">d) La Dirección de la empresa informará periódicamente al Comité de empresa o los Delegados de Personal sobre el número de horas extraordinarias realizadas, especificando las causas y, en su caso, la distribución por secciones o departamentos. Asimismo, en función de esta información y de los criterios anteriormente señalados, la empresa y los representantes legales de los trabajadores determinarán el carácter y naturaleza de las horas extraordinarias.</p>
+    <p class="parrafo_2">2. Por lo que se refiere a los recargos por horas extraordinarias, así como a la limitación del número de ellas, habrá de estarse, en todo caso, además de a lo pactado en los dos apartados anteriores, a lo previsto en la legislación general vigente en cada momento.</p>
+    <p class="parrafo">3. Salvo pacto individual en contrario, las horas extraordinarias se compensarán por tiempos equivalentes de descanso incrementados, al menos con el 75 por 100. Previo acuerdo entre empresa y trabajador, la compensación con tiempo de descanso se hará acumulando horas hasta completar, al menos, el tiempo equivalente a una jornada laboral, que se disfrutará dentro del mismo año natural en que se hayan realizado las horas extraordinarias o, como máximo, en la primera semana del mes de enero siguiente.</p>
+    <a id="art30"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 30º Dietas y desplazamientos.</h4>
+    <p class="parrafo">1. Los importes de las dietas para los desplazamientos que se produzcan en territorio español serán los siguientes:</p>
+    <p class="parrafo_2">Jefes Zona, Inspectores de Entrevistadores, y Entrevistadores: 36,56 euros/día.</p>
+    <p class="parrafo">Subalternos y aspirantes: 33,85 euros/día.</p>
+    <p class="parrafo">Resto del personal: 52,06 euros/día.</p>
+    <p class="parrafo_2">En los desplazamientos realizados en vehículo del propio trabajador la empresa abonará 0,17 euros (28 pesetas) por kilómetro.</p>
+    <p class="parrafo">2. En los viajes de servicio en los que no se requiera pernoctar fuera de la residencia habitual, la cuantía de la dieta se reducirá en un 50 por 100.</p>
+    <p class="parrafo">3. En cuanto el desplazamiento tenga una duración superior a sesenta días ininterrumpidos en una misma localidad, el importe de las dietas se reducirá en un tercio.</p>
+    <p class="parrafo">A estos efectos, no se considerará interrumpido el desplazamiento cuando el trabajador haga uso de su derecho de estancia de cuatro días laborables en su domicilio de origen por cada tres meses de desplazamiento.</p>
+    <p class="parrafo">4. La movilidad geográfica de los trabajadores tendrá las limitaciones y se regirá por lo que establecen las normas contenidas en el texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <p class="parrafo">5. El trabajo que presten los trabajadores españoles contratados en España al servicio de empresas españolas en el extranjero se regulará por el contrato celebrado al efecto con sumisión estricta a la legislación española y al presente Convenio. En consecuencia, dichas trabajadores tendrán, como mínimo, los derechos económicos que les corresponderían caso de trabajar en territorio español. El trabajador y el empresario pueden someter sus litigios a la jurisdicción laboral española.</p>
+    <a id="art31"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 31º Plus de Convenio.</h4>
+    <p class="parrafo">1. Durante los años 2007, 2008 y 2009, se mantiene un Plus de Convenio, en cómputo anual y por categorías profesionales, de las cuantías que para cada una de éstas se fijan en el respectivo apartado Plus Convenio de los Anexos I, II y III de este Convenio, sin perjuicio de la excepción que se establece en el apartado 2 del presente artículo.</p>
+    <p class="parrafo">2. Los trabajadores titulados de grado superior o medio que accedan a su primer empleo como tales y los mismos contratados en prácticas, conforme al artículo 11 del texto refundido de la Ley del Estatuto de los Trabajadores, comenzarán a devengar el citado plus al cumplirse un año de la relación laboral con la respectiva empresa. Estos contratos se formalizarán, en todo caso, por escrito y se presentarán a registro en la Oficina de Empleo correspondiente, sin cuyos requisitos no tendrá validez alguna la supresión del Plus de Convenio pactada en el párrafo anterior.</p>
+    <p class="parrafo">3. El importe del Plus de Convenio establecido en el presente artículo no se computará para el cálculo de la bonificación por años de servicio o premio de antig&#xFC;edad ni para los complementos en situación de baja por incapacidad temporal.</p>
+    <p class="parrafo">4. Las empresas dispondrán de cuatro meses para la regularización y abono de las diferencias a que hubiere lugar por aplicación de los pluses establecidos en este artículo, debiendo efectuar dichos abonos en importes equivalentes, para cada mes, a la cuarta parte, al menos, del importe total de las diferencias.</p>
+    <p class="parrafo">5. Lo previsto en los apartados 2, 3, 4 y 5 del artículo 27 de este Convenio será de aplicación respecto del plus regulado en los apartados precedentes.</p>
+    <a id="art32"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 32º Dimisión del Trabajador</h4>
+    <p class="parrafo">1. En caso de dimisión del trabajador de su puesto de trabajo en la empresa, habrá de avisar por escrito a la Dirección de la misma, con un mínimo de quince días laborables de antelación, computados estos según el calendario laboral del Centro de Trabajo donde preste sus servicios el dimisionario. Si no se realizase este preaviso, perderá el interesado la parte proporcional de la paga extraordinaria de Julio o Navidad que estuviese devengada, como resarcimiento de los daños y perjuicios que tal omisión de plazo ocasione a la empresa. Lo establecido en el párrafo precedente se entiende sin perjuicio de la indemnización prevista en los supuestos que contempla el artículo 21 del texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <p class="parrafo">2. En caso de incumplimiento parcial, esto es, cuando el trabajador preavisare de su cese aunque con antelación menor a los quince días laborables, la pena, es decir, la pérdida de paga extra devengada será igualmente parcial, en proporción de un quinceavo de la cuantía de la paga extra correspondiente por cada por cada día laborable que falte para completar los quince fijados por el presente Convenio.</p>
+    <a id="art33"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 33º Excedencias.</h4>
+    <p class="parrafo">Conforme al tenor literal de los apartados 2 y 3 del vigente artículo 46 del Estatuto de los Trabajadores, «2. El trabajador con al menos una antig&#xFC;edad en la empresa de un año tiene derecho a que se le reconozca la posibilidad de situarse en excedencia voluntaria por un plazo no menor a cuatro meses y no mayor a cinco años. Este derecho sólo podrá ser ejercitado otra vez por el mismo trabajador si han transcurrido cuatro años desde el final de la anterior excedencia.</p>
+    <p class="parrafo">3. Los trabajadores tendrán derecho a un período de excedencia de duración no superior a tres años para atender al cuidado de cada hijo, tanto cuando lo sea por naturaleza, como por adopción, o en los supuestos de acogimiento, tanto permanente como preadoptivo, aunque éstos sean provisionales, a contar desde la fecha de nacimiento o, en su caso, de la resolución judicial o administrativa.</p>
+    <p class="parrafo">También tendrán derecho a un período de excedencia, de duración no superior a dos años, salvo que se establezca una duración mayor por negociación colectiva, los trabajadores para atender al cuidado de un familiar hasta el segundo grado de consanguinidad o afinidad, que por razones de edad, accidente, enfermedad o discapacidad no pueda valerse por sí mismo, y no desempeñe actividad retribuida.</p>
+    <p class="parrafo">La excedencia contemplada en el presente apartado, cuyo período de duración podrá disfrutarse de forma fraccionada, constituye un derecho individual de los trabajadores, hombres o mujeres. No obstante, si dos o más trabajadores de la misma empresa generasen este derecho por el mismo sujeto causante, el empresario podrá limitar su ejercicio simultáneo por razones justificadas de funcionamiento de la empresa.</p>
+    <p class="parrafo">Cuando un nuevo sujeto causante diera derecho a un nuevo período de excedencia, el inicio de la misma dará fin al que, en su caso, se viniera disfrutando.</p>
+    <p class="parrafo">El período en que el trabajador permanezca en situación de excedencia conforme a lo establecido en este artículo será computable a efectos de antig&#xFC;edad y el trabajador tendrá derecho a la asistencia a cursos de formación profesional, a cuya participación deberá ser convocado por el empresario, especialmente con ocasión de su reincorporación. Durante el primer año tendrá derecho a la reserva de su puesto de trabajo. Transcurrido dicho plazo, la reserva quedará referida a un puesto de trabajo del mismo grupo profesional o categoría equivalente.</p>
+    <p class="parrafo">No obstante, cuando el trabajador forme parte de una familia que tenga reconocida oficialmente la condición de familia numerosa, la reserva de su puesto de trabajo se extenderá hasta un máximo de 15 meses cuando se trate de una familia numerosa de categoría general, y hasta un máximo de 18 meses si se trata de categoría especial».</p>
+    <a id="art34"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 34º Derechos de reunión y de libre sindicación.</h4>
+    <p class="parrafo">1. Las empresas afectadas por el presente Convenio, dentro siempre de las formas establecidas por la legislación vigente en cada momento, facilitarán a sus trabajadores el ejercicio del derecho de reunión en sus locales, si las condiciones de los mismos lo permiten, fuera de las horas de trabajo y sin perturbar la actividad normal de las empresas.</p>
+    <p class="parrafo">2. Las empresas respetarán el derecho de todos los trabajadores a sindicarse libremente y no podrán sujetar el empleo de un trabajador a la condición de que no se afilie o renuncie a su afiliación sindical, y tampoco despedir a un trabajador o perjudicarle de cualquier otra forma, a causa de su afiliación o actividad sindical.</p>
+    <p class="articulo">Artículo 35. Derechos y obligaciones de los sindicatos de trabajadores.</p>
+    <p class="parrafo">1. En esta materia, las partes se someten expresamente a las normas contenidas en la Ley Orgánica de Libertad Sindical.</p>
+    <p class="parrafo">2. A requerimiento de los trabajadores afiliados a los sindicatos, las empresas descontarán en la nómina mensual de los mismos el importe de la cuota sindical correspondiente. El trabajador interesado en la realización de tal operación, remitirá a la Dirección de la empresa un escrito en el que se expresará con claridad la orden de descuento, la cuantía de la cuota, así como el número de la cuenta corriente o libreta de ahorro de la entidad financiera a la que debe ser transferida la correspondiente cantidad. Las empresas efectuarán las antedichas detracciones, salvo indicación en contrario, durante períodos de un año. La Dirección de la empresa entregará copia de la transferencia a la representación sindical en la empresa.</p>
+    <p class="articulo">Artículo 36. Comités de empresa o de centro de trabajo.</p>
+    <p class="parrafo">1. Además de las competencias que se establecen en el artículo 64 del texto refundido de la Ley del Estatuto de los Trabajadores, y siempre con la observancia de sigilo profesional previsto en el artículo 65 del mismo, los Comités de empresa tendrán las siguientes:</p>
+    <p class="parrafo_2">a) Ser informados trimestralmente sobre la evolución de los negocios de la empresa.</p>
+    <p class="parrafo">b) Anualmente tener a su disposición, el Balance, la Cuenta de Resultados y la Memoria de la entidad.</p>
+    <p class="parrafo">c) Con carácter previo a su ejecución por el empresario, ser informado de los cierres totales o parciales de la empresa o centro de trabajo.</p>
+    <p class="parrafo">d) Ser informado del movimiento de ingresos y ceses, así como de los ascensos.</p>
+    <p class="parrafo">e) Ejercer una labor de vigilancia sobre la calidad de la docencia y la efectividad de la misma en los centros de formación y capacitación que, en su caso, tuviere la empresa.</p>
+    <p class="parrafo">f) Colaborar con la Dirección de la empresa para conseguir el cumplimiento de cuantas medidas procuren el mantenimiento y el incremento de la productividad de la empresa.</p>
+    <p class="parrafo">g) En los procesos de selección de personal para la propia empresa, velará no sólo por el cumplimiento de la normativa vigente o pactada, sino también por la observancia de los principios de no discriminación, igualdad de sexo y fomento de una política racional de empleo.</p>
+    <p class="parrafo_2">2. De conformidad con lo establecido en la Ley de Prevención de Riesgos Laborales, en lugar de los Delegados de prevención, podrán ser miembros del Comité de Seguridad y Salud los trabajadores de la empresa que al efecto se elijan, aunque no reúnan la condición legal de representante de aquéllos, siempre que tengan una adecuada formación en la materia.</p>
+    <a id="art35"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 35º Derechos y obligaciones de los sindicatos de trabajadores.</h4>
+    <p class="parrafo">1. En esta materia, las partes se someten expresamente a las normas contenidas en la Ley Orgánica de Libertad Sindical.</p>
+    <p class="parrafo">2. A requerimiento de los trabajadores afiliados a los sindicatos, las empresas descontarán en la nómina mensual de los mismos el importe de la cuota sindical correspondiente. El trabajador interesado en la realización de tal operación, remitirá a la Dirección de la empresa un escrito en el que se expresará con claridad la orden de descuento, la cuantía de la cuota, así como el número de la cuenta corriente o libreta de ahorro de la entidad financiera a la que debe ser transferida la correspondiente cantidad. Las empresas efectuarán las antedichas detracciones, salvo indicación en contrario, durante períodos de un año. La Dirección de la empresa entregará copia de la transferencia a la representación sindical en la empresa.</p>
+    <a id="art36"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 36º Comités de empresa o de centro de trabajo.</h4>
+    <p class="parrafo">1. Además de las competencias que se establecen en el artículo 64 del texto refundido de la Ley del Estatuto de los Trabajadores, y siempre con la observancia de sigilo profesional previsto en el artículo 65 del mismo, los Comités de empresa tendrán las siguientes:</p>
+    <p class="parrafo_2">a) Ser informados trimestralmente sobre la evolución de los negocios de la empresa.</p>
+    <p class="parrafo">b) Anualmente tener a su disposición, el Balance, la Cuenta de Resultados y la Memoria de la entidad.</p>
+    <p class="parrafo">c) Con carácter previo a su ejecución por el empresario, ser informado de los cierres totales o parciales de la empresa o centro de trabajo.</p>
+    <p class="parrafo">d) Ser informado del movimiento de ingresos y ceses, así como de los ascensos.</p>
+    <p class="parrafo">e) Ejercer una labor de vigilancia sobre la calidad de la docencia y la efectividad de la misma en los centros de formación y capacitación que, en su caso, tuviere la empresa.</p>
+    <p class="parrafo">f) Colaborar con la Dirección de la empresa para conseguir el cumplimiento de cuantas medidas procuren el mantenimiento y el incremento de la productividad de la empresa.</p>
+    <p class="parrafo">g) En los procesos de selección de personal para la propia empresa, velará no sólo por el cumplimiento de la normativa vigente o pactada, sino también por la observancia de los principios de no discriminación, igualdad de sexo y fomento de una política racional de empleo.</p>
+    <p class="parrafo_2">2. De conformidad con lo establecido en la Ley de Prevención de Riesgos Laborales, en lugar de los Delegados de prevención, podrán ser miembros del Comité de Seguridad y Salud los trabajadores de la empresa que al efecto se elijan, aunque no reúnan la condición legal de representante de aquéllos, siempre que tengan una adecuada formación en la materia.</p>
+    <a id="art37"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 37º Garantías de los representantes de los trabajadores.</h4>
+    <p class="parrafo">Los miembros del Comité de empresa y los Delegados de Personal tendrán las garantías que se establecen en el artículo 68 del texto refundido de la Ley del Estatuto de los Trabajadores y las que se determinen a continuación:</p>
+    <p class="parrafo_2">a) No se computará dentro del máximo legal de horas mensuales disponibles para el ejercicio de sus funciones de representación, el exceso que sobre el mismo se produzca con motivo de la designación de Delegados de Personal, miembros del Comité de empresa como ponentes de Comisiones Negociadoras de Convenios Colectivos en los que sean afectados, y por lo que se refiere a la celebración de sesiones oficiales a través de las cuales transcurran tales negociaciones y cuando la empresa en cuestión se vea afectada por el ámbito de negociación referido.</p>
+    <p class="parrafo">b) Sin rebasar el máximo legal, podrán ser consumidas las horas retribuidas de que disponen los miembros del Comité de empresa o Delegados de Personal, a fin de prever la asistencia de los mismos a cursos de formación organizados por sus sindicatos, instituciones de formación u otras entidades</p>
+    <a id="art38"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 38º Prácticas anti-sindicales.</h4>
+    <p class="parrafo">En cuanto a los supuestos de prácticas que, a juicio de alguna de las partes, quepa calificar de anti-sindicales, se estará a lo dispuesto en las leyes.</p>
+    <a id="art39"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 39º Trabajos en pantallas. Prevención de Riesgos.</h4>
+    <p class="parrafo">1. Se denominan pantallas de datos y/o de visualización al conjunto terminal-pantalla de rayos catódicos, que permiten una gran información (caracteres o símbolos a gran velocidad), unidas a un teclado numérico y/o alfabético.</p>
+    <p class="parrafo">2. Los locales y puestos de trabajo en los que se utilicen las pantallas de datos han de estar diseñados, equipados, mantenidos y utilizados de tal forma que no causen daño a los usuarios de las mismas.</p>
+    <p class="parrafo">3. El puesto de trabajo, así como el mobiliario principal y auxiliar deberán situarse de modo que eviten cualquier perjuicio a la salud o fatiga adicional a la propia del desempeño de la actividad.</p>
+    <p class="parrafo">4. En la utilización de las citadas pantallas de datos se tendrá especial cuidado en el cumplimiento de las normas vigentes en cada momento.</p>
+    <p class="parrafo">5. Conforme al tenor literal del vigente artículo 25 y apartados 1 a 4 del vigente artículo 26 de la Ley 31/1995 de Prevención de Riesgos Laborales.</p>
+    <a id="art40"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 40º Armonización de la vida laboral y familiar. Planes de Igualdad:</h4>
+    <p class="parrafo">1. Las trabajadoras, por lactancia de un hijo menor de nueve meses, tendrán derecho a una hora de ausencia del trabajo en horario a elegir por las mismas y que podrá ser dividida en dos fracciones, una al principio y otra al final de la jornada. Este permiso podrá ser disfrutado indistintamente por la madre o por el padre en caso de que ambos trabajen y deberá ser comunicado a la empresa por escrito.</p>
+    <p class="parrafo">Conforme al tenor literal del primer párrafo del vigente artículo 37.6 del Estatuto de los Trabajadores «La concreción horaria y la determinación del período de disfrute del permiso de lactancia y de la reducción de jornada, previstos en los apartados 4 y 5 de este artículo, corresponderá al trabajador, dentro de su jornada ordinaria. El trabajador deberá preavisar al empresario con quince días de antelación la fecha en que se reincorporará a su jornada ordinaria».</p>
+    <p class="parrafo">La mujer, por su voluntad, podrá sustituir este derecho por una reducción de su jornada en media hora con la misma finalidad, o, con carácter alternativo, sustituirse, a voluntad de la trabajadora, por un permiso retribuido de 15 días naturales a continuación del descanso de maternidad, preavisando con al menos 15 días naturales. En el caso de partos múltiples, el descanso será ampliado proporcionalmente al número de hijos.</p>
+    <p class="parrafo">Estos permisos podrán ser disfrutados indistintamente por la madre o por el padre en caso de que ambos trabajen y deberá ser comunicado a la empresa por escrito.</p>
+    <p class="parrafo">Conforme al tenor literal del apartado 6 del vigente artículo 37 del Estatuto de los Trabajadores «La trabajadora víctima de violencia de género tendrá derecho, para hacer efectiva su protección o su derecho a la asistencia social integral, a la reducción de la jornada de trabajo con disminución proporcional del salario o a la reordenación del tiempo de trabajo, a través de la adaptación del horario, de la aplicación del horario flexible o de otras formas de ordenación del tiempo de trabajo que se utilicen en la empresa.</p>
+    <p class="parrafo">Estos derechos se podrán ejercitar en los términos que para estos supuestos concretos se establezcan en los convenios colectivos o en los acuerdos entre la empresa y los representantes de los trabajadores, o conforme al acuerdo entre la empresa y la trabajadora afectada. En su defecto, la concreción de estos derechos corresponderá a la trabajadora, siendo de aplicación las reglas establecidas en el apartado anterior, incluidas las relativas a la resolución de discrepancias».</p>
+    <p class="parrafo">Conforme al tenor literal del apartado 4 bis del vigente artículo 37 del Estatuto de los Trabajadores «En los casos de nacimientos de hijos prematuros o que, por cualquier causa, deban permanecer hospitalizados a continuación del parto, la madre o el padre tendrán derecho a ausentarse del trabajo durante una hora. Asimismo, tendrán derecho a reducir su jornada de trabajo hasta un máximo de dos horas, con la disminución proporcional del salario. Para el disfrute de este permiso se estará a lo previsto en el apartado 6 de este artículo».</p>
+    <p class="parrafo">Conforme al tenor literal del apartado 3 bis del vigente artículo 40 del Estatuto de los Trabajadores «La trabajadora víctima de violencia de género que se vea obligada a abandonar el puesto de trabajo en la localidad donde venía prestando sus servicios, para hacer efectiva su protección o su derecho a la asistencia social integral, tendrá derecho preferente a ocupar otro puesto de trabajo, del mismo grupo profesional o categoría equivalente, que la empresa tenga vacante en cualquier otro de sus centros de trabajo.</p>
+    <p class="parrafo">En tales supuestos, la empresa estará obligada a comunicar a la trabajadora las vacantes existentes en dicho momento o las que se pudieran producir en el futuro.</p>
+    <p class="parrafo">El traslado o el cambio de centro de trabajo tendrán una duración inicial de seis meses, durante los cuales la empresa tendrá la obligación de reservar el puesto de trabajo que anteriormente ocupaba la trabajadora.</p>
+    <p class="parrafo">Terminado este período, la trabajadora podrá optar entre el regreso a su puesto de trabajo anterior o la continuidad en el nuevo. En este último caso, decaerá la mencionada obligación de reserva».</p>
+    <p class="parrafo">2. Quien por razón de guarda legal tenga a su cuidado directo algún menor de ocho años o a un disminuido físico, psíquico o sensorial, que no desempeñe una actividad retribuida, tendrá derecho a una reducción de la jornada, con la disminución proporcional del salario entre, al menos un octavo y un máximo de la mitad de la duración de aquella.</p>
+    <p class="parrafo">Tendrá el mismo derecho quien precise encargarse del cuidado directo de un familiar, hasta el segundo grado de consanguinidad o afinidad, que por razones de edad, accidente o enfermedad no pueda valerse por sí mismo, y que no desempeñe actividad retribuida.</p>
+    <p class="parrafo">La reducción de jornada contemplada en el presente apartado constituye un derecho individual de los trabajadores, hombres o mujeres. No obstante, si dos o más trabajadores de la misma empresa generasen este derecho por el mismo sujeto causante, el empresario podrá limitar su ejercicio simultáneo por razones justificadas de funcionamiento de la empresa.</p>
+    <p class="parrafo">3. Las empresas realizarán esfuerzos tendentes a lograr la igualdad de oportunidades en todas sus políticas, en particular, la igualdad de género, adoptando medidas dirigidas a evitar cualquier tipo de discriminación laboral entre hombres y mujeres.</p>
+    <p class="parrafo">En el caso de empresas de más de 250 trabajadores, las medidas de igualdad a que se refiere el párrafo anterior, se dirigirán a la elaboración y aplicación de un Plan de Igualdad, que deberá ser objeto de desarrollo en los términos y condiciones establecidos legalmente.</p>
+    <p class="parrafo">Los planes de igualdad podrán contemplar, entre otras materias de acceso al empleo, clasificación profesional, promoción y formación, retribuciones, ordenación del tiempo de trabajo, favorecer en términos de igualdad entre mujeres y hombres, la conciliación laboral, personal y familiar, y prevención de acoso sexual y del acoso por razón de sexo.</p>
+    <p class="parrafo">La Comisión paritaria estatal tendrá como objetivo la elaboración y difusión de recomendaciones sobre las mejores prácticas para la elaboración de planes de igualdad.</p>
+    <p class="parrafo">El régimen de funcionamiento y la periodicidad de las reuniones a estos fines serán establecidos por la propia Comisión.</p>
+    <p class="parrafo">Las medidas de igualdad que se adopten se ajustarán en todo caso a la normativa aplicable y específicamente lo previsto por los siguientes artículos de la Ley Orgánica 3/2007:</p>
+    <a id="art41"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Art. 41º Derecho Supletorio y Prelación de Normas</h4>
+    <p class="parrafo">1. En todas aquellas materias no reguladas en el presente Convenio se estará a lo dispuesto en el texto refundido de la Ley del Estatuto de los Trabajadores, y a lo previsto en las disposiciones de carácter general que sean de aplicación.</p>
+    <p class="parrafo">2. Los pactos contenidos en el presente Convenio, sobre las materias en él reguladas, serán de preferente aplicación sobre cualesquiera otras disposiciones legales de carácter general que vinieran rigiendo en la materia.</p>
+    <p class="parrafo">3. Haciendo uso de las facultades atribuidas por el artículo 83.2 del texto refundido de la Ley del Estatuto de los Trabajadores a las partes firmantes del presente Convenio, se establece su complementariedad respecto de los restantes Convenios del mismo ámbito funcional cualquiera que fuera su ámbito territorial. Por tanto, el presente Convenio regirá como normativa supletoria y sustitutiva del contenido de la derogada Ordenanza Laboral de Oficinas y Despachos, de los restantes Convenios Colectivos del sector, en los aspectos y materias en estos no previstos, sin perjuicio, en todo caso, de la prohibición de concurrencia que dispone el primer párrafo del artículo 84 del texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <a id="disp1"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Disposición Adicional Primera. Formación a Nivel del Sector.</h4>
+    <p class="parrafo">1. Las partes firmantes del presente Convenio, siendo plenamente conscientes de la trascendencia de la formación tecnológica de los trabajadores del sector, se obligan a solicitar conjuntamente de los organismos competentes de la Administración Pública la creación de un fondo integrado en su totalidad por una parte de las cuotas que las empresas y trabajadores del sector abonan con destino a la Formación Profesional.</p>
+    <p class="parrafo">La constitución de dicho fondo tendrá por finalidad organizar e impartir los cursos y enseñanzas cuya programación se estime precisa de acuerdo con las necesidades de formación que se requieran por las empresas y trabajadores del sector.</p>
+    <p class="parrafo">La gestión del citado fondo para la formación, caso de obtenerse la pertinente autorización y aportación económica oficial, correrá a cargo de una Comisión bipartita integrada a nivel nacional, y paritariamente, con la representación de los empresarios y de los trabajadores en el presente Convenio, y de la que formarán parte cuatro representantes de cada una de las dos representaciones, laboral y empresarial. El funcionamiento de dicha Comisión Sectorial de Formación se realizará en la forma que la misma acuerde, y la adopción de decisiones requerirá el voto favorable de, al menos, las tres cuartas partes de cada una de las dos representaciones, laboral y empresarial. De dicha Comisión podrán formar parte como asesores, con voz pero sin voto, dos personas por cada una de las dos representaciones.</p>
+    <p class="parrafo">2. Con independencia de lo pactado en el precedente apartado 1, las dos partes firmantes asumen el contenido íntegro del IV Acuerdo Nacional de Formación Continua (de carácter bipartito) firmado el 1 de febrero de 2006 y publicado en el Boletín Oficial del Estado de 27 de marzo de 2006 y el III Acuerdo Tripartito de Formación Continua, firmado el 19 de diciembre de 2000 y publicado en el Boletín Oficial del Estado de 15 de febrero de 2001, que desarrollarán sus efectos en el ámbito funcional del presente Convenio Colectivo.</p>
+    <p class="parrafo">La Comisión Sectorial de Formación prevista en el anterior apartado queda facultada para desarrollar cuantas iniciativas sean necesarias para la aplicación de dichos Acuerdos Nacionales.</p>
+    <p class="parrafo">Al pacto de este apartado 2 se le confiere carácter normativo a los solos efectos de lo dispuesto en el artículo 86.3 del texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <a id="disp1"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Disposición Adicional Segunda. Adhesión al A.S.E.C.</h4>
+    <p class="parrafo">Las partes firmantes del presente Convenio pactan y acuerdan su adhesión al Tercer Acuerdo sobre Solución Extrajudicial de Conflictos Laborales, de 29 de diciembre de 2004, aprobado por Resolución de la Dirección General de Trabajo de 12 de enero de 2005, publicado en el B.O.E. de 29.1.2005, el cual, por tanto, surtirá plenos efectos en los ámbitos de obligar del presente Convenio Colectivo.</p>
+    <a id="disp2"></a>
+    <a class="indice" href="">Índice</a>
+
+    <h4>Disposición Final Primera. Eficacia y Concurrencia. Adhesión</h4>
+    <p class="parrafo">1. El Convenio Colectivo de Empresas de Planificación, Organización de Empresas y Contable obliga por todo el tiempo de su vigencia a la totalidad de los empresarios y trabajadores comprendidos dentro de su ámbito de aplicación, según determina el artículo 82.3 del texto refundido de la Ley del Estatuto de los Trabajadores, y no podrá ser afectado en tanto esté en vigor por lo dispuesto en Convenio de ámbito distinto, salvo pacto expreso en él contenido, de acuerdo también con lo previsto en el primer párrafo del artículo 84 del ya citado texto refundido, y el artículo 37.1 de la Constitución, que garantiza su fuerza vinculante.</p>
+    <p class="parrafo">2. Las representaciones de las empresas y de los trabajadores que a la entrada en vigor de este Convenio se encuentren afectados por otros Convenios Colectivos vigentes, al concluir sus respectivas vigencias, podrán adherirse expresamente al presente, de común acuerdo las partes legitimadas para ello, en los términos establecidos en el artículo 92.1 del ya citado texto refundido de la Ley del Estatuto de los Trabajadores, previa notificación conjunta a las partes signatarias de este Convenio Colectivo nacional y la Dirección General de Trabajo.</p> 
+    <a id="dispf1"></a>
+    <a class="indice" href="">Índice</a>
+
+    <h4>Disposición Final Segunda. Eficacia y Concurrencia. Adhesión</h4>
+    <p class="parrafo">El presente Convenio Colectivo, dentro de su ámbito, deroga, anula y sustituye totalmente de modo expreso, a partir de la fecha de su entrada en vigor, al XV Convenio de Empresas Consultoras de Planificación, Organización de Empresas y Contable, de ámbito nacional, suscrito con fecha 28 de noviembre de 2006 y publicado en el «Boletín Oficial del Estado» del día 12 de enero de 2007 por resolución de la Dirección General de Trabajo de fecha 26 de diciembre de 2006.</p>
+    <a id="dispf2"></a>
+    <a class="indice" href="">Índice</a>
+
+    <h4>Disposición Final Tercera</h4>
+    <p class="parrafo">Tanto la Patronal del Sector de investigación de mercados y estudios de opinión como los Sindicatos firmantes de este Convenio muestran su voluntad y se comprometen a trabajar con la base del Acuerdo Colectivo para las Empresas de estudios de mercado y opinión pública y sus encuestadores, anexo al Convenio Colectivo de Empresas consultoras de planificación, organización de empresas y contable (BOE núm. 148, de 21 de junio de 1988, páginas 19.461 a 19.463), sobre la actualización e incorporación del baremo de rendimiento mínimo para el próximo convenio colectivo del Sector.</p>
+    <a id="dispf3"></a>
+    <a class="indice" href="">Índice</a>
+
+    <h4>Disposición Final Cuarta</h4>
+
+    <p class="parrafo">En el texto del presente Convenio se ha utilizado el masculino como genérico para englobar a los trabajadores y trabajadoras, sin que esto suponga ignorancia de las diferencias de género existentes.</p>
+        <p class="capitulo_num">ANEXO I</p>
+        <p class="capitulo">Tabla salarial y de plus convenio 2007</p>
+        <table class="tabla" summary="Tabla de formato">
+          <tbody><tr>
+            <th>
+              <p class="t_cabeza_tabla">Categorías</p>
+            </th>
+            <th>
+              <p class="t_cabeza_tabla">Mes (× 14) <br></p>
+              <p class="t_cabeza_tabla">– <br></p>
+              <p class="t_cabeza_tabla">Euros</p>
+            </th>
+            <th>
+              <p class="t_cabeza_tabla">Año <br></p>
+              <p class="t_cabeza_tabla">– <br></p>
+              <p class="t_cabeza_tabla">Euros</p>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo I. Titulados</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Titulado de grado superior</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.496,74</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">20.954,36</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Titulado de grado medio</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.081,09</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">15.135,26</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo II. Administrativos</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe Superior</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.113,35</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">15.586,90</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe de primera y Cajero con firma</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.052,06</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">14.728,84</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe de segunda y Cajero sin firma</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">934,93</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">13.089,02</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial de primera</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">817,69</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">11.447,66</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial de segunda y Telefonista-recepcionista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">746,65</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">10.453,10</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Auxiliar, Auxiliar de caja y Telefonista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">655,30</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.174,20</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Aspirantes de dieciséis y diecisiete años</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">554,49</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">7.762,86</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo III. Técnicos de oficina</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Analista y Analista de sistemas</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.496,74</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">20.954,36</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Analista-programador y Diseñador de página Web</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.468,54</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">20.559,56</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Programador senior, Jefe de operación y Programador en Internet</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.052,06</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">14.728,84</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Delineante-proyectista</p>
+              <p class="cuerpo_tabla_izq">Programador junior, Operador ordenador,</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">973,92</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">13.634,88</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Programador máquina auxiliar, Monitor de grabación y Técnico mantenimiento página Web</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">942,05</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">13.188,70</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Delineante</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">845,72</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">11.840,08</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Administrador de test</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">802,07</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">11.228,98</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo IV. Especialistas de oficina</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe de campo</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.052,06</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">14.728,84</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe de zona</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">934,93</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">13.089,02</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Tabulador de ordenador, Operador de máquina auxiliar, Preparador de trabajos y Operador de periféricos</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">802,07</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">11.228,98</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Inspector-entrevistador y Dibujante</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">732,41</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">10.253,74</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Calcador</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">657,09</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.199,26</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Codificador informático, Perforista, Verificador, Clasificador, y Grabador</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">655,30</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.174,20</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Entrevistador-encuestador y Codificador de encuesta</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">633,73</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">8.872,22</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo V. Subalternos</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Cobrador, Vigilante y Sereno</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">689,19</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.648,66</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Conserje, Ordenanza, Portero y Personal de limpieza</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">648,28</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.075,92</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Botones de dieciséis y diecisiete años</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">546,54</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">7.651,56</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo VI. Oficios varios</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial de primera</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">715,86</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">10.022,04</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial segunda</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">660,25</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.243,50</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Ayudante</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">616,09</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">8.625,26</p>
+            </td>
+          </tr>
+        </tbody></table>
+        <p class="capitulo">Plus convenio 1.1 / 31.12.2007</p>
+        <table class="tabla" summary="Tabla de formato">
+          <tbody><tr>
+            <th>
+              <p class="t_cabeza_tabla">Categorías</p>
+            </th>
+            <th>
+              <p class="t_cabeza_tabla">Mes (× 14) <br></p>
+              <p class="t_cabeza_tabla">– <br></p>
+              <p class="t_cabeza_tabla">Euros</p>
+            </th>
+            <th>
+              <p class="t_cabeza_tabla">Año <br></p>
+              <p class="t_cabeza_tabla">– <br></p>
+              <p class="t_cabeza_tabla">Euros</p>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo I. Titulados</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Titulado de grado superior</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">104,66</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.465,24</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Titulado de grado medio</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">76,32</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.068,48</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo II. Administrativos</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe superior</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">78,45</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.098,30</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe de primera y Cajero con firma</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">74,20</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.038,80</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe de segunda y Cajero sin firma</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">65,96</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">923,44</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial de primera</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">57,53</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">805,42</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial de segunda y Telefonista-recepcionista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">52,29</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">732,06</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Auxiliar, Auxiliar de caja y Telefonista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">45,90</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">642,60</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Aspirantes de dieciséis y diecisiete años</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">28,25</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">395,50</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo III. Técnicos de oficina</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Analista y Analista de sistemas</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">104,66</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.465,24</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Analista-programador y Diseñador de página Web</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">97,98</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.371,72</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Programador senior, Jefe de operación y Programador en Internet</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">74,20</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.038,80</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Delineante-proyectista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">68,03</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">952,42</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Programador junior, Operador ordenador, Programador máquina auxiliar, Monitor de grabación y Técnico mantenimiento página Web</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">66,29</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">928,06</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Delineante</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">59,51</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">833,14</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Administrador de test</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">56,45</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">790,30</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo IV. Especialistas de oficina</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe de campo</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">74,20</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.038,80</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe de zona</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">65,96</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">923,44</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Tabulador de ordenador, Operador de máquina auxiliar, Preparador de trabajos y Operador de periféricos</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">56,45</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">790,30</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Inspector-entrevistador y Dibujante</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">51,30</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">718,20</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Calcador</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">46,01</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">644,14</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Codificador informático, Perforista, Verificador, Clasificador, y Grabador</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">45,90</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">642,60</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Entrevistador-encuestador y Codificador de encuesta</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">44,39</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">621,46</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo V. Subalterno</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Cobrador, Vigilante y Sereno</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">47,42</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">663,88</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Conserje, Ordenanza, Portero y Personal de limpieza</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">45,21</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">632,94</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Botones de dieciséis y diecisiete años</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">27,81</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">389,39</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo VI. Oficios varios</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial de primera</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">48,44</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">678,16</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial de segunda</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">46,24</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">647,36</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Ayudante</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">43,17</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">604,38</p>
+            </td>
+          </tr>
+        </tbody></table>
+        <p class="capitulo_num">ANEXO II</p>
+        <p class="capitulo">Tabla salarial y de plus convenio 2008</p>
+        <table class="tabla" summary="Tabla de formato">
+          <tbody><tr>
+            <th>
+              <p class="t_cabeza_tabla">Categorías</p>
+            </th>
+            <th>
+              <p class="t_cabeza_tabla">Mes (× 14) <br></p>
+              <p class="t_cabeza_tabla">– <br></p>
+              <p class="t_cabeza_tabla">Euros</p>
+            </th>
+            <th>
+              <p class="t_cabeza_tabla">Año <br></p>
+              <p class="t_cabeza_tabla">– <br></p>
+              <p class="t_cabeza_tabla">Euros</p>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo I. Titulados</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Titulado/a de grado superior</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.538,48</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">21.538,72</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Titulado/a de grado medio</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.111,24</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">15.557,36</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo II. Administrativos</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe/a Superior</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.144,40</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">16.021,60</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe/a de primera y Cajero/a con firma</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.081,41</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">15.139,74</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe/a de segunda y Cajero/a sin firma</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">961,01</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">13.454,14</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial/a de primera</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">840,49</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">11.766,86</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial/a de segunda y Telefonista-recepcionista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">767,48</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">10.744,72</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Auxiliar, Auxiliar de caja y Telefonista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">673,57</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.429,98</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Aspirantes de dieciséis y diecisiete años</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">570,96</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">7.993,44</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo III. Técnicos de oficina</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Analista y Analista de sistemas</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.538,48</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">21.538,72</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Analista-programador/a y Diseñador/a de página Web</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.509,50</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">21.133,00</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Programador/a senior, Jefe/a de operación y Programador/a en Internet</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.081,41</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">15.139,74</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Delineante-proyectista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.001,09</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">14.015,26</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Programador/a junior, Operador/a ordenador, Programador/a máquina auxiliar, Monitor/a de grabación y Técnico/a mantenimiento página Web</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">968,32</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">13.556,48</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Delineante</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">869,31</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">12.170,34</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Administrador/a de test</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">824,44</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">11.542,16</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo IV. Especialistas de oficina</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe de campo</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.081,41</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">15.139,68</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe de zona</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">961,01</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">13.454,20</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Tabulador de ordenador, Operador de máquina auxiliar, Preparador de trabajos y Operador de periféricos</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">824,45</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">11.542,27</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Inspector-entrevistador y Dibujante</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">752,84</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">10.539,79</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Calcador</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">675,41</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.455,70</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Codificador informático, Perforista, Verificador, Clasificador, y Grabador</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">673,57</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.430,03</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Entrevistador-encuestador y Codificador de encuesta</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">651,41</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.119,75</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo V. Subalternos</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Cobrador/a, Vigilante y Sereno</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">708,41</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.917,74</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Conserje, Ordenanza, Portero/a y Personal de limpieza</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">666,36</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.329,04</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Botones de dieciséis y diecisiete años</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">570,96</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">7.993,44</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo VI. Oficios varios</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial/a de primera</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">735,83</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">10.301,62</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial/a segunda</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">678,67</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.501,38</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Ayudante/a</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">633,27</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">8.865,78</p>
+            </td>
+          </tr>
+        </tbody></table>
+        <p class="capitulo">Plus convenio 1.1 / 31.12.2008</p>
+        <table class="tabla" summary="Tabla de formato">
+          <tbody><tr>
+            <th>
+              <p class="t_cabeza_tabla">Categorías</p>
+            </th>
+            <th>
+              <p class="t_cabeza_tabla">Mes (× 14) <br></p>
+              <p class="t_cabeza_tabla">– <br></p>
+              <p class="t_cabeza_tabla">Euros</p>
+            </th>
+            <th>
+              <p class="t_cabeza_tabla">Año <br></p>
+              <p class="t_cabeza_tabla">– <br></p>
+              <p class="t_cabeza_tabla">Euros</p>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo I. Titulados</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Titulado/a de grado superior</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">107,58</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.506,12</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Titulado/a de grado medio</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">78,45</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.098,30</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo II. Administrativos</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe/a Superior</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">80,64</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.128,96</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe/a de primera y Cajero/a con firma</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">76,27</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.067,78</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe/a de segunda y Cajero/a sin firma</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">67,80</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">949,20</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial/a de primera</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">59,14</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">827,96</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial/a de segunda y Telefonista-recepcionista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">53,75</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">752,50</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Auxiliar, Auxiliar de caja y Telefonista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">47,18</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">660,52</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Aspirantes de dieciséis y diecisiete años</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">29,04</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">406,56</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo III. Técnicos de oficina</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Analista y Analista de sistemas</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">107,58</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.506,12</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Analista-programador/a y Diseñador/a de página Web</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">100,71</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.409,94</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Programador/a senior, Jefe/a de operación y Programador/a en Internet</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">76,27</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.067,78</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Delineante-proyectista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">69,92</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">978,88</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Programador/a junior, Operador/a ordenador,</p>
+              <p class="cuerpo_tabla_izq">Programador/a máquina auxiliar, Monitor/a de grabación y Técnico/a mantenimiento página Web</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">68,14</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">953,96</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Delineante</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">61,17</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">856,38</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Administrador/a de test</p>
+
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">58,02</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">812,28</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo IV. Especialistas de oficina</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe de campo</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">76,27</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.067,77</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe de zona</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">67,79</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">949,07</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Tabulador de ordenador, Operador de máquina auxiliar, Preparador de trabajos y Operador de periféricos</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">58,01</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">812,16</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Inspector-entrevistador y Dibujante</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">52,74</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">738,31</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Calcador</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">47,29</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">662,08</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Codificador informático, Perforista, Verificador, Clasificador, y Grabador</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">47,18</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">660,50</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Entrevistador-encuestador y Codificador de encuesta</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">45,63</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">638,82</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo V. Subalterno</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Cobrador/a, Vigilante y Sereno</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">48,74</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">682,36</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Conserje, Ordenanza, Portero/a y Personal de limpieza</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">46,47</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">650,58</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Botones de dieciséis y diecisiete años</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">29,04</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">406,56</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo VI. Oficios varios</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial/a de primera</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">49,79</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">697,06</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial/a segunda</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">47,53</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">665,42</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Ayudante/a</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">44,37</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">621,18</p>
+            </td>
+          </tr>
+        </tbody></table>
+        <p class="capitulo_num">ANEXO III</p>
+        <p class="capitulo">Tabla salarial y de plus convenio 2009</p>
+        <table class="tabla" summary="Tabla de formato">
+          <tbody><tr>
+            <th>
+              <p class="t_cabeza_tabla">Categorías</p>
+            </th>
+            <th>
+              <p class="t_cabeza_tabla">Mes (× 14) <br></p>
+              <p class="t_cabeza_tabla">– <br></p>
+              <p class="t_cabeza_tabla">Euros</p>
+            </th>
+            <th>
+              <p class="t_cabeza_tabla">Año <br></p>
+              <p class="t_cabeza_tabla">– <br></p>
+              <p class="t_cabeza_tabla">Euros</p>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo I. Titulados</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Titulado/a de grado superior</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.569,25</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">21.969,50</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Titulado/a de grado medio</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.133,46</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">15.868,44</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo II. Administrativos</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe/a Superior</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.167,29</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">16.342,06</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe/a de primera y Cajero/a con firma</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.103,04</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">15.442,56</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe/a de segunda y Cajero/a sin firma</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">980,23</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">13.723,22</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial/a de primera</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">857,30</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">12.002,20</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial/a de segunda y Telefonista-recepcionista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">782,83</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">10.959,62</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Auxiliar, Auxiliar de caja y Telefonista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">687,04</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.618,56</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Aspirantes de dieciséis y diecisiete años</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">594,38</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">8.321,32</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo III. Técnicos de oficina</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Analista y Analista de sistemas</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.569,25</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">21.969,50</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Analista-programador/a y Diseñador/a de página Web</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.539,69</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">21.555,66</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Programador/a senior, Jefe/a de operación y Programador/a en Internet</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.103,04</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">15.442,56</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Delineante-proyectista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.021,11</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">14.295,54</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Programador/a junior, Operador/a ordenador, Programador/a máquina auxiliar, Monitor/a de grabación y Técnico/a mantenimiento página Web</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">987,69</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">13.827,66</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Delineante</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">886,70</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">12.413,80</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Administrador/a de test</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">840,93</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">11.773,02</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo IV. Especialistas de oficina</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe de campo</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.103,04</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">15.442,53</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe de zona</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">980,23</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">13.723,22</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Tabulador de ordenador, Operador de máquina auxiliar, Preparador de trabajos y Operador de periféricos</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">840,94</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">11.773,15</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Inspector-entrevistador y Dibujante</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">767,90</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">10.750,56</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Calcador</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">688,92</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.644,85</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Codificador informático, Perforista, Verificador, Clasificador, y Grabador</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">687,04</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.618,58</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Entrevistador-encuestador y Codificador de encuesta</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">664,44</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.302,13</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo V. Subalternos</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Cobrador/a, Vigilante y Sereno</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">722,58</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">10.116,12</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Conserje, Ordenanza, Portero/a y Personal de limpieza</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">679,69</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.515,66</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Botones de dieciséis y diecisiete años</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">594,38</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">8.321,32</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo VI. Oficios varios</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial/a de primera</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">750,55</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">10.507,70</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial/a segunda</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">692,24</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.691,36</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Ayudante/a</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">645,94</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">9.043,16</p>
+            </td>
+          </tr>
+        </tbody></table>
+        <p class="capitulo">Plus convenio 1.1 / 31.12.2009</p>
+        <table class="tabla" summary="Tabla de formato">
+          <tbody><tr>
+            <th>
+              <p class="t_cabeza_tabla">Categorías</p>
+            </th>
+            <th>
+              <p class="t_cabeza_tabla">Mes (× 14) <br></p>
+              <p class="t_cabeza_tabla">– <br></p>
+              <p class="t_cabeza_tabla">Euros</p>
+            </th>
+            <th>
+              <p class="t_cabeza_tabla">Año <br></p>
+              <p class="t_cabeza_tabla">– <br></p>
+              <p class="t_cabeza_tabla">Euros</p>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo I. Titulados</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Titulado/a de grado superior</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">109,73</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.536,22</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Titulado/a de grado medio</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">80,02</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.120,28</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo II. Administrativos</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe/a Superior</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">82,25</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.151,50</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe/a de primera y Cajero/a con firma</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">77,80</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.089,20</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe/a de segunda y Cajero/a sin firma</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">69,16</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">968,24</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial/a de primera</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">60,32</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">844,48</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial/a de segunda y Telefonista-recepcionista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">54,83</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">767,62</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Auxiliar, Auxiliar de caja y Telefonista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">48,12</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">673,68</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Aspirantes de dieciséis y diecisiete años</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">29,62</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">414,68</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo III. Técnicos de oficina</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Analista y Analista de sistemas</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">109,73</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.536,22</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Analista-programador/a y Diseñador/a de página Web</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">102,72</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.438,08</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Programador/a senior, Jefe/a de operación y Programador/a en Internet</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">77,80</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.089,20</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Delineante-proyectista</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">71,32</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">998,48</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Programador/a junior, Operador/a ordenador, Programador/a máquina auxiliar, Monitor/a de grabación y Técnico/a mantenimiento página Web</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">69,50</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">973,00</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Delineante</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">62,39</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">873,46</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Administrador/a de test</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">59,18</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">828,52</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo IV. Especialistas de oficina</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe de campo</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">77,80</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">1.089,14</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Jefe de zona</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">69,15</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">968,04</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Tabulador de ordenador, Operador de máquina auxiliar, Preparador de trabajos y Operador de periféricos</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">59,17</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">828,38</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Inspector-entrevistador y Dibujante</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">53,79</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">753,13</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Calcador</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">48,24</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">675,30</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Codificador informático, Perforista, Verificador, Clasificador, y Grabador</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">48,12</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">673,73</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Entrevistador-encuestador y Codificador de encuesta</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">46,54</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">651,60</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo V. Subalterno</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Cobrador/a, Vigilante y Sereno</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">49,71</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">695,94</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Conserje, Ordenanza, Portero/a y Personal de limpieza</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">47,40</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">663,60</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Botones de dieciséis y diecisiete años</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">29,16</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">414.68</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Grupo VI. Oficios varios</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_centro"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial/a de primera</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">50,79</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">711,06</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Oficial/a segunda</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">48,48</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">678,72</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="cuerpo_tabla_izq">Ayudante/a</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">45,26</p>
+            </td>
+            <td>
+              <p class="cuerpo_tabla_der">633,64</p>
+            </td>
+          </tr>
+        </tbody></table>
+    <a id="dispf4"></a>
+    <a class="indice" href="">Índice</a>
+
+
+    <h4>Categoría Nivel Salarial</h4>
+    <table border="1" cellpadding="2">
+            <tr>
+                    <th>CATEGORIA</th>
+                    <th>NIVEL SALARIAL</th>
+            </tr>
+            <tr>
+                    <td colspan="2"><strong>Titulados</strong></td>
+            </tr>
+            <tr>
+                    <td>Personal titulado de grado superior</td>
+                    <td>1</td>
+            </tr>
+            <tr>
+                    <td>Personal titulado de grado medio</td>
+                    <td>2</td>
+            </tr>
+            <tr>
+                    <td colspan="2"><strong>Personal administrativo</strong></td>
+            </tr>
+            <tr>
+                    <td>Jefe superior</td>
+                    <td>2</td>
+            </tr>
+            <tr>
+                    <td>Jefe de primera</td>
+                    <td>3</td>
+            </tr>
+            <tr>
+                    <td>Jefe de segunda</td>
+                    <td>4</td>
+            </tr>
+            <tr>
+                    <td>Oficial de primera</td>
+                    <td>5</td>
+            </tr>
+            <tr>
+                    <td>Oficinal de segunda</td>
+                    <td>6</td>
+            </tr>
+            <tr>
+                    <td>Auxiliar</td>
+                    <td>9</td>
+            </tr>
+            <tr>
+                    <td colspan="2"><strong>Técnicos</strong></td>
+            </tr>
+            <tr>
+                    <td>Jefe de informática</td>
+                    <td>3</td>
+            </tr>
+            <tr>
+                    <td>Analista</td>
+                    <td>3</td>
+            </tr>
+            <tr>
+                    <td>Programador</td>
+                    <td>3</td>
+            </tr>
+            <tr>
+                    <td>Jefe de delineación</td>
+                    <td>4</td>
+            </tr>
+            <tr>
+                    <td>Jefe de explotación</td>
+                    <td>4</td>
+            </tr>
+            <tr>
+                    <td>Delineante proyectista</td>
+                    <td>5</td>
+            </tr>
+            <tr>
+                    <td>Operador de primera</td>
+                    <td>5</td>
+            </tr>
+            <tr>
+                    <td>Delineante</td>
+                    <td>6</td>
+            </tr>
+            <tr>
+                    <td colspan="2"><strong>Especialistas</strong></td>
+            </tr>
+            <tr>
+                    <td>Operador de segunda</td>
+                    <td>6</td>
+            </tr>
+            <tr>
+                    <td>Dibujante</td>
+                    <td>7</td>
+            </tr>
+            <tr>
+                    <td>Entrevistador-encuestador</td>
+                    <td>7</td>
+            </tr>
+            <tr>
+                    <td>Calcador</td>
+                    <td>8</td>
+            </tr>
+            <tr>
+                    <td>Grabador-recuperador de datos</td>
+                    <td>8</td>
+            </tr>
+            <tr>
+                    <td colspan="2"><strong>Subalternos</strong></td>
+            </tr>
+            <tr>
+                    <td>Conserje</td>
+                    <td>9</td>
+            </tr>
+            <tr>
+                    <td>Ordenanza</td>
+                    <td>9</td>
+            </tr>
+            <tr>
+                    <td>Vigilante diurno y nocturno</td>
+                    <td>9</td>
+            </tr>
+            <tr>
+                    <td>Limpiadores</td>
+                    <td>9</td>
+            </tr>
+            <tr>
+                    <td>Botones</td>
+                    <td>10</td>
+            </tr>
+            <tr>
+                    <td colspan="2"><strong>Oficios varios</strong></td>
+            </tr>
+            <tr>
+                    <td>Encargado</td>
+                    <td>6</td>
+            </tr>
+            <tr>
+                    <td>Oficial de primera y conductor</td>
+                    <td>7</td>
+            </tr>
+            <tr>
+                    <td>Oficinal de segunda</td>
+                    <td>8</td>
+            </tr>
+            <tr>
+                    <td>Mozo y peón</td>
+                    <td>9</td>
+            </tr>
+    </table>
+    <a id="anex1"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Anexo I. Tabla Económica 2010.</h4>
+    <table border="1" cellpadding="2">
+            <caption>Punto 1</caption>
+            <tr>
+                    <th>NIVELES</th>
+                    <th>EUROS/MES</th>
+                    <th>SALARIO ANUAL<br>(14 PAGAS)</th>
+            </tr>
+            <tr>
+                    <td>1</td>
+                    <td>1.103,89</td>
+                    <td>15.454,46</td>
+            </tr>
+            <tr>
+                    <td>2</td>
+                    <td>1.067,44</td>
+                    <td>14.944,11</td>
+            </tr>
+            <tr>
+                    <td>3</td>
+                    <td>1.027,95</td>
+                    <td>14.387,05</td>
+            </tr>
+            <tr>
+                    <td>4</td>
+                    <td>987,83</td>
+                    <td>13.829,55</td>
+            </tr>
+            <tr>
+                    <td>5</td>
+                    <td>914,92</td>
+                    <td>12.808,91</td>
+            </tr>
+            <tr>
+                    <td>6</td>
+                    <td>878,48</td>
+                    <td>12.298,68</td>
+            </tr>
+            <tr>
+                    <td>7</td>
+                    <td>835,41</td>
+                    <td>11.695,78</td>
+            </tr>
+            <tr>
+                    <td>8</td>
+                    <td>798,94</td>
+                    <td>11.185,10</td>
+            </tr>
+            <tr>
+                    <td>9</td>
+                    <td>749,15</td>
+                    <td>10.488,16</td>
+            </tr>
+            <tr>
+                    <td>10</td>
+                    <td>633,3</td>
+                    <td>8.866,20</td>
+            </tr>
+    </table>
+    <table border="1" cellpadding="2">
+        <caption>Punto 2</caption>
+        <tr>
+                <th>NIVELES</th>
+                <th>EUROS/MES</th>
+        </tr>
+        <tr>
+                <td>1</td>
+                <td>13,63</td>
+        </tr>
+        <tr>
+                <td>2</td>
+                <td>13,18</td>
+        </tr>
+        <tr>
+                <td>3</td>
+                <td>12,69</td>
+        </tr>
+        <tr>
+                <td>4</td>
+                <td>12,2</td>
+        </tr>
+        <tr>
+                <td>5</td>
+                <td>11,3</td>
+        </tr>
+        <tr>
+                <td>6</td>
+                <td>10,85</td>
+        </tr>
+        <tr>
+                <td>7</td>
+                <td>10,31</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9,66</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>9,25</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>9,3</td>
+        </tr>
+    </table>
+    <table border="1" cellpadding="2">
+        <caption>Punto 3</caption>
+        <tr>
+            <td>Dieta Íntegra</td>
+            <td>62,22 €</td>
+        </tr>
+        <tr>
+            <td>Cada Kilómetro</td>
+            <td>0,28 €</td>
+        </tr>
+    </table>
+    <p><strong>Punto 4</strong></p>
+    <p>Canon de la parte patronal de la Comisión Paritaria. El canon se fija en
+    la cantidad de 150,25 euros por consulta. Se entiende por consulta todas
+    aquellas preguntas que se planteen a la Comisión en cada escrito.</p>
+    <a href="">Volver al índice</a>
+</article>
+{% render "ECLLaboralBundle:Layout:sidebar" %}
+{% endblock %}

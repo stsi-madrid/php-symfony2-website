@@ -1,0 +1,31 @@
+{% extends 'ECLDefaultBundle::base_front.html.twig' %}
+{% block title %}Lista de Convenios para la Comunidad de Madrid{% endblock %}
+{% block description %}Lista actualizada de los Convenios Colectivos del
+2011-2012 aplicados en la Comunidad de Madrid. Tablas Salariales y legislación
+laboral.{% endblock %}
+{% block stylesheets %}
+    <link href="{{ asset('bundles/ecllaboral/css/laboral.css') }}" rel="stylesheet">
+{% endblock %}
+{% block body_front %}
+<article class="main">
+    <ul id="menu">
+        <li><a href="{{ url('ECLLaboralBundle_homepage')}}">Acción Sindical</a></li>
+        <li><strong>Convenios Colectivos</strong></li>
+    </ul>
+    <h1>Convenios Colectivos para la Comunidad de Madrid</h1>        
+    <ul id="list">
+        <li><a href="{{ url('ECLLaboralBundle_convenios_despachos')}}">Oficinas
+        y Despachos</a></li>
+        <li><a href="{{ url('ECLLaboralBundle_convenios_metal')}}">Industria,
+        Servicios e Instalaciones del Metal</a></li>
+        <li><a href="{{ url('ECLLaboralBundle_convenios_ingeniera')}}">Empresas
+        de ingeniería y oficinas de estudios técnicos</a></li>
+        <li><a href="{{ url('ECLLaboralBundle_convenios_consultoria')}}">Empresas
+        de consultoría y estudios de mercado y de la opinión pública</a></li>
+    </ul>
+    <p>Si eres trabajador/a del sector y piensas que el convenio por el que se rige
+    tu contrato de trabajo no está reflejado en este listado puedes contactarnos
+    para que lo incluyamos: informatica.madrid@cnt.es</p>
+</article>
+{% render "ECLLaboralBundle:Layout:sidebar" %}
+{% endblock %}

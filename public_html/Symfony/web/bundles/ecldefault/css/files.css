@@ -1,0 +1,73 @@
+.select_file
+{
+    margin-top: 20px;
+}
+.loading
+{
+    margin: -3px 0 0 200px;
+}
+#file_list
+{
+    list-style-type: none;
+    margin: 50px;
+}
+    #file_list li ul
+    {
+        display: none;
+        list-style-type: none;
+    }
+        #file_list span
+        {
+            background: url(../imagenes/file_icons.png);
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 32px;
+            margin-right: 10px;
+            vertical-align: middle;
+            width: 32px;
+        }
+        .year_folder
+        {
+            margin: 10px 0;
+        }
+            #file_list .year_folder span
+            {
+                background-position: -224px 0;
+                cursor: pointer;
+            }
+            #file_list .folder_open > span
+            {
+                background-position: -256px 0;
+            }            
+        .month_folder
+        {
+            margin: 10px 0 10px 50px;
+        }
+        .files
+        {
+            margin: 10px 0 10px 50px;
+        }
+            #file_list .files span
+            {
+                background-position: -128px 0;
+            }
+            #file_list span.delete
+            {
+                background-position: -288px 0;
+            }
+            #file_list span.file_type_png, #file_list span.file_type_jpg, #file_list span.file_type_gif
+            {
+                background-position: 0 0;
+            }
+            #file_list span.file_type_pdf
+            {
+                background-position: -64px 0;
+            }
+            #file_list span.file_type_odt
+            {
+                background-position: -160px 0;
+            }
+            #file_list span.file_type_xls
+            {
+                background-position: -192px 0;
+            }

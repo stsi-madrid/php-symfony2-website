@@ -1,0 +1,34 @@
+{% extends 'ECLDefaultBundle::base_backoffice.html.twig' %}
+{% block title %}Editar {% endblock %}
+{% block javascriptsheets %}
+<script src="{{asset('bundles/ecldefault/js/vendor/tinymce/tinymce/tiny_mce.js')}}"></script>
+{% endblock %}
+{% block body_backoffice %}
+<nav id="nav">
+    <ul>
+        <li><a href="{{url('ECLHomeBundle_backoffice')}}">Backoffice</a></li>
+        <li>></li>
+        <li><a href="{{url('ECLArticlesBundle_backoffice_articles')}}">Artículos</a></li>
+        <li>></li>                    
+        <li><strong>Editar Artículo</strong></li>
+    </ul>
+</nav>
+<article id="form_article">
+    <h1 id="title">Editar Artículo</h1>
+    <form action="{{path('ECLArticlesBundle_backoffice_articles_editar', { id: article_id })}}"
+    method="post"  class="redactar">
+        <label id="users">Autor:</label>
+    {% if role_admin %}
+        <select name="users">
+        {% for user in users %}
+            <option {% if user.id == article.getUserId %}selected{% endif %} value="{{ user.id }}">{{ user.username }}</option>
+        {% endfor %}
+        </select>
+    {% endif %}
+        {{ form_widget(form) }}
+        <a class="hide_tinymce" href="article_form_articles_extend_article_text" style="display: inline;">HTML</a>
+        <a class="show_tinymce hide" href="article_form_articles_extend_article_text" style="display: none;">Texto</a>
+        <input type="submit" value="editar" class="button">
+    </form>
+</article>
+{% endblock %}

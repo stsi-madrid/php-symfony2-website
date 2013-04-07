@@ -1,0 +1,11 @@
+<header id="header">
+    <h1><a href="{{url('ECLHomeBundle_homepage')}}">Sección de Telecomunicaciones
+    y Servicios Informáticos</a></h1>
+    <h2><a href="http://madrid.cnt.es/">Federación Local de Madrid</a></h2>
+    <h3><a href="http://www.cnt.es/">CNT</a> - <a href="http://www.iwa-ait.org/">AIT</a></h3>
+    <p>Plaza de Tirso de Molina, 5. 6º Dcha. 28012. | Tlf: 913690972 |
+    <a href="mailto:informatica.madrid@cnt.es"
+    title="escríbenos por email">informatica.madrid@cnt.es</a></p>
+</header>
+{% set bundle = app.request.attributes.get('_route')|split('_')[0] %}
+{%block body_header%}{%endblock%}

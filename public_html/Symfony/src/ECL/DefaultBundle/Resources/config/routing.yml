@@ -1,0 +1,91 @@
+ECLAnnotations:
+    resource: "@ECLDefaultBundle/Controller/"
+    prefix:   /
+    type:     annotation
+
+logout:
+    pattern:   /backoffice/logout
+    
+login:
+    pattern:   /backoffice/login
+    defaults: { _controller: ECLDefaultBundle:Security:login }
+    
+login_check:
+    pattern:   /backoffice/login_check
+    defaults: { _controller: ECLDefaultBundle:Security:login }
+  
+ECLDefaultBundle_files:
+    pattern:   /backoffice/ficheros
+    defaults: { _controller: ECLDefaultBundle:Files:index }
+  
+ECLDefaultBundle_upload_file:
+    pattern:  /backoffice/ficheros/upload
+    defaults: { _controller: ECLDefaultBundle:Files:upload }
+    requirements:
+                _method: POST
+                
+ECLDefaultBundle_remove_file:
+    pattern:  /backoffice/ficheros/remove
+    defaults: { _controller: ECLDefaultBundle:Files:remove }
+    requirements:
+                _method: POST                
+
+ECLDefaultBundle_users:
+    pattern:   /backoffice/usuarios
+    defaults: { _controller: ECLDefaultBundle:User:index }
+
+ECLDefaultBundle_users_edit:
+    pattern:   /backoffice/usuarios/editar/{id}
+    defaults: { _controller: ECLDefaultBundle:User:edit }
+    
+ECLDefaultBundle_users_update:
+    pattern:   /backoffice/usuarios/actualizar/{id}
+    defaults: { _controller: ECLDefaultBundle:User:update }
+    
+ECLDefaultBundle_users_update_profile:
+    pattern:   /backoffice/usuarios/actualizarperfil/{id}
+    defaults: { _controller: ECLDefaultBundle:User:updateProfile }
+  
+ECLDefaultBundle_users_new:
+    pattern:   /backoffice/usuarios/nuevo
+    defaults: { _controller: ECLDefaultBundle:User:new }
+
+ECLDefaultBundle_users_create:
+    pattern:   /backoffice/usuarios/crear
+    defaults: { _controller: ECLDefaultBundle:User:create }
+
+ECLDefaultBundle_users_delete:
+    pattern:   /backoffice/usuarios/eliminar/{id}
+    defaults: { _controller: ECLDefaultBundle:User:delete }
+  
+ECLDefaultBundle_roles:
+    pattern:   /backoffice/roles
+    defaults: { _controller: ECLDefaultBundle:Role:index }
+  
+ECLDefaultBundle_roles_edit:
+    pattern:   /backoffice/roles/editar/{id}
+    defaults: { _controller: ECLDefaultBundle:Role:edit }
+    
+ECLDefaultBundle_roles_update:
+    pattern:   /backoffice/roles/actualizar/{id}
+    defaults: { _controller: ECLDefaultBundle:Role:update }
+  
+ECLDefaultBundle_roles_new:
+    pattern:   /backoffice/roles/nuevo
+    defaults: { _controller: ECLDefaultBundle:Role:new }
+
+ECLDefaultBundle_roles_create:
+    pattern:   /backoffice/roles/crear
+    defaults: { _controller: ECLDefaultBundle:Role:create }
+
+ECLDefaultBundle_roles_delete:
+    pattern:   /backoffice/roles/eliminar/{id}
+    defaults: { _controller: ECLDefaultBundle:Role:delete }
+
+ECLDefaultBundle_roles_show:
+    pattern:   /backoffice/roles/{id}
+    defaults: { _controller: ECLDefaultBundle:Role:show }
+    
+ECLDefaultBundle_users_profile:
+    pattern:   /backoffice/perfil
+    defaults: { _controller: ECLDefaultBundle:User:profile }

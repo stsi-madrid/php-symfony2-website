@@ -1,0 +1,7 @@
+parameters:
+#    ecl_laboral.example.class: ECL\LaboralBundle\Example
+
+services:
+#    ecl_laboral.example:
+#        class: %ecl_laboral.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

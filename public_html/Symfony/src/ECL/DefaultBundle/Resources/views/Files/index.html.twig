@@ -1,0 +1,53 @@
+{% extends 'ECLDefaultBundle::base_backoffice.html.twig' %}
+{% block stylesheets %}
+{{ parent() }}
+<link href="{{ asset('bundles/ecldefault/css/files.css') }}" rel="stylesheet">
+{% endblock %}    
+{% block javascriptsheets %}
+{{ parent() }}
+<script type="text/javascript">
+    var PARAM_1 = '{{ url('ECLDefaultBundle_upload_file') }}',
+        PARAM_2 = '{{ url }}',
+        PARAM_3 = '{{ url('ECLDefaultBundle_remove_file') }}';
+</script>
+<script src="{{ asset('bundles/ecldefault/js/files.js') }}"></script>
+{% endblock %}
+{% block body_backoffice %}
+<nav id="nav">
+    <ul>
+        <li><a href="{{url('ECLHomeBundle_backoffice')}}">Backoffice</a></li>
+        <li>></li>
+        <li><strong>Ficheros</strong></li>
+    </ul>
+</nav>
+<article id="files">
+    <h1 id="title">Lista de Ficheros</h1>
+    <span class="loading"></span>
+    <input type="file" id="fileselect" size="chars">
+    <button class="select_file">Subir Archivo</button>​
+    <section id="remove_window" class="window">
+        <p>¿Seguro que quieres borrarlo?</p>
+        <button id="yes">Sí</button>
+        <button id="no">No</button>
+    </section>
+    <ul id="file_list">
+    {% for year, folder_year in files %}
+        <li class="year_folder js_{{ year }}"><span></span>{{ year }}
+            <ul>
+            {% for month, folder_month in folder_year %}
+                <li class="month_folder js_{{ month }}"><span></span>{{ month }}
+                    <ul>
+                    {% for file in folder_month %}
+                        <li class="files"><span class="delete" title="borrar"></span>
+                        <span class="file_type_{{ file | file_extension }}"></span>
+                        <a target="_blank" href="{{ url ~ year ~ '/' ~ month ~ '/' ~ file }}">{{ file }}</a></li>
+                    {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+    </ul>
+</article>
+{% endblock %}

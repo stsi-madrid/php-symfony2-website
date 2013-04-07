@@ -1,0 +1,9 @@
+{% extends 'ECLDefaultBundle::base.html.twig' %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('css/backoffice_main.css')}}">
+{% endblock %}        
+{% block body %}
+{% include '::header_backoffice.html.twig' %}
+{% block body_backoffice %}{% endblock %}
+{% include '::footer_backoffice.html.twig' %}
+{% endblock %}

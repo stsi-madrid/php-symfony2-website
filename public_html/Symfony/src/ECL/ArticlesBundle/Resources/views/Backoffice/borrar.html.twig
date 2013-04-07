@@ -1,0 +1,12 @@
+{% extends 'ECLDefaultBundle::base_backoffice.html.twig' %}
+{% block title %}Borrar {% endblock %}
+{% block body_backoffice %}
+<article id="remove_article">
+    <h1 id="title">Borrar Artículo</h1>
+    <section>
+        <p>¿Seguro que quieres borrar el artículo?</p>
+        <a href="{{ app.request.uri }}/yes">SI</a>
+        <a href="{{ app.request.uri }}/no">NO</a>
+    </section>
+</article>
+{% endblock %}

@@ -1,0 +1,586 @@
+{% extends 'ECLDefaultBundle::base_front.html.twig' %}
+{% block title %}Convenio de Empresas de Ingenieria y Oficinas de Estudios
+Tecnicos para la Comunidad de Madrid{% endblock %}
+{% block description %}Convenio Colectivo 2011 de Empresas De Ingenieria Y
+Oficinas De Estudios Tecnicos para la Comunidad de Madrid. Tablas Salariales y
+legislación laboral.{% endblock %}
+{% block stylesheets %}
+    <link href="{{ asset('bundles/ecllaboral/css/laboral.css') }}" rel="stylesheet">
+{% endblock %}
+{% block body_front %}
+<article class="main">
+    <ul id="menu">
+        <li><a href="{{ url('ECLLaboralBundle_homepage')}}">Acción Sindical</a></li>
+        <li><a href="{{ url('ECLLaboralBundle_convenios')}}">Convenios Colectivos</a></li>
+    </ul>    
+    <header>
+        <hgroup>
+            <h1>XVI Convenio colectivo nacional de empresas de ingeniería y
+            oficinas de estudios técnicos</h1>
+            <h2>1 de enero de 2010 - Se renueva en Diciembre automáticamente
+            hasta aparición del XVII Convenio</h2>
+        </hgroup>
+    </header>
+    <ul>
+        <li><a href="#pre">Preámbulo.</a></li>
+        <li><a href="#ind_2">Artículo 1. Ámbito funcional. Especial vinculación.</a></li>
+        <li><a href="#ind_3">Artículo 2. Ámbito territorial.</a></li>
+        <li><a href="#ind_4">Artículo 3. Ámbito personal.</a></li>
+        <li><a href="#ind_5">Artículo 4. Ámbito temporal.</a></li>
+        <li><a href="#ind_6">Artículo 5. Denuncia y revisión.</a></li>
+        <li><a href="#ind_7">Artículo 6. Vinculación a la totalidad.</a></li>
+        <li><a href="#ind_8">Artículo 7. Compensación. Absorción.</a></li>
+        <li><a href="#ind_9">Artículo 8. Respeto de las mejoras adquiridas.</a></li>
+        <li><a href="#ind_10">Artículo 9. Comité Paritario de Vigilancia e
+        Interpretación.</a></li>
+        <li><a href="#ind_11">Artículo 10. Período de prueba de ingreso.</a></li>
+        <li><a href="#ind_12">Artículo 11. Provisión de vacantes.</a></li>
+        <li><a href="#ind_13">Artículo 12. Promoción o ascensos.</a></li>
+        <li><a href="#ind_14">Artículo 13. Reglas para la provisión de vacantes.</a></li>
+        <li><a href="#ind_15">Artículo 14. Anuncio de convocatorias.</a></li>
+        <li><a href="#ind_16">Artículo 15. Formación.</a></li>
+        <li><a href="#ind_17">Artículo 16. Dirección y control de la actividad
+        laboral.</a></li>
+        <li><a href="#ind_18">Artículo 17. Clasificación profesional.</a></li>
+        <li><a href="#ind_19">Artículo 18. Contratos de duración determinada del
+        artículo 15.1.b) y a) del texto refundido de la Ley del ET. Productividad y
+        empleo estable.</a></li><li><a href="#ind_20">Artículo 19. Contratos a
+        tiempo parcial y de relevo.</a></li>
+        <li><a href="#ind_21">Artículo 20. Trabajos de categoría superior.</a></li>
+        <li><a href="#ind_22">Artículo 21. Trabajos de categoría inferior.</a></li>
+        <li><a href="#ind_23">Artículo 22. Prevención de riesgos laborales. Comisión
+        de Seguridad y Salud en el Trabajo. Delegados de prevención.</a></li>
+        <li><a href="#ind_24">Artículo 23. Jornada laboral.</a></li>
+        <li><a href="#ind_25">Artículo 24. Vacaciones.</a></li>
+        <li><a href="#ind_26">Artículo 25. Permisos retribuidos.</a></li>
+        <li><a href="#ind_27">Artículo 25 bis. Conciliación de la vida familiar y
+        laboral.</a></li>
+        <li><a href="#ind_28">Artículo 26. Permisos sin sueldo.</a></li>
+        <li><a href="#ind_29">Artículo 27. Faltas y sanciones.</a></li>
+        <li><a href="#ind_30">Artículo 28. Antigüedad.</a></li>
+        <li><a href="#ind_31">Artículo 29. Prestaciones por enfermedad y accidente de
+        trabajo.</a></li>
+        <li><a href="#ind_32">Artículo 30. Seguro complementario de accidentes de
+        trabajo.</a></li>
+        <li><a href="#ind_33">Artículo 31. Retribuciones.</a></li>
+        <li><a href="#ind_34">Artículo 32. Pago mensual.</a></li>
+        <li><a href="#ind_35">Artículo 33. Tablas de niveles salariales.</a></li>
+        <li><a href="#ind_36">Artículo 34. Distribución del salario anual y pagas
+        extraordinarias.</a></li>
+        <li><a href="#ind_37">Artículo 35. Trabajo nocturno.</a></li>
+        <li><a href="#ind_38">Artículo 36. Horas extraordinarias.</a></li>
+        <li><a href="#ind_39">Artículo 37. Dietas y desplazamientos.</a></li>
+        <li><a href="#ind_40">Artículo 38. Plus de Convenio.</a></li>
+        <li><a href="#ind_41">Artículo 39. Dimisión del trabajador.</a></li>
+        <li><a href="#ind_42">Artículo 40. Derechos de reunión y de libre
+        sindicación.</a></li>
+        <li><a href="#ind_43">Artículo 41. Derechos y obligaciones de los Sindicatos
+        de trabajadores.</a></li>
+        <li><a href="#ind_44">Artículo 42. Comités de empresa. Medios telemáticos.</a></li>
+        <li><a href="#ind_45">Artículo 43. Garantías de los representantes de los
+        trabajadores.</a></li><li><a href="#ind_46">Artículo 44. Prácticas
+        antisindicales.</a></li>
+        <li><a href="#ind_47">Artículo 45. Trabajos en pantallas.</a></li>
+        <li><a href="#ind_48">Artículo 46. Jubilación obligatoria.</a></li>
+        <li><a href="#ind_49">Artículo 47. No discriminación en las relaciones
+        laborales. Acoso y violencia en el lugar de trabajo.</a></li>
+        <li><a href="#ind_50">Artículo 48. Formación a nivel de sector.</a></li>
+        <li><a href="#ind_51">Artículo 49. Derecho supletorio y prelación de
+        normas.</a></li>
+        <li><a href="#ind_52">Disposición final primera. Eficacia y concurrencia.
+        Adhesión.</a></li>
+        <li><a href="#ind_53">Disposición final segunda. Pacto derogatorio.</a></li>
+    </ul>
+    <a id="pre"></a>
+    <a class="indice" href="">Índice</a>
+    <h4>Preámbulo</h4>
+    <p class="parrafo_2">Las partes signatarias del presente Convenio colectivo, integradas por la Federación de Servicios de la UGT (FES) y la Federación de Servicios Financieros y Administrativos de CC.OO. (COMFIA), en representación laboral, y TECNIBERIA Asociación Española de Empresas de Ingeniería, Consultoría y Servicios Tecnológicos, en representación empresarial, como organizaciones más representativas estatalmente en el subsector de empresas de servicios de ingeniería y de estudios técnicos acuerdan:</p>
+    <p class="articulo"><a id="ind_2">Artículo 1. Ámbito funcional. Especial vinculación.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. El presente Convenio será de obligada observancia en todas las empresas de ingeniería y oficinas de estudios técnicos, incluidas las de delineantes, cuya actividad de servicios de asistencia técnica, estudios y proyectos de ingeniería civil, agraria, medioambiental, química, electrónica, industrial, aeronáutica, aeroespacial y de cualquier orden similar, haya estado encuadrada en la Ordenanza Laboral de Oficinas y Despachos aprobada por Orden de 31 de octubre de 1972, que fue sustituida íntegramente en dicho ámbito por el IX Convenio de este sector, publicado en el BOE de 20 de julio de 1995; así como la inspección, supervisión y control técnicos y de calidad en la ejecución de tales proyectos y estudios, en empresas que no aplicasen anteriormente otro Convenio colectivo de distinta actividad.</p>
+    <p class="parrafo">2. Para preservar y garantizar los derechos fundamentales de asociación y de libertad sindical, constitucionalmente reconocidos, y para que tales derechos no queden vacíos de contenido por inaplicación de los efectos jurídicos inherentes a esos derechos, esencialmente del derecho de elegir y designar libremente representante en el ámbito estatal y sin discriminación por razón del territorio, el presente Convenio será también, y especialmente, de obligada observancia en las empresas y a sus trabajadores que, ejerciendo las actividades incluidas en su ámbito funcional, se encuentren adscritos o afiliados a las organizaciones firmantes del presente Convenio, y sin perjuicio, en todo caso, de las normas de derecho necesario que en cada momento estén vigentes en nuestra legislación.</p>
+    <p class="parrafo">Siempre que se respeten dichas normas de derecho necesario, en las empresas del sector que cuenten con Convenio propio, se estará a lo en él establecido, si bien en ellas el presente Convenio de ámbito nacional siempre será complementario, conforme a lo establecido en su artículo 49.3.</p>
+    <p class="parrafo">Las partes confieren al pacto contenido en el presente apartado carácter normativo e inderogable, cualquiera que sea el período de vigencia inicial pactado para el presente Convenio.</p>
+    <p class="articulo"><a id="ind_3">Artículo 2. Ámbito territorial.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">Este Convenio colectivo será de aplicación en todo el territorio del Estado español.</p>
+    <p class="articulo"><a id="ind_4">Artículo 3. Ámbito personal.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">El presente Convenio afecta a todos los trabajadores adscritos a las empresas indicadas en el artículo 1, con la única excepción del personal de alta dirección al que se refiere el artículo 2.1.a) del texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <p class="articulo"><a id="ind_5">Artículo 4. Ámbito temporal.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. La duración del presente Convenio colectivo será de dos años, iniciando su vigencia en materia salarial, así como respecto del plus de Convenio, una vez registrado y publicado, el 1 de enero de 2010 y el 1 de enero de 2011, respectivamente, para los mismos conceptos indicados anteriormente. Las restantes materias iniciarán su vigencia el día de la publicación del Convenio en el «Boletín Oficial del Estado», salvo para las que se especifique otra fecha distinta.</p>
+    <p class="parrafo">2. Su vigencia se extenderá hasta el 31 de diciembre de 2011, con las excepciones previstas en el último párrafo del artículo 1.2 y en el artículo 48.2, prorrogándose anualmente por tácita reconducción, en sus propios términos, en tanto no se solicite su revisión y se formule su necesaria denuncia en los términos del artículo 5.</p>
+    <p class="articulo"><a id="ind_6">Artículo 5. Denuncia y revisión.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Por cualquiera de las dos partes firmantes del presente Convenio podrá pedirse, mediante denuncia notificada fehacientemente por escrito a la otra parte, la revisión del mismo, con un mes mínimo de antelación al vencimiento del plazo de vigencia antes señalado y/o de cualquiera de sus prórrogas.</p>
+    <p class="parrafo">2. En el caso de solicitarse la revisión del Convenio, la parte que formule su denuncia, y para que ésta se considere válida a los efectos señalados en el apartado anterior, deberá remitir a la otra parte, en el plazo máximo de los dos meses siguientes al de la denuncia, propuesta concreta sobre los puntos y contenido que comprenda la revisión solicitada. Caso de incumplirse este requisito, se tendrá por no hecha la denuncia. De esta comunicación y de la propuesta se enviará copia, a efectos de registro, a la Dirección General de Trabajo.</p>
+    <p class="articulo"><a id="ind_7">Artículo 6. Vinculación a la totalidad.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">Siendo las condiciones pactadas un todo orgánico e indivisible, el presente Convenio será nulo y quedará sin efecto alguno en el supuesto de que la autoridad o jurisdicción competente, en el ejercicio de las facultades que le sean propias, objetase o invalidase alguno de sus pactos o no aprobara la totalidad de su contenido, que debe ser uno e indivisible en su aplicación.</p>
+    <p class="articulo"><a id="ind_8">Artículo 7. Compensación. Absorción.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Todas las condiciones económicas que se establecen en el presente Convenio, sean o no de naturaleza salarial, son compensables en su conjunto y cómputo anual con las mejoras de cualquier tipo que vinieran anteriormente satisfaciendo las empresas, bien sea por imperativo legal, Convenio colectivo, laudo, contrato individual, uso o costumbre, concesión voluntaria de las empresas o por cualesquiera otras causas.</p>
+    <p class="parrafo">2. Dichas condiciones también serán absorbibles, hasta donde alcancen y en cómputo anual, por los aumentos que en el futuro pudieran establecerse en virtud de preceptos legales, Convenios colectivos o contratos individuales de trabajo, con la única excepción de aquellos conceptos que expresamente fuesen excluidos de absorción en el texto del presente Convenio.</p>
+    <p class="articulo"><a id="ind_9">Artículo 8. Respeto de las mejoras adquiridas.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">Se respetarán como derechos adquiridos, a título personal, las situaciones que pudieran existir a la fecha de la firma de este Convenio que, computadas en conjunto y anualmente, resultasen superiores a las establecidas en el mismo.</p>
+    <p class="articulo"><a id="ind_10">Artículo 9. Comité Paritario de Vigilancia e Interpretación.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Queda encomendada la vigilancia e interpretación de los pactos contenidos en el presente Convenio a un Comité Paritario que se dará por constituido el mismo día de su publicación en el «Boletín Oficial del Estado». Este Comité cumplirá sus funciones interpretativas únicamente a petición de la representación correspondiente de cualquiera de las dos partes firmantes, por lo que el consultante deberá dirigirse inexcusablemente por escrito a la representación que corresponda, aportando sus argumentos interpretativos, con el fin de que ésta promueva, en su caso, la reunión del Comité, que deberá resolver en igual plazo al señalado en el apartado siguiente.</p>
+    <p class="parrafo">2. Además de las funciones de vigilancia e interpretación del Convenio, en supuestos de conflicto de carácter colectivo suscitados por aplicación de preceptos del presente Convenio, cualquiera de las dos partes firmantes del mismo solicitará la inmediata reunión del Comité Paritario a efectos de ofrecer su mediación, interpretar el Convenio con carácter previo a cualquier otro órgano administrativo o jurisdiccional, y ofrecer su arbitraje en su caso. Los promotores del conflicto colectivo deberán, en todo caso, remitir por escrito a una de las dos partes firmantes el detalle de la controversia o duda suscitada e, intentado sin efecto el obligado trámite interpretativo ante el Comité o transcurridos quince días hábiles desde su solicitud sin que se haya celebrado, quedará expedita la vía administrativa o jurisdiccional correspondiente. Los acuerdos del Comité, interpretativos de este Convenio, tendrán la misma eficacia que la de la cláusula que haya sido interpretada.</p>
+    <p class="parrafo">Será competente igualmente en todas aquellas materias a las que hace referencia el artículo 85.3 del Estatuto de los Trabajadores, pronunciándose, en el supuesto de posibles desacuerdos que puedan surgir en la negociación para la modificación sustancial de las condiciones de trabajo establecidas en este Convenio colectivo, cuando cualquiera de las partes lo solicite, conforme a los plazos y procedimiento establecidos en el artículo 41.6 del Estatuto de los Trabajadores. Cuando el Comité Paritario de Vigilancia e Interpretación no alcanzara un acuerdo, las partes deberán recurrir a los procedimientos de aplicación general y directa que se establezcan en los acuerdos interprofesionales previstos en el artículo 83 del Estatuto de los Trabajadores para solventar de manera efectiva las discrepancias en la negociación para la modificación sustancial de las condiciones de trabajo establecidas en este Convenio colectivo, incluida la posibilidad de someter las discrepancias a un arbitraje, en cuyo caso el laudo arbitral tendrá la misma eficacia que los acuerdos en período de consultas y solo será recurrible conforme al procedimiento y en base a los motivos establecidos en el artículo 91 del Estatuto de los Trabajadores.</p>
+    <p class="parrafo">3. Pese a ser ésta una cláusula obligacional en lo que concierne a los firmantes, y normativa para los afectados por el ámbito de obligar del Convenio, las partes la establecen también para ellas con carácter normativo a los solos efectos de lo dispuesto en el artículo 86.3 del texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <p class="parrafo">4. Se mantiene la adhesión al Acuerdo sobre Solución Extrajudicial de Conflictos Laborales (ASEC), suscrito entre CEOE-CEPYME y los sindicatos mayoritarios y al que, en su caso, le sustituya, así como a su Reglamento de aplicación, que desarrollarán sus efectos en los ámbitos de obligar del Convenio colectivo Nacional de Empresas de Ingeniería y Oficinas de Estudios Técnicos.</p>
+    <p class="parrafo">Siempre que los conflictos sean de ámbito inferior a los previstos en el ASEC, podrá intentarse su solución ante organismos establecidos en otros Acuerdos autonómicos con la misma finalidad, si las partes en conflicto así lo decidiesen.</p>
+    <p class="parrafo">5. El Comité Paritario quedará integrado por cuatro representantes titulares y dos suplentes de cada una de las dos partes signatarias del Convenio, siendo designados por TECNIBERIA los miembros titulares y suplentes de la representación empresarial, así como el que, de ellos, vaya a actuar como Copresidente, haciéndoselo así saber a la otra representación. Por su parte, la representación sindical se dirigirá a la representación empresarial para comunicarle el nombre del Copresidente de su representación y de sus vocales titulares y suplentes.</p>
+    <p class="parrafo">6. El Comité previsto en este artículo, se reunirá dos veces al año, al menos, con objeto de hacer una evaluación de la evolución del empleo en el sector obligado por el ámbito funcional de este Convenio y en función de los datos que las partes puedan aportar a las reuniones que se celebren a tal fin.</p>
+    <p class="articulo"><a id="ind_11">Artículo 10. Período de prueba de ingreso.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Podrá concertarse por escrito un período de prueba, que en ningún caso podrá exceder de seis meses para los técnicos titulados, ni de tres meses para los demás trabajadores, excepto para los no cualificados, en cuyo caso la duración máxima será de quince días laborables. El empresario y el trabajador están, respectivamente, obligados a realizar las experiencias que constituyan el objeto de la prueba.</p>
+    <p class="parrafo">2. Durante el período de prueba el trabajador tendrá los derechos y obligaciones correspondientes a su categoría profesional y al puesto de trabajo que desempeñe, como si fuera de plantilla, excepto los derivados de la resolución de la relación laboral, que podrá producirse a instancia de cualquiera de las partes durante su transcurso.</p>
+    <p class="parrafo">3. Transcurrido el período de prueba sin que se haya producido el desistimiento, el contrato producirá plenos efectos, computándose el tiempo de los servicios prestado en la antigüedad del trabajador en la empresa. Las situaciones de incapacidad temporal, maternidad y adopción o acogimiento que afecten al trabajador durante el período de prueba interrumpen el cómputo del mismo siempre que se produzca acuerdo entre ambas partes.</p>
+    <p class="articulo"><a id="ind_12">Artículo 11. Provisión de vacantes.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">Se cubrirán libremente por la Dirección de la empresa las plazas, sean de nueva creación o vacantes, que hayan de ser ocupadas:</p>
+    <p class="parrafo_2">a) Por titulados, tanto en el campo técnico como administrativo.</p>
+    <p class="parrafo">b) Por otra categoría, en puestos de confianza, directivos o que impliquen función de mando a todos los niveles de la estructura.</p>
+    <p class="parrafo_2">En cualquier caso, se seguirán observando las normas que existieran con anterioridad en cada empresa.</p>
+    <p class="articulo"><a id="ind_13">Artículo 12. Promoción o ascensos.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Se concederá preferencia al personal subalterno al servicio de las empresas para que puedan ocupar plazas de categoría administrativa, siempre que obtengan igual puntuación a la de los aspirantes a ingreso en el examen que se convoque a tal fin.</p>
+    <p class="parrafo">2. Los auxiliares administrativos y los calcadores con cuatro años de antigüedad en su categoría, ascenderán respectivamente a la categoría inmediata superior, cuando se produzcan vacantes en estas categorías, sin precisar someterse a ninguna clase de prueba.</p>
+    <p class="parrafo">3. Para el ascenso o promoción de los trabajadores se requerirá con carácter único la capacidad de los mismos, o sea, la reunión de aptitudes mínimas para la ocupación de los distintos puestos de trabajo, y la dirección de la empresa valorará, a estos efectos, la asistencia de los trabajadores, con aprovechamiento, a cursos de formación que, a juicio de la empresa, estén relacionados con el puesto a ocupar.</p>
+    <p class="articulo"><a id="ind_14">Artículo 13. Reglas para la provisión de vacantes.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. En cuanto a las vacantes que se produzcan por creación de nuevos puestos de trabajo o para cubrir plazas que hayan quedado libres, la empresa tendrá en cuenta los siguientes principios básicos:</p>
+    <p class="parrafo_2">a) Todos los trabajadores afectados por este Convenio podrán concursar, solicitando cualquier vacante que se produzca de categoría superior.</p>
+    <p class="parrafo">b) La empresa, cuando lo juzgue necesario, podrá efectuar las pruebas pertinentes en orden a comprobar si se dan en los aspirantes los requisitos exigidos para el puesto que se pretenda cubrir.</p>
+    <p class="parrafo">c) En igualdad de conocimientos tendrán preferencia los aspirantes de la empresa a los ajenos a ella, y entre aquéllos los pertenecientes al mismo departamento donde exista la vacante. En los casos en que no se dé la preferencia incluida en el párrafo anterior o, dándose, existieran dos candidatos en igualdad de condiciones, se otorgará la vacante al más antiguo.</p>
+    <p class="parrafo">d) Para la evaluación de la medida en que se dan los requisitos exigidos en los aspirantes, se estará no sólo a lo dispuesto en el apartado b), sino a la valoración de los méritos que de todos los aspirantes ordene hacer la Dirección.</p>
+    <p class="parrafo">e) Todos los ascensos se considerarán hechos a prueba, confirmándose la designación en el caso de cobertura de puesto de mando a los seis meses, y en los restantes a los tres, salvo que de este período de prueba se deduzca la falta de idoneidad para la vacante del elegido, en cuyo caso continuará en su situación anterior, convocándose nuevamente la plaza.</p>
+    <p class="parrafo">f) Del tribunal que deba calificar las pruebas convocadas para cubrir puestos de nueva creación o vacantes, formará parte el miembro del Comité de Empresa o, en su defecto, el Delegado de Personal que se designe por la representación legal de los trabajadores.</p>
+    <p class="parrafo_2">2. En general, y por lo que se refiere a provisión de vacantes o puestos de nueva creación, las empresas seguirán observando las normas internas que sobre el particular existieran en las mismas con anterioridad a la entrada en vigor de este Convenio.</p>
+    <p class="articulo"><a id="ind_15">Artículo 14. Anuncio de convocatorias.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">En los avisos de convocatoria deberán figurar los siguientes requisitos:</p>
+    <p class="parrafo_2">a) Conocimientos que se exigen o titulación requerida.</p>
+    <p class="parrafo">b) Categoría dentro de la empresa del puesto a ocupar.</p>
+    <p class="parrafo">c) Definición de las funciones básicas a desempeñar dentro del puesto.</p>
+    <p class="parrafo">d) Enunciación y contenido básico de las pruebas a realizar.</p>
+    <p class="articulo"><a id="ind_16">Artículo 15. Formación.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. El trabajador tendrá derecho:</p>
+    <p class="parrafo_2">a) Al disfrute de los permisos necesarios para concurrir a exámenes, así como a una preferencia a elegir turno de trabajo, si tal es el régimen instaurado en la empresa, cuando curse con regularidad estudios para la obtención de un título académico o profesional.</p>
+    <p class="parrafo">b) A la adaptación de la jornada ordinaria de trabajo para la asistencia a cursos de formación profesional o a la concesión del permiso oportuno de formación o perfeccionamiento profesional con reserva del puesto de trabajo.</p>
+    <p class="parrafo_2">2. En todos los casos contemplados en el precedente apartado, la dirección de la empresa podrá exigir la presentación de certificados del centro de enseñanza que acrediten la asistencia del interesado. La falta de esta asistencia con carácter reiterado supondrá la supresión de los beneficios que en este artículo se establecen.</p>
+    <p class="parrafo">3. Las empresas darán conocimiento anualmente a la representación legal de los trabajadores, de los costos aplicados a la formación durante el ejercicio económico.</p>
+    <p class="parrafo">4. Todos los trabajadores tendrán acceso a los cursos de formación en la medida que reúnan los requisitos exigidos en la correspondiente convocatoria.</p>
+    <p class="parrafo">5. Las empresas que dediquen gastos a formación podrán disponer de un comité de formación, del que formarán parte, al menos, dos representantes designados por el Comité de Empresa o Delegados de Personal, sin que sea necesario que tales representantes sean vocales de dicho Comité de Empresa o Delegados de Personal. La misión de ese Comité será la de asesorar y garantizar una visión global del conjunto de la formación dentro de la empresa, facilitando sobre todo la adaptación de los trabajadores a los cambios tecnológicos.</p>
+    <p class="parrafo">6. Las empresas que obtengan fondos públicos especialmente para la formación, deberán disponer obligatoriamente de un Comité de Formación, que participará en la elaboración del plan anual que realice la Dirección de la empresa con dichos fondos para la formación de los trabajadores. A estos efectos, la Dirección pondrá a disposición del comité de formación el plan anual de formación, con al menos quince días de antelación a la presentación de dicho plan en la Fundación Tripartita para la Formación en el Empleo. El citado comité recibirá la misma información que la Dirección de la empresa esté obligada a facilitar a la Fundación Tripartita para la Formación en el Empleo. El referido comité estará formado paritariamente por dos representantes designados por la Dirección de la empresa y otros dos nombrados, de entre sus miembros, por el Comité de Empresa o Delegados de Personal.</p>
+    <p class="parrafo">Las solicitudes de los permisos individuales de formación financiados por Fundación Tripartita para la Formación en el Empleo se regirán por lo establecido en el correspondiente Acuerdo Nacional de Formación Continua a que se refiere el artículo 48 del presente Convenio.</p>
+    <p class="articulo"><a id="ind_17">Artículo 16. Dirección y control de la actividad laboral.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. El trabajador estará obligado a realizar el trabajo convenido bajo la dirección del empresariado o persona en quien éste delegue.</p>
+    <p class="parrafo">2. En el cumplimiento de la obligación de trabajar asumida en el contrato, el trabajador debe al empresario la diligencia y la colaboración en el trabajo que marquen las disposiciones legales, el presente Convenio y las órdenes o instrucciones adoptadas por aquél en el ejercicio regular de sus facultades de dirección y, en su defecto, por los usos y costumbres. En cualquier caso, el trabajador y el empresario se someterán en sus prestaciones recíprocas a las exigencias de la buena fe.</p>
+    <p class="parrafo">3. El empresario podrá adoptar las medidas que estime más oportunas de vigilancia y control para verificar el cumplimiento por el trabajador de sus obligaciones y deberes laborales, guardando en su adopción y aplicación la consideración debida a su dignidad humana y teniendo en cuenta la capacidad real de los trabajadores disminuidos, en su caso, sin perjuicio de lo establecido en el artículo 64 del texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <p class="parrafo">4. El empresario podrá verificar el estado de enfermedad o accidente del trabajador que sea alegado por éste para justificar sus faltas de asistencia al trabajo, mediante reconocimiento a cargo de personal médico. La negativa del trabajador a dichos reconocimientos podrá determinar la suspensión de los derechos económicos que pudieran existir a cargo del empresario por dichas situaciones.</p>
+    <p class="articulo"><a id="ind_18">Artículo 17. Clasificación profesional.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Los grupos profesionales, y las definiciones de las categorías que se recogen en la tabla salarial por niveles del presente Convenio, según las funciones o actividades del personal dentro de la empresa, serán los siguientes:</p>
+    <p class="parrafo_2">Titulados.</p>
+    <p class="parrafo_2">Personal titulado: Es el que se halla en posesión de un título o diploma universitario oficial de Ingeniero, Arquitecto, Licenciado o Doctor (antes, de Grado Superior), Ingeniero Técnico, Arquitecto Técnico, Aparejador y Diplomado (antes de Grado Medio), que está unido a la empresa por un vínculo de relación laboral concertado en razón del título que posee, para ejercer funciones específicas para las que el mismo le habilita y siempre que preste sus servicios en la empresa con carácter exclusivo o preferente por un sueldo o tanto alzado, sin sujeción a la escala habitual de honorarios de su profesión.</p>
+    <p class="parrafo">Con objeto de fomentar y facilitar el contrato de relevo, también se incluyen en este grupo los profesionales que, sin contar con las titulaciones universitarias antes citadas, tienen conocimientos equivalentes equiparados por la empresa y/o experiencia consolidada y acreditada en el ejercicio de la actividad profesional que ejerza en la empresa y reconocida por ésta.</p>
+    <p class="parrafo_2">Personal administrativo: Se integran en este grupo los empleados que tienen a su cargo las funciones propias de administración y gestión de las empresas en sus diversas áreas.</p>
+    <p class="parrafo_2">Jefes superiores: Son aquellos, provistos o no de poderes, que bajo la dependencia directa de la dirección o gerencia llevan la responsabilidad directa de dos o más departamentos o de una sucursal, delegación o agencia.</p>
+    <p class="parrafo">Jefe de primera: Es el empleado capacitado, provisto o no de poderes, que actúa a las órdenes inmediatas del Jefe superior, si lo hubiere, y lleva la responsabilidad directa de uno o más servicios. Están incluidas también aquellas personas que organizan o construyen la contabilidad de la empresa.</p>
+    <p class="parrafo">Los actuales Cajeros con firma, se mantendrán como categoría a extinguir con igual asimilación a Jefes de primera.</p>
+    <p class="parrafo">Jefe de segunda: Es el empleado, provisto o no de poderes, que a las órdenes inmediatas del Jefe de primera, si lo hubiere, está encargado de orientar, dirigir y dar unidad a una sección, distribuyendo los trabajos entre Oficiales, Auxiliares y demás personal que de él dependa.</p>
+    <p class="parrafo">Quedan adscritos a esta categoría los Traductores e Intérpretes Jurados de más de un idioma y los actuales Cajeros sin firma reconocida en entidades bancarias o de crédito, se mantendrán como categoría a extinguir con igual asimilación a Jefes de segunda.</p>
+    <p class="parrafo">Oficial de primera: Es aquel empleado que actúa a las órdenes de un Jefe, si lo hubiere, y que bajo su propia responsabilidad realiza con la máxima perfección burocrática trabajos que requieren iniciativa.</p>
+    <p class="parrafo">Se adscriben a esta categoría: Intérpretes Jurados de un idioma, Operadores de máquinas contables, Taquimecanógrafos en idioma nacional que tomen al dictado 130 palabras por minuto, traduciéndolas correcta y directamente a la máquina, así como las/os Telefonistas-Recepcionistas capacitados para expresarse en dos o más idiomas extranjeros.</p>
+    <p class="parrafo">Oficial de segunda: Es el empleado que con iniciativa y responsabilidad restringida y subordinado a un Jefe u Oficial de primera, si los hubiere, realiza trabajos de carácter secundario que sólo exigen conocimientos generales de la técnica administrativa.</p>
+    <p class="parrafo">Se adscriben a esta categoría las/os Telefonistas-Recepcionistas y los Traductores e Intérpretes no Jurados.</p>
+    <p class="parrafo">Auxiliar: Es el empleado mayor de dieciocho años que se dedica a operaciones elementales administrativas y en general a las puramente mecánicas inherentes al trabajo de la oficina o despacho.</p>
+    <p class="parrafo">Quedan adscritas a esta categoría las/os Telefonistas.</p>
+    <p class="parrafo">Aspirante: Se entenderá por aspirante al empleado menor de dieciocho años que trabaja en funciones propias de oficina, dispuesto a iniciarse en las funciones de ésta.</p>
+    <p class="parrafo">Técnicos y especialistas de oficina: Se integran en este grupo quienes cuenten con las titulaciones de formación profesional, o con la experiencia afín equivalente reconocida por la empresa, exigidas para la ejecución de las actividades propias de los Departamentos de las empresas incluidas en el ámbito funcional del presente Convenio.</p>
+    <p class="parrafo">Analista: Verifica análisis orgánicos de aplicaciones complejas para obtener la solución mecanizada de las mismas en cuanto se refiere a:</p>
+    <p class="parrafo_2">Cadenas de operaciones a seguir.</p>
+    <p class="parrafo">Diseño de documentos base.</p>
+    <p class="parrafo">Documentos a obtener.</p>
+    <p class="parrafo">Diseño de los mismos.</p>
+    <p class="parrafo">Ficheros a tratar: su definición.</p>
+    <p class="parrafo">Puesta a punto de las aplicaciones.</p>
+    <p class="parrafo">Creación de juegos de ensayo.</p>
+    <p class="parrafo">Enumeración de anomalías que puedan producirse y definición de su tratamiento.</p>
+    <p class="parrafo">Colaboración al programa de las pruebas de «lógica» de cada programa.</p>
+    <p class="parrafo">Finalización de los expedientes técnicos de aplicaciones complejas.</p>
+    <p class="parrafo_2">Técnico de cálculo o diseño: Es el empleado que, sin precisar de titulación, coadyuva con responsabilidad limitada, dentro de las especialidades propias de la Sección o Departamento en que trabaja, al desarrollo de funciones específicas de los técnicos titulados.</p>
+    <p class="parrafo">Programador de ordenador: Es el trabajador que debe tener un conocimiento profundo de las técnicas y recursos que maneja, enfocado principalmente a los lenguajes de programación existentes en el ordenador que utiliza, así como de las facilidades y ayuda que le presta al «software» para la puesta a punto de programas, correspondiéndole estudiar los procesos complejos definidos por los analistas, confeccionando organigramas más detallados de tratamiento. Le corresponde redactar programas en el lenguaje de programación que le sea indicado. Asimismo, confecciona juegos de ensayo, pone a punto los programas y completa los expedientes técnicos de los mismos.</p>
+    <p class="parrafo">Programador máquinas auxiliares: Planifica la realización de máquinas básicas, contribuyendo a la creación de los paneles o tarjetas de perforación precisos para la programación de las citadas máquinas auxiliares.</p>
+    <p class="parrafo">Delineante Proyectista: Es el empleado que, dentro de las especialidades propias de la sección en que trabaje, proyecta o detalla los trabajos del Técnico superior, a cuyas órdenes actúa, o el que, sin superior inmediato, realiza lo que personalmente concibe según los datos y condiciones técnicas exigidas por los clientes o por la empresa.</p>
+    <p class="parrafo">Técnico de primera: Es el empleado que actúa a las órdenes de un superior, y bajo su propia responsabilidad realiza trabajos técnicos que requieren iniciativa, propios del Departamento de la empresa al que esté adscrito.</p>
+    <p class="parrafo">Delineante: Es el técnico que está capacitado para el desarrollo de proyectos sencillos, levantamiento e interpretación de planos y trabajos análogos.</p>
+    <p class="parrafo">Operador de ordenador: Es el trabajador que realiza la ejecución en el ordenador de las aplicaciones, conociendo los componentes del ordenador, tanto a nivel de «hardware» como en las utilidades necesarias para desarrollar sus funciones. Deberá conocer la problemática que las aplicaciones presentan en el proceso de explotación.</p>
+    <p class="parrafo">Dibujante: Es el empleado que confecciona toda clase de rótulos, carteles y dibujos de carácter sencillo, desarrollando trabajos de esta índole bajo la dirección de un Delineante-Proyectista.</p>
+    <p class="parrafo">Técnicos de segunda: Es el empleado que con iniciativa y responsabilidad restringidas y subordinada, realiza trabajos técnicos secundarios propios del Departamento de la empresa al que esté adscrito.</p>
+    <p class="parrafo">Calcador: Es el que calca dibujos en papel transparente, realiza y acota croquis sencillos y efectúa otras labores análogas.</p>
+    <p class="parrafo">Perforista y Grabador: Son los trabajadores que realizan el perfecto manejo de las máquinas perforadoras y grabadoras, conociendo suficientemente la técnica de programación de dichas máquinas, formatos, tipos de validación, etc., y debiendo consultar las tablas, listados o documentos necesarios para desarrollar su trabajo.</p>
+    <p class="parrafo">Auxiliar Técnico: Es el empleado que se dedica a operaciones técnicas sencillas y auxiliares, propias del Departamento de la empresa en que se desarrolle sus funciones, y a las órdenes de un superior.</p>
+    <p class="parrafo_2">Servicios varios generales: Se integran en este grupo el personal subalterno de la empresa, que realiza funciones de guarda, vigilancia, control, limpieza de locales y recados en el interior y exterior de la empresa, así como el personal de oficios varios con funciones necesarias para desarrollar las actividades propias de los Departamentos de las empresas obligadas por el ámbito funcional de este Convenio.</p>
+    <p class="parrafo_2">Conserje: Es el empleado que, con un mínimo de tres personas a sus órdenes, tiene a su cargo la vigilancia y responsabilidad de los servicios subalternos, ordenanzas, botones y de limpieza. Tiene como misión específica vigilar las puertas y accesos a los locales de la empresa.</p>
+    <p class="parrafo">Ordenanza: Tendrá esta categoría el subalterno mayor de dieciocho años, cuya misión consiste en hacer recados dentro o fuera de la oficina, recoger y entregar correspondencia, así como otros trabajos secundarios ordenados por sus Jefes.</p>
+    <p class="parrafo">Vigilante: Tiene a su cargo el servicio de vigilancia diurna o nocturna de los locales.</p>
+    <p class="parrafo">Botones: Es el subalterno menor de dieciocho años que realiza recados, repartos y otras funciones de carácter elemental.</p>
+    <p class="parrafo">Personal de limpieza: Está ocupado de la limpieza de los locales de las empresas.</p>
+    <p class="parrafo">Oficial de primera; Oficial de segunda; Ayudante; Peón; de oficios varios: Incluye al personal, como Mecánicos, Carpinteros, Electricistas, etcétera, que realizan los trabajos propios de un oficio cualquiera de las categorías señaladas.</p>
+    <p class="parrafo">Los Conductores de automóviles serán considerados oficiales de primera si ejecutan toda clase de reparaciones que no exijan elementos de taller. En los demás casos serán, como mínimo, Oficiales de segunda.</p>
+    <p class="parrafo">Quedan asimilados a la categoría de Ayudantes los siguientes profesionales:</p>
+    <p class="parrafo_2">Operador de reproductora de planos: Es el encargado de la obtención de copias de un original impreso en vegetal u otro papel, graduando la velocidad con el fin de que las copias tengan la máxima nitidez.</p>
+    <p class="parrafo">Operador de fotocopiadora: Está encargado de la obtención de copias de un original de acuerdo con las especificaciones requeridas, teniendo además la función de la limpieza total de la máquina y la puesta a punto para su buen funcionamiento.</p>
+    <p class="parrafo_2">Cualquiera de las categorías que se recogen en el presente artículo, podrán ser desempeñadas por personal masculino o femenino indistintamente.</p>
+    <p class="parrafo">2. Dentro del mes siguiente al de publicación del Convenio en el «Boletín Oficial del Estado» se creará una Comisión mixta para la definición y concreción, en su caso, de categorías profesionales, que estará constituida por cuatro personas, con dos suplentes, designados por cada una de las dos partes firmantes del presente Convenio. Estas personas deberán ser miembros de la Comisión Deliberadora del Convenio.</p>
+    <p class="parrafo">La Comisión Mixta prevista en el párrafo anterior concluirá sus trabajos, en todo caso, el día 30 de noviembre de 2011. Las redefiniciones de categorías que se aprueben por la Comisión Mixta, serán a su vez elevadas a la Comisión Negociadora del Convenio para su aprobación definitiva debiendo remitirse por la Comisión Negociadora del Convenio dentro de un plazo de quince días a la Dirección General de Trabajo a efectos de su inscripción como anexo del presente Convenio y posterior publicación en el «Boletín Oficial del Estado». A partir de la fecha de la citada publicación las empresas dispondrán de un plazo de seis meses para la adaptación, cuando proceda, de las categorías profesionales que sean redefinidas por la mencionada Comisión mixta.</p>
+    <p class="parrafo">3. La relación de categorías profesionales incluida en la tabla salarial del presente Convenio es meramente enunciativa, sin que suponga obligación de tener cubiertas todas las enumeradas si la importancia y necesidad de la empresa no lo requiere.</p>
+    <p class="articulo"><a id="ind_19">Artículo 18. Contratos de duración determinada del artículo 15.1.b) y a) del texto refundido de la Ley del ET. Productividad y empleo estable.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. La duración máxima del contrato por circunstancias del mercado, acumulación de tareas o exceso de pedidos, previsto en el artículo 15.1.b) del texto refundido de la Ley del Estatuto de los Trabajadores, será de doce meses dentro de un período de dieciocho meses.</p>
+    <p class="parrafo">En el caso de que dichos contratos se concierten por un período de tiempo inferior al máximo, podrán ser prorrogados mediante acuerdo de las partes, por una sola vez, sin que la duración total del contrato pueda exceder del límite máximo establecido en el párrafo anterior.</p>
+    <p class="parrafo">En estos contratos eventuales por circunstancias de la producción, los períodos de prueba establecidos en el artículo 10.1 se reducirán a la mitad.</p>
+    <p class="parrafo">2. El contrato de duración determinada establecido en el artículo 15.1.a) del TRLET deberá contener para su validez la especificación o identificación suficiente, con precisión y claridad del servicio o proyecto que constituya su objeto. En caso contrario, se entenderá que el contrato se ha suscrito por tiempo indefinido.</p>
+    <p class="parrafo">Cuando el contrato por servicio o proyecto determinado comprenda o incluya la fase de trabajos de elaboración de los estudios necesarios y de redacción del proyecto en las oficinas de la empresa, así como la fase de supervisión de la ejecución del proyecto o montaje en obra, la precisión y claridad exigidas para la validez del contrato en el párrafo anterior, deberán comprender y se extenderán a las dos citadas fases de los trabajos que integran dicho contrato por proyecto o servicio determinado.</p>
+    <p class="parrafo">Los contratos de obra y/o servicio suscritos desde el 18 de junio de 2010, podrán tener, de conformidad con la legislación vigente, una duración máxima de cuatro años.</p>
+    <p class="parrafo">3. El contrato para el fomento de la contratación indefinida se regulará por lo dispuesto en la disposición adicional primera de la Ley 12/2001, de 9 de julio, de Medidas Urgentes de Reforma del Mercado de Trabajo para el Incremento del Empleo y la Mejora de su Calidad, con las modificaciones introducidas por Ley 43/2006, de 29 de diciembre, para la mejora del crecimiento y del empleo, o disposición legal que la sustituya.</p>
+    <p class="parrafo">El Comité Paritario previsto en el artículo 9 del presente Convenio, recabará del Servicio Público de Empleo la información necesaria para estudiar la evolución de la conversión de contratos temporales en indefinidos, dentro del sector.</p>
+    <p class="parrafo">4. A efectos del mantenimiento e incremento de la productividad y del empleo estable, las representaciones firmantes del presente Convenio, entienden la necesidad de profundizar en la regulación de la contratación dentro del sector, adecuando la misma a la realidad de la actividad que se presta, como lo han hecho ya en los precedentes apartados de este artículo y pretendiendo, con ello, contribuir a la competitividad de las empresas y a la mejora del empleo mediante la reducción de la temporalidad en aquellos trabajos que no sean eminentemente de carácter temporal.</p>
+    <p class="parrafo">La estabilidad del empleo, cuando exista estabilidad en la necesaria carga de trabajo en la empresa, en la medida en que el capital humano constituye un activo fundamental en las empresas del sector, debe ser un elemento a tener presente como garantía de la competitividad para las mismas y de seguridad para los trabajadores y las propias empresas, siempre que no se trate de actividades de naturaleza temporal.</p>
+    <p class="parrafo">En consonancia con los principios reconocidos en los precedentes párrafos, la contratación laboral en el sector que lleven a cabo las empresas afectadas por el presente Convenio, deberá respetar y ajustarse a tales principios, que las partes firmantes consideran básicos.</p>
+    <p class="articulo"><a id="ind_20">Artículo 19. Contratos a tiempo parcial y de relevo.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Tendrá la consideración de contrato de trabajo a tiempo parcial el previsto en el apartado 1 y siguientes del artículo 12 del texto refundido de la Ley del Estatuto de los Trabajadores, y en los términos en él establecidos, o disposición legal que lo sustituya.</p>
+    <p class="parrafo">2. El contrato de relevo es el que se concierta con un trabajador desempleado o que tuviese concertado con la empresa un contrato de duración determinada para sustituir al trabajador de la empresa que accede a la jubilación parcial prevista en el Real Decreto 1131/2002, de 31 de octubre, simultáneamente con el contrato a tiempo parcial que se pacte con este último, según lo establecido en el apartado anterior.</p>
+    <p class="parrafo">3. La jubilación parcial y el contrato de relevo se regirán por lo establecido en el Real Decreto 1131/2002, de 31 de octubre, o normativa que lo sustituya.</p>
+    <p class="articulo"><a id="ind_21">Artículo 20. Trabajos de categoría superior.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. El trabajador que realice funciones de categoría superior a las que correspondan a la categoría profesional que tuviera reconocida, por un período superior a seis meses durante un año u ocho durante dos años, puede reclamar ante la dirección de la empresa la clasificación profesional adecuada.</p>
+    <p class="parrafo">2. Contra la negativa de la empresa y previo informe del comité o, en su caso, de los delegados de personal, puede reclamar ante la jurisdicción competente.</p>
+    <p class="parrafo">3. Cuando se desempeñen funciones de categoría superior, pero no proceda legal o convencionalmente el ascenso, el trabajador tendrá derecho a la diferencia retributiva entre la categoría asignada y la función que efectivamente realice.</p>
+    <p class="articulo"><a id="ind_22">Artículo 21. Trabajos de categoría inferior.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">Si por necesidades perentorias o imprevisibles de la actividad productiva el empresario precisara destinar a un trabajador a tareas correspondientes a categoría inferior a la suya, sólo podrá hacerlo por el tiempo imprescindible, manteniéndole la retribución y demás derechos derivados de su categoría profesional y comunicándolo a los representantes legales de los trabajadores.</p>
+    <p class="articulo"><a id="ind_23">Artículo 22. Prevención de riesgos laborales. Comisión de Seguridad y Salud en el Trabajo. Delegados de prevención.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Las partes firmantes del presente Convenio, son plenamente conscientes de la importancia que tiene preservar la vida humana y el derecho a la integridad física de todos los que intervienen con su trabajo en el proceso productivo de este sector, aunque éste no sea de especial riesgo, y por ello, llaman muy especialmente la atención de los destinatarios de este Convenio, para que cumplan y hagan cumplir las normas de prevención de riesgos laborales establecida por la legislación vigente en la materia, extremando la vigilancia de las obligaciones legales de prevención que tienen las empresas y las de cumplimiento por parte de sus trabajadores de las normas establecidas y de las instrucciones que al respecto reciban.</p>
+    <p class="parrafo">2. De conformidad con lo previsto en el artículo 35 de la Ley de Prevención de Riesgos Laborales, y cuando no existan representantes legales del personal, los trabajadores podrán elegir directamente, por mayoría simple, quien o quienes habrán de desempeñar el cometido de delegado de prevención, procurando siempre que tenga una adecuada formación en la materia, y hasta tanto exista representación legal de los trabajadores.</p>
+    <p class="parrafo">3. Se constituye la Comisión Sectorial de Seguridad y Salud en el Trabajo, que queda integrada por cuatro representantes de cada una de las dos partes firmantes del presente Convenio, y que serán designados, una vez éste entre en vigor, por las respectivas organizaciones firmantes. De entre ellos, se designará, por cada parte, un Copresidente de la Comisión.</p>
+    <p class="parrafo">El reglamento de funcionamiento de esta Comisión Sectorial tendrá el mismo contenido que el del Comité Paritario previsto en el artículo 9 de este Convenio, sólo con las modificaciones precisas en cuanto a denominaciones y miembros que lo integran.</p>
+    <p class="parrafo">Las funciones de la Comisión Sectorial serán las de estudio, propuesta y ejecución, en su caso, de las acciones en materia de prevención de riesgos, dentro del sector, que puedan financiarse con asignaciones de recursos hechas por la Fundación para la Prevención de Riesgos Laborales o instituciones similares que las convoquen y concedan, siempre que tales acciones sean acordadas en el seno de la Comisión Sectorial.</p>
+    <p class="articulo"><a id="ind_24">Artículo 23. Jornada laboral.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. A partir del 1 de enero de 2011, la jornada ordinaria máxima de trabajo efectivo, en cómputo anual, será de mil ochocientas (1.800) horas. La distribución semanal de la jornada ordinaria anual podrá pactarse con los representantes de los trabajadores en la empresa, teniendo en cuenta que, en ningún caso, se podrán realizar más de nueve horas ordinarias diarias de trabajo efectivo. De acuerdo con lo establecido en el artículo 37.2 del texto refundido de la Ley del Estatuto de los Trabajadores, ninguna fiesta laboral será recuperable.</p>
+    <p class="parrafo">2. Las empresas que tengan establecida jornada intensiva durante el verano no podrán rebasar las 36 horas semanales durante el período en que la tengan implantada.</p>
+    <p class="parrafo">3. En las empresas en que se realice jornada continuada, las condiciones de temporada más beneficiosa se mantendrán tal y como actualmente se realizan en cada empresa.</p>
+    <p class="parrafo">4. Todo trabajador desplazado a otra empresa u obras por razón de servicio, se atendrá al horario del centro del trabajo de destino, si bien, en cuanto al cómputo de las horas trabajadas durante el tiempo de su desplazamiento, se respetarán las existentes en su empresa de origen.</p>
+    <p class="parrafo">5. Cuando de las 14 festividades que anualmente comprende el calendario oficial, según el artículo 37.2 del texto refundido de la Ley del Estatuto de los Trabajadores, al menos tres de ellas coincidan en sábado o domingo sin ser trasladadas a otro día de la semana, la jornada máxima de trabajo efectivo citada en el anterior apartado 1 de este artículo se reducirá para ese año en ocho horas.</p>
+    <p class="parrafo">6. La jornada laboral de los días 24 y 31 de diciembre no serán laborables ni recuperables. En el cómputo anual máximo establecido en el anterior apartado 1, ya se ha tenido en cuenta lo pactado en este apartado</p>
+    <p class="parrafo">7. En las empresas que no la tengan establecida, podrá pactarse una jornada flexible en las entradas y salidas, respetándose un número de horas de presencia común obligada atendiendo a las necesidades de cada empresa.</p>
+    <p class="articulo"><a id="ind_25">Artículo 24. Vacaciones.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Todos los trabajadores al servicio de la empresa disfrutarán de 23 días laborables de vacaciones anuales retribuidas.</p>
+    <p class="parrafo">Las empresas que tuvieran establecidas condiciones más favorables podrán aplicar lo establecido en el artículo 7 del presente Convenio.</p>
+    <p class="parrafo">2. Salvo en las empresas que tengan establecido un período fijo anual para vacar la totalidad de sus trabajadores, el período de vacaciones podrá ser fraccionado por acuerdo entre empresa y trabajador, estableciéndose un período mínimo por año, de al menos ocho días continuados laborales, siempre que el trabajador así lo solicite a la empresa con la antelación prevista en el apartado 3 del artículo 38</p>
+    <p class="articulo"><a id="ind_26">Artículo 25. Permisos retribuidos.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Los trabajadores, previo aviso y justificación, podrán ausentarse del trabajo, con derecho a remuneración, por alguno de los motivos y por el tiempo siguiente:</p>
+    <p class="parrafo_2">a) Quince días naturales en caso de matrimonio.</p>
+    <p class="parrafo">b) Dos días por el nacimiento de hijo y por el fallecimiento, accidente o enfermedad graves, hospitalización o intervención quirúrgica sin hospitalización que precise reposo domiciliario, de parientes hasta el segundo grado de consanguinidad o afinidad, salvo en el caso de fallecimiento del cónyuge, padres o hijos en el que el permiso será el establecido en el siguiente inciso c). Cuando, con tal motivo, el trabajador necesite hacer un desplazamiento al efecto de más de doscientos kilómetros, por cada uno de los viajes de ida y vuelta, el plazo será de cuatro días.</p>
+    <p class="parrafo">c) Cuatro días en los casos de fallecimiento del cónyuge, padres o hijos, incluyéndose en este tiempo los posibles desplazamientos.</p>
+    <p class="parrafo">d) Un día por traslado de domicilio habitual.</p>
+    <p class="parrafo">e) Por el tiempo indispensable, para el cumplimiento de un deber inexcusable de carácter público y personal. Cuando el cumplimiento del deber antes referido suponga la imposibilidad de la prestación del trabajo debido en más del veinte por ciento de las horas laborables en un período de tres meses, podrá la empresa pasar al trabajador afectado a la situación de excedencia forzosa. En el supuesto de que el trabajador por cumplimiento del deber o desempeño del cargo perciba una indemnización, se descontará el importe de la misma del salario a que tuviera derecho en la empresa.</p>
+    <p class="parrafo">f) Para realizar funciones sindicales o de representación del personal en los términos establecidos en la Ley y en el presente Convenio.</p>
+    <p class="parrafo_2">2. En sustitución del permiso previsto en el artículo 37.4 TRLET, por lactancia de un hijo menor de nueve meses, la madre trabajadora podrá optar por la acumulación de esa hora diaria de permiso en jornadas completas de libranza, que deberán disfrutarse de forma ininterrumpida inmediatamente a continuación de la suspensión por parto prevista en el artículo 48.4 TRLET, siendo el máximo total de semanas en que podrá ver incrementado dicho descanso maternal, de dos semanas ininterrumpidas, que se sumarán a las legalmente establecidas por dicho descanso.</p>
+    <p class="parrafo">En el supuesto de que la trabajadora extinguiese el contrato de trabajo antes de que el hijo cumpla los nueve meses, la empresa podrá deducir de la liquidación que corresponda a la trabajadora la cuantía correspondiente a los permisos por lactancia no consolidados, disfrutados anticipadamente, que se hayan podido acumular a la suspensión por maternidad legalmente establecida.</p>
+    <p class="articulo"><a id="ind_27">Artículo 25 bis. Conciliación de la vida familiar y laboral.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">En los derechos y deberes de los trabajadores con responsabilidades familiares, las partes respectivas de la relación laboral deberán tener en cuenta las normas que al respecto establezca la Ley de Conciliación de la Vida Familiar y Laboral vigente en cada momento.</p>
+    <p class="articulo"><a id="ind_28">Artículo 26. Permisos sin sueldo.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Los trabajadores que cuenten con una antigüedad mínima de un año en la empresa, tendrán derecho a disfrutar de permiso sin sueldo por un máximo de un mes y por una sola vez al año.</p>
+    <p class="parrafo">2. Alternativamente, dicho permiso será fraccionable en dos períodos máximos de quince días naturales, uno en cada semestre del año.</p>
+    <p class="parrafo">3. Excepto en los casos en que se destinen a la formación, de acuerdo con lo pactado en el artículo 15.1 del presente Convenio, las empresas podrán denegar la concesión de estos permisos cuando en las mismas fechas se encuentren disfrutándolos el siguiente número de trabajadores:</p>
+    <p class="parrafo_2">Empresas de 1 a 20 trabajadores: un trabajador.</p>
+    <p class="parrafo">Empresas de 21 a 50 trabajadores: dos trabajadores.</p>
+    <p class="parrafo">Empresas de 51 a 100 trabajadores: tres trabajadores.</p>
+    <p class="parrafo">Empresas de más de 100 trabajadores: más del 3% del personal.</p>
+    <p class="parrafo_2">En estos casos, el número de trabajadores indicado no podrá pertenecer a un mismo departamento de la empresa.</p>
+    <p class="articulo"><a id="ind_29">Artículo 27. Faltas y sanciones.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Las faltas cometidas por los trabajadores al servicio de las empresas reguladas por este Convenio se clasificarán atendiendo a su importancia, reincidencia e intención, en leves, graves y muy graves, de conformidad con lo que se dispone en el presente artículo y en las normas vigentes del ordenamiento jurídico laboral en lo que resulten de pertinente aplicación.</p>
+    <p class="parrafo_2">A) Se considerarán faltas leves:</p>
+    <p class="parrafo_2">Tres faltas de puntualidad durante un mes sin que exista causa justificada.</p>
+    <p class="parrafo">La no comunicación, con la antelación debida, de su falta al trabajo por causa justificada, a no ser que pruebe la imposibilidad de hacerlo.</p>
+    <p class="parrafo">Falta de aseo y limpieza personal.</p>
+    <p class="parrafo">Falta de atención y diligencia con los clientes.</p>
+    <p class="parrafo">Discusiones que repercutan en la buena marcha de los servicios.</p>
+    <p class="parrafo">Faltar al trabajo un día al mes sin causa justificada.</p>
+    <p class="parrafo">La embriaguez ocasional.</p>
+    <p class="parrafo_2">B) Son faltas graves:</p>
+    <p class="parrafo_2">Faltar dos días al trabajo sin justificación.</p>
+    <p class="parrafo">La simulación de enfermedad o accidente.</p>
+    <p class="parrafo">Simular la presencia de otro trabajador, valiéndose de su ficha, firma, tarjeta o medio de control.</p>
+    <p class="parrafo">Cambiar, mirar o revolver los armarios y ropas de los compañeros sin la debida autorización.</p>
+    <p class="parrafo">Las cometidas contra la disciplina en el trabajo o contra el respeto debido a sus superiores.</p>
+    <p class="parrafo">La reincidencia en las faltas leves, salvo las de puntualidad, aunque sean de distinta naturaleza, dentro de un trimestre, cuando hayan mediado sanciones.</p>
+    <p class="parrafo">El abandono del trabajo sin causa justificada.</p>
+    <p class="parrafo">La negligencia en el trabajo cuando cause perjuicio grave.</p>
+    <p class="parrafo_2">C) Son faltas muy graves:</p>
+    <p class="parrafo_2">Faltar al trabajo más de dos días al mes sin causa justificada. No se considerará injustificada la falta al trabajo que derive de la detención del trabajador, mientras no se trate de sanción firme impuesta por la autoridad competente y siempre que el hecho de la detención haya sido puesto en conocimiento de la Dirección de la empresa antes de transcurridos cuatro días hábiles de ausencia al trabajo. En todo caso, la empresa no vendrá obligada a abonar los salarios correspondientes a los días de ausencia al trabajo por causa de detención.</p>
+    <p class="parrafo">El fraude, la deslealtad y abuso de confianza en las gestiones encomendadas.</p>
+    <p class="parrafo">El hurto y el robo tanto a los demás trabajadores como a la empresa o a cualquier persona dentro de los locales de la empresa o fuera de la misma, durante acto de servicio. Quedan incluidos en este inciso el falsear datos ante la representación legal de los trabajadores, si tales falsedades tienen como finalidad maliciosa el conseguir algún beneficio.</p>
+    <p class="parrafo">La simulación comprobada de enfermedad; inutilizar, destrozar o causar desperfectos en máquinas, aparatos, instalaciones, edificios, enseres y departamentos de la empresa; haber recaído sobre el trabajador sentencia de los Tribunales de Justicia competentes por delitos de robo, hurto, estafa y malversación, cometidos fuera de la empresa, que pueda motivar desconfianza hacia su autor; la continua y habitual falta de aseo y limpieza personal, que produzca quejas justificadas de los compañeros; la embriaguez durante el trabajo; dedicarse a trabajos de la misma actividad que impliquen competencia a la empresa, si no media autorización de la misma; los malos tratos de palabra u obra o falta grave de respeto y consideración a los jefes, compañeros o subordinados, considerándose como tales las conductas sexistas legalmente tipificadas como acoso sexual, y las conductas de acoso moral también legalmente tipificadas; abandonar el trabajo en puestos de responsabilidad; la reincidencia en falta grave, aunque sea de distinta naturaleza, dentro del mismo trimestre, siempre que hayan sido objeto de sanción; y demás establecidas en el artículo 54 del texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <p class="parrafo_2">2. Las sanciones que las empresas podrán aplicar, según la gravedad y circunstancias de las faltas cometidas, serán las siguientes:</p>
+    <p class="parrafo_2">A) Faltas leves:</p>
+    <p class="parrafo_2">Amonestación verbal.</p>
+    <p class="parrafo">Amonestación por escrito.</p>
+    <p class="parrafo">Suspensión de empleo y sueldo de un día.</p>
+    <p class="parrafo_2">B) Faltas graves:</p>
+    <p class="parrafo_2">Suspensión de empleo y sueldo de uno a diez días.</p>
+    <p class="parrafo">Inhabilitación, por plazo no superior a un año, para el ascenso a la categoría superior.</p>
+    <p class="parrafo_2">C) Faltas muy graves:</p>
+    <p class="parrafo_2">Pérdida temporal o definitiva de la categoría profesional.</p>
+    <p class="parrafo">Suspensión de empleo y sueldo de once días a dos meses.</p>
+    <p class="parrafo">Inhabilitación durante dos años o definitivamente para pasar a otra categoría.</p>
+    <p class="parrafo">Despido.</p>
+    <p class="parrafo_2">Para la aplicación de las sanciones que anteceden se tendrá en cuenta el mayor o menor grado de responsabilidad del que cometa la falta, categoría profesional del mismo y repercusión del hecho en los demás trabajadores y en la empresa.</p>
+    <p class="parrafo">3. La facultad de imponer las sanciones corresponde a la dirección de la empresa, que pondrá en conocimiento de los representantes legales de los trabajadores las que se refieran a faltas graves o muy graves.</p>
+    <p class="parrafo">Será necesaria la instrucción de expediente en la imposición de sanciones a los trabajadores que ostenten cargos electivos sindicales, y en aquellos otros casos establecidos en la legislación en vigor o lo decida la empresa. La formación de expediente se ajustará a las siguientes normas:</p>
+    <p class="parrafo_2">a) Se iniciará con una orden escrita del jefe de la empresa, con la designación del instructor y del secretario. Comenzarán las actuaciones tomando declaración al autor de la falta y a los testigos, admitiendo cuantas pruebas aporten. En los casos de falta muy grave, si el instructor lo juzga pertinente, propondrá a la dirección de la empresa la suspensión de empleo y sueldo del inculpado por el tiempo que dure la incoación del expediente, previa audiencia de los representantes legales de los trabajadores.</p>
+    <p class="parrafo">b) La tramitación del expediente, si no es preciso aportar pruebas de cualquier clase que sean de lugares distintos a la localidad que se incoe, se terminará en un plazo no superior a veinte días. En caso contrario, se efectuará con la máxima diligencia, una vez incorporadas las pruebas al expediente.</p>
+    <p class="parrafo">c) La resolución recaída se comunicará por escrito, expresando las causas que la motivaron, debiendo firmar el duplicado el interesado. Caso de que se negase a firmar, se le hará la notificación ante testigos.</p>
+    <p class="parrafo_2">4. Las empresas anotarán en los expedientes personales de sus trabajadores las sanciones por faltas graves o muy graves que se les impongan, anotando también las reincidencias en las faltas leves. La prescripción de las faltas se producirá según lo establecido en el artículo 60.2 del texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <p class="articulo"><a id="ind_30">Artículo 28. Antigüedad.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Las bonificaciones por años de servicio, como premio de vinculación a la empresa respectiva, consistirán, en este orden, en cinco trienios del cinco por ciento cada uno del salario base pactado para su categoría en las tablas salariales del presente Convenio, tres trienios siguientes del diez por ciento cada uno y un último trienio del cinco por ciento del indicado salario.</p>
+    <p class="parrafo">2. No obstante, de acuerdo con lo pactado en el artículo 8, y en sus propios términos, aquellas empresas que vinieran satisfaciendo por el concepto de antigüedad un porcentaje por trienio superior a los indicados en el apartado anterior, los trabajadores a ellas vinculados y en activo en la fecha de 18 de septiembre de 1980, continuarán manteniendo a título personal la condición más beneficiosa que vinieren disfrutando, sin que, en ningún caso puedan superarse las limitaciones que establecía el artículo 25 del Estatuto de los Trabajadores, de 10 de marzo de 1980, que se mantienen.</p>
+    <p class="parrafo">En el supuesto contemplado en el párrafo precedente, para los trabajadores que en el mismo se mencionan, y siempre con las limitaciones en él establecidas, la antigüedad no será absorbible en ningún caso.</p>
+    <p class="parrafo">3. Los trienios se devengarán a partir del 1 de enero del año en que se cumplan y todos ellos se abonarán con arreglo a la última categoría y sueldo base de Convenio que tenga el trabajador.</p>
+    <p class="articulo"><a id="ind_31">Artículo 29. Prestaciones por enfermedad y accidente de trabajo.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Aparte de lo establecido en la Ley de la Seguridad Social sobre indemnizaciones, se respetarán las condiciones más beneficiosas que, en virtud de costumbre o concesión espontánea de las empresas, estén establecidas.</p>
+    <p class="parrafo">2. Las empresas afectadas por este Convenio, desde el quinto día de la correspondiente baja, inclusive, en enfermedades de más de 30 días de duración, complementarán las prestaciones económicas de la Seguridad Social de la incapacidad temporal (IT) por enfermedad o accidente de trabajo hasta el 100 por 100 del salario durante un plazo máximo de doce meses a partir de la baja.</p>
+    <p class="parrafo">Este complemento se podrá prorrogar, con un límite de seis meses más, cuando el organismo competente reconozca expresamente la situación de prórroga de la prestación económica de la incapacidad temporal, por presumirse que durante la prórroga el trabajador puede ser dado de alta médica por curación.</p>
+    <p class="parrafo">3. Los empleados están obligados, salvo imposibilidad manifiesta y justificada, a cursar la baja de la Seguridad Social dentro de las cuarenta y ocho horas. Habrán de prestarse también a ser reconocidos por el médico que designe la empresa, al objeto de que éste informe sobre la imposibilidad de prestar servicio. La resistencia del empleado a ser reconocido establecerá la presunción de que la enfermedad es simulada. En caso de discrepancia entre el médico de la empresa y el del empleado, se someterá la cuestión a la Inspección Médica de la Seguridad Social, cuyo dictamen será decisivo.</p>
+    <p class="articulo"><a id="ind_32">Artículo 30. Seguro complementario de accidentes de trabajo.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Para cubrir los riesgos de los viajes de servicio, la dirección de la empresa concertará el establecimiento de un seguro de accidentes, complementario del obligatorio, siempre que no tenga en vigor algún otro seguro de más amplia cobertura.</p>
+    <p class="parrafo">El capital asegurado no será nunca inferior a 22.000 euros, y cubrirá las contingencias de muerte, incapacidad permanente absoluta y gran invalidez, derivadas de accidente de trabajo.</p>
+    <p class="parrafo">2. La indemnización convenida en el apartado 1 anterior, tendrá en todo caso la consideración de percepción a cuenta de cualesquiera cantidades que pudieran ser reconocidas al trabajador como consecuencia de responsabilidades económicas que se imputen a la empresa por accidente, siendo, por tanto, deducible de aquéllas.</p>
+    <p class="articulo"><a id="ind_33">Artículo 31. Retribuciones.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">Los salarios y remuneraciones de todas clases establecidos en el presente Convenio, tienen el carácter de mínimos, pudiendo ser mejorados por concesión de las empresas o contratos individuales de trabajo.</p>
+    <p class="articulo"><a id="ind_34">Artículo 32. Pago mensual.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">Como norma general, el pago de salarios se efectuará mensualmente.</p>
+    <p class="articulo"><a id="ind_35">Artículo 33. Tablas de niveles salariales.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Los salarios pactados en el presente Convenio para el año 2010, en cómputo anual, y agrupadas por niveles las distintas categorías profesionales, son los siguientes:</p>
+    <table class="tabla" summary="Tabla de datos">
+        <tr>
+            <td><p class="cuerpo_tabla_centro"></p></td>
+            <th><p class="cabeza_tabla">Mes × 14</p></th>
+            <th><p class="cabeza_tabla">Anual</p></th>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 1. Licenciados y titulados 2.º y
+            3.<sup>er</sup> ciclo universitario y Analista.</p></td>
+            <td><p class="cuerpo_tabla_der">1.638,40</p></td>
+            <td><p class="cuerpo_tabla_der">22.937,51</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 2. Diplomados y titulados
+            1.<sup>er</sup> ciclo universitario. Jefe Superior.</p></td>
+            <td><p class="cuerpo_tabla_der">1.217,04</p></td>
+            <td><p class="cuerpo_tabla_der">17.038,62</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 3. Técnico de cálculo o diseño,
+            Jefe de 1.ª y Programador de ordenador.</p></td>
+            <td><p class="cuerpo_tabla_der">1.173,58</p></td>
+            <td><p class="cuerpo_tabla_der">16.430,09</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 4. Delineante-Proyectista, Jefe de
+            2.ª y Programador de maq. Auxiliares.</p></td>
+            <td><p class="cuerpo_tabla_der">1.075,95</p></td>
+            <td><p class="cuerpo_tabla_der">15.063,34</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 5. Delineante, Técnico de 1.ª,
+            Oficial 1.ª Admtvo. y Operador de ordenador.</p></td>
+            <td><p class="cuerpo_tabla_der">940,33</p></td>
+            <td><p class="cuerpo_tabla_der">13.164,70</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 6. Dibujante, Técnico de 2.ª,
+            Oficial 2.ª Adtmvo., Perforista, Grabador y Conserje.</p></td>
+            <td><p class="cuerpo_tabla_der">810,13</p></td>
+            <td><p class="cuerpo_tabla_der">11.341,82</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 7. Telefonista-Recepcionista,
+            Oficial 1.ª oficios varios, y Vigilante.</p></td>
+            <td><p class="cuerpo_tabla_der">782,97</p></td>
+            <td><p class="cuerpo_tabla_der">10.961,53</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 8. Calcador, Auxiliar Técnico,
+            Auxiliar Admtvo., Telefonista, Ordenanza, Personal de limpieza y Oficial
+            2.ª oficios varios.</p></td>
+            <td><p class="cuerpo_tabla_der">728,75</p></td>
+            <td><p class="cuerpo_tabla_der">10.202,54</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 9. Ayudante oficios varios.</p></td>
+            <td><p class="cuerpo_tabla_der">678,12</p></td>
+            <td><p class="cuerpo_tabla_der">9.493,72</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 10. Aspirante y Botones.</p></td>
+            <td><p class="cuerpo_tabla_der">477,65</p></td>
+            <td><p class="cuerpo_tabla_der">6.687,10</p></td>
+        </tr>
+    </table>
+    <p class="parrafo_2">2. Para el año 2011, una vez incrementada la tabla salarial
+    del año 2010 en un 1,75%, que se aplicará con efectos retroactivos del 1 de
+    enero de 2011, los salarios pactados en el presente Convenio, en cómputo anual,
+    y agrupadas por niveles las distintas categorías profesionales, son los
+    siguientes:</p>
+    <table class="tabla" summary="Tabla de datos">
+        <tr>
+            <td><p class="cuerpo_tabla_centro"></p></td>
+            <th><p class="cabeza_tabla">Mes × 14</p></th>
+            <th><p class="cabeza_tabla">Anual</p></th>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 1. Licenciados y titulados 2.º y
+            3.<sup>er</sup> ciclo universitario y Analista.</p></td>
+            <td><p class="cuerpo_tabla_der">1.667,07</p></td>
+            <td><p class="cuerpo_tabla_der">23.338,98</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 2. Diplomados y titulados
+            1.<sup>er </sup>ciclo universitario. Jefe Superior.</p></td>
+            <td><p class="cuerpo_tabla_der">1.238,34</p></td>
+            <td><p class="cuerpo_tabla_der">17.336,76</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 3. Técnico de cálculo o diseño,
+            Jefe de 1.ª y Programador de ordenador.</p></td>
+            <td><p class="cuerpo_tabla_der">1.194,12</p></td>
+            <td><p class="cuerpo_tabla_der">16.717,68</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 4. Delineante-Proyectista, Jefe de
+            2.ª y Programador de maq. Auxiliares.</p></td>
+            <td><p class="cuerpo_tabla_der">1.094,78</p></td>
+            <td><p class="cuerpo_tabla_der">15.326,92</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 5. Delineante, Técnico de 1.ª,
+            Oficial 1.ª Admtvo. y Operador de ordenador.</p></td>
+            <td><p class="cuerpo_tabla_der">956,79</p></td>
+            <td><p class="cuerpo_tabla_der">13.395,06</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 6. Dibujante, Técnico de 2.ª,
+            Oficial 2.ª Adtmvo., Perforista, Grabador y Conserje.</p></td>
+            <td><p class="cuerpo_tabla_der">824,31</p></td>
+            <td><p class="cuerpo_tabla_der">11.540,34</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 7. Telefonista-Recepcionista,
+            Oficial 1.ª oficios varios, y Vigilante.</p></td>
+            <td><p class="cuerpo_tabla_der">796,67</p></td>
+            <td><p class="cuerpo_tabla_der">11.153,38</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 8. Calcador, Auxiliar Técnico,
+            Auxiliar Admtvo., Telefonista, Ordenanza, Personal de limpieza y Oficial
+            2.ª oficios varios.</p></td>
+            <td><p class="cuerpo_tabla_der">741.50</p></td>
+            <td><p class="cuerpo_tabla_der">10.381,00</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 9. Ayudante oficios varios.</p></td>
+            <td><p class="cuerpo_tabla_der">689,99</p></td>
+            <td><p class="cuerpo_tabla_der">9.659,86</p></td>
+        </tr>
+        <tr>
+            <td><p class="cuerpo_tabla_izq">Nivel 10. Aspirante y Botones.</p></td>
+            <td><p class="cuerpo_tabla_der">492,49</p></td>
+            <td><p class="cuerpo_tabla_der">6.894,86</p></td>
+        </tr>
+    </table>
+    <p class="parrafo_2">3. Como cláusula de garantía salarial para el año 2011, se establece que, en el caso de que el IPC anual registrado por el INE alcanzara el 31-12-2011 un incremento superior al 2%, se efectuará una revisión de la tabla salarial en el exceso sobre el citado 2%, con efectos exclusivos desde el día primero del mes en el que dicho IPC anual sobrepase el reiterado 2%.</p>
+    <p class="parrafo">Para llevar a cabo tal revisión, se tomarán como referencia las tablas salariales utilizadas para realizar el incremento pactado para 2011.</p>
+    <p class="parrafo">La revisión salarial que proceda se abonará, en su caso, en una sola paga, previa publicación en el «Boletín Oficial del Estado» de las tablas salariales que elabore el Comité Paritario previsto en el artículo 9 del presente Convenio, que se reunirá antes del día 1 de febrero de 2012 para elaborarlas y acordar su envío a la Dirección General de Trabajo para su publicación en el «Boletín Oficial del Estado», siendo también de aplicación a estos efectos lo previsto en el siguiente apartado de este artículo.</p>
+    <p class="parrafo">4. Las empresas dispondrán de treinta y dos días para la regularización y abono de las diferencias a que hubiere lugar por aplicación de los salarios establecidos en el presente artículo.</p>
+    <p class="parrafo">5. En los casos de posible inaplicación salarial del Convenio, previstos en el apartado 3 del artículo 82 del texto refundido de la Ley del Estatuto de los Trabajadores, se estará a lo dispuesto en la legislación vigente sobre la materia en cada momento.</p>
+    <p class="articulo"><a id="ind_36">Artículo 34. Distribución del salario anual y pagas extraordinarias.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Los importes anuales recogidos en las tablas salariales habrán de distribuirse en doce mensualidades naturales, más una paga extraordinaria en el mes de julio y otra en Navidad, de acuerdo con lo establecido en el artículo 33.</p>
+    <p class="parrafo">No obstante, los importes de las dos pagas extraordinarias podrán prorratearse por la empresa entre las doce pagas mensuales, previo acuerdo con la representación de los trabajadores.</p>
+    <p class="parrafo">2. Las pagas extraordinarias de julio y Navidad deberán hacerse efectivas entre los días 15 y 20, ambos inclusive, de los respectivos meses y en proporción al tiempo trabajado en el semestre natural anterior a la de julio y en el segundo semestre del año para la correspondiente a Navidad. La fracción del mes se computará como mes completo.</p>
+    <p class="parrafo">3. Las empresas que vinieran abonando mayor número de pagas al año que las establecidas en el apartado 1 del presente artículo, podrán continuar manteniendo el número de ellas.</p>
+    <p class="articulo"><a id="ind_37">Artículo 35. Trabajo nocturno.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">El trabajo nocturno, entendiendo por tal el efectuado entre las veintidós horas y las seis de la mañana, se retribuirá con un ciento por ciento más de los salarios fijados en el artículo 33 del presente Convenio, salvo para el personal sujeto al sistema de turno y para el contratado expresamente para la realización de un horario nocturno, como vigilantes, serenos, etcétera.</p>
+    <p class="articulo"><a id="ind_38">Artículo 36. Horas extraordinarias.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Las partes firmantes del presente Convenio acuerdan la conveniencia de reducir al mínimo indispensable la realización de las horas extraordinarias, ajustándose en esta materia a los siguientes criterios:</p>
+    <p class="parrafo_2">a) Horas extraordinarias habituales: supresión.</p>
+    <p class="parrafo">b) Horas extraordinarias que vengan exigidas por la necesidad de reparar siniestros y otros daños extraordinarios y urgentes, así como en caso de pérdida de materias primas: realización.</p>
+    <p class="parrafo">c) Horas extraordinarias necesarias por períodos punta de producción, ausencias imprevistas, cambios de turno u otras circunstancias de carácter estructural derivadas de la naturaleza de la actividad de que se trate: mantenimiento, siempre que no quepa la utilización de las distintas modalidades de contratación temporal o parcial previstas por la Ley.</p>
+    <p class="parrafo_2">2. La Dirección de la empresa informará periódicamente al Comité de Empresa o a los Delegados de Personal sobre el número de horas extraordinarias realizadas, especificando las causas y, en su caso, la distribución por secciones o departamentos. Asimismo, en función de esta información y de los criterios anteriormente señalados, la empresa y los representantes legales de los trabajadores determinarán el carácter y la naturaleza de las horas extraordinarias. Sólo se considerarán como extraordinarias las horas que excedan de la jornada semanal ordinaria cuando ésta se haya pactado con los representantes de los trabajadores conforme al artículo 23.</p>
+    <p class="parrafo">3. Por lo que se refiere a los recargos para las horas extraordinarias, así como a la limitación del número de ellas, habrá de estarse en todo caso, además de lo pactado en los dos apartados anteriores, a lo previsto en la legislación general vigente en cada momento.</p>
+    <p class="parrafo">4. Salvo pacto individual en contrario, las horas extraordinarias se compensarán por tiempos equivalentes de descanso incrementados, al menos, en el setenta y cinco por ciento. Previo acuerdo entre empresa y trabajador, la compensación con tiempo de descanso se hará acumulando horas hasta completar, al menos, el tiempo equivalente a una jornada, que se disfrutará dentro del mismo año natural en que se hayan realizado las horas extraordinarias o, como máximo, en la primera semana del mes de enero siguiente.</p>
+    <p class="articulo"><a id="ind_39">Artículo 37. Dietas y desplazamientos.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. El importe de la dieta para los desplazamientos que se produzcan en territorio español será de 49 euros/día.</p>
+    <p class="parrafo">2. Cuando el desplazamiento tenga una duración superior a sesenta días ininterrumpidos en una misma localidad, el importe de la dieta se reducirá en un veinticinco por ciento. A estos efectos no se considerará interrumpido el desplazamiento cuando el trabajador haga uso de su derecho de estancia durante cuatro días laborables en su domicilio de origen por cada tres meses de desplazamiento.</p>
+    <p class="parrafo">3. En los viajes de servicio que originen desplazamientos a distinta localidad de un máximo de tres días completos, la cuantía de la dieta indicada en el apartado 1 se incrementará en un veinticinco por ciento.</p>
+    <p class="parrafo">4. Cuando el trabajador no pueda regresar a comer a su domicilio por encomendarle la empresa trabajos en lugar distinto al habitual, aun cuando sea dentro de la misma localidad, tendrá derecho a percibir 10 euros en concepto de dieta por comida o cena.</p>
+    <p class="parrafo">5. Cuando, con motivo de un viaje de servicio, la empresa autorice el uso del vehículo propio del trabajador, éste tendrá derecho a percibir, como gastos de locomoción la cantidad de 0,19 euros por kilómetro recorrido, más, salvo en los casos en que la empresa abone mayor importe por kilómetro recorrido, los gastos de peaje y aparcamiento que se justifiquen. Se difiere el incremento del importe vigente de la citada locomoción al momento en que entre en vigor la nueva cuantía en que se revise el límite de exención fiscal, estableciéndose, a partir de entonces, la locomoción en el mismo importe que se fije como exento fiscalmente. Se mantendrán las cantidades superiores que, como locomoción, vinieran abonando las empresas.</p>
+    <p class="parrafo">6. La movilidad geográfica de los trabajadores tendrá las limitaciones y se regirá por lo que establecen las normas contenidas en el texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <p class="parrafo">7. El trabajo que presten los trabajadores españoles contratados en España al servicio de empresas españolas en el extranjero se regulará por el contrato celebrado al efecto con sumisión estricta a la legislación española y al presente Convenio. En consecuencia, dichos trabajadores tendrán como mínimo los derechos económicos que les corresponderían caso de trabajar en territorio español. El trabajador y el empresario pueden someter sus litigios a la jurisdicción laboral española.</p>
+    <p class="parrafo">El personal desplazado por la empresa a país extranjero, tendrá cubierta, a cargo de ésta, la asistencia médica y hospitalaria que precise el trabajador durante el tiempo de su desplazamiento y por el procedimiento que concierte la empresa.</p>
+    <p class="articulo"><a id="ind_40">Artículo 38. Plus de Convenio.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Como complemento de calidad y cantidad a todos los efectos, durante el año 2010 se mantiene un plus de Convenio de dos mil cuarenta y ocho euros con noventa céntimos anuales (2.048,90 euros).</p>
+    <p class="parrafo">Para el año 2011 dicho plus será de dos mil ochenta y cuatro euros con setenta y seis céntimos (2.084,76 euros) anuales, desde el día 1 de enero de dicho año y con efectos retroactivos desde dicho día, aplicándose la cláusula de garantía salarial para dicho año conforme a lo establecido en el apartado tres del artículo 33 del presente Convenio.</p>
+    <p class="parrafo">2. Los trabajadores titulados de los niveles 1 y 2 del artículo 33 del presente Convenio que accedan a su primer empleo como tales y los mismos contratados en prácticas conforme al artículo 11.1 del texto refundido de la Ley del Estatuto de los Trabajadores, comenzarán a devengar el citado plus al cumplirse un año de su relación laboral con la respectiva empresa.</p>
+    <p class="parrafo">Estos contratos se formalizarán en todo caso por escrito y se presentarán en la oficina de empleo correspondiente, sin cuyos requisitos no tendrá validez alguna la supresión del plus de Convenio pactada en el párrafo anterior.</p>
+    <p class="parrafo">3. El importe del plus de Convenio establecido en el presente artículo no se computará en el cálculo del valor de las horas extraordinarias, bonificación por años de servicio o premio por antigüedad y complementos en situación de baja por incapacidad temporal.</p>
+    <p class="parrafo">4. La falta injustificada al trabajo facultará a la empresa para deducir en nómina el importe del veinticinco por ciento del plus de Convenio mensual que correspondería al trabajador. No teniendo carácter de sanción la deducción de dicho plus, sino de compensación o resarcimiento a la empresa de los perjuicios que se le ocasionan por la ausencia injustificada, la deducción del indicado plus se entiende que procederá sin perjuicio de las medidas disciplinarias que correspondan conforme a la legislación en vigor.</p>
+    <p class="parrafo">5. Las empresas dispondrán de treinta y dos días para la regularización y abono de las diferencias a que hubiere lugar por aplicación del plus establecido en el presente artículo.</p>
+    <p class="parrafo">6. Lo previsto en el apartado 5 del artículo 33 será de aplicación respecto del plus regulado en los apartados precedentes.</p>
+    <p class="articulo"><a id="ind_41">Artículo 39. Dimisión del trabajador.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">En caso de dimisión del trabajador de su puesto de trabajo en la empresa, habrá de avisar por escrito a la Dirección de la misma con un mínimo de quince días laborables de antelación. Si no se realizase este preaviso, siempre que la empresa acredite la existencia de un daño o perjuicio para la organización del trabajo, perderá el interesado la parte proporcional de las pagas extraordinarias de julio o Navidad que estuviesen devengadas, como resarcimiento de los daños y perjuicios que, tal omisión del plazo, ocasione a la empresa. Lo establecido en el párrafo precedente se entiende sin perjuicio de la indemnización prevista en los supuestos que contempla el artículo 21 del texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <p class="articulo"><a id="ind_42">Artículo 40. Derechos de reunión y de libre sindicación.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Las empresas afectadas por el presente Convenio, dentro siempre de las normas establecidas por la legislación vigente en cada momento, facilitarán a sus trabajadores el ejercicio del derecho de reunión en sus locales, si las condiciones de los mismos lo permiten, fuera de las horas de trabajo y sin perturbar la actividad normal de las empresas.</p>
+    <p class="parrafo">2. Las empresas respetarán el derecho de todos los trabajadores a sindicarse libremente y no podrán sujetar el empleo de un trabajador a la condición de que no se afilie o renuncie a su afiliación sindical, y tampoco despedir a un trabajador o perjudicarle de cualquier otra forma, a causa de su afiliación o actividad sindical.</p>
+    <p class="articulo"><a id="ind_43">Artículo 41. Derechos y obligaciones de los Sindicatos de trabajadores.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. En esta materia las partes se someten expresamente a las normas contenidas en la Ley Orgánica de Libertad Sindical.</p>
+    <p class="parrafo">2. A requerimiento de los trabajadores afiliados a los sindicatos, las empresas descontarán en la nómina mensual de los mismos el importe de la cuota sindical correspondiente. El trabajador interesado en la realización de tal operación, remitirá a la Dirección de la empresa un escrito en el que se expresará con claridad la orden de descuento, la cuantía de la cuota, así como el número de la cuenta corriente o libreta de Caja de Ahorros a la que debe ser transferida la correspondiente cantidad. Las empresas efectuarán las antedichas detracciones, salvo indicación en contrario, durante períodos de un año. La Dirección de la empresa entregará copia de la transferencia a la representación sindical en la empresa.</p>
+    <p class="articulo"><a id="ind_44">Artículo 42. Comités de empresa. Medios telemáticos.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Además de las competencias que se establecen en el artículo 64 del texto refundido de la Ley del Estatuto de los Trabajadores y siempre con la observancia del sigilo profesional previsto en el artículo 65 del mismo, los comités de empresa tendrán las siguientes:</p>
+    <p class="parrafo_2">a) Ser informados trimestralmente sobre la evolución de los negocios de la empresa.</p>
+    <p class="parrafo">b) Anualmente tener a su disposición el balance, la cuenta de resultados y la memoria de la entidad.</p>
+    <p class="parrafo">c) Con carácter previo a su ejecución por el empresario ser informado de los cierres totales o parciales de la empresa o centro de trabajo.</p>
+    <p class="parrafo">d) Ser informado del movimiento de ingresos y ceses, así como sobre los ascensos.</p>
+    <p class="parrafo">e) Ejercer una labor de vigilancia sobre la calidad de la docencia y la efectividad de la misma en los centros de formación y capacitación que, en su caso, tuviera la empresa.</p>
+    <p class="parrafo">f) Colaborar con la Dirección de la empresa para conseguir el cumplimiento de cuantas medidas procuren el mantenimiento y el incremento de la productividad de la empresa.</p>
+    <p class="parrafo">g) En los procesos de selección de personal, velará no sólo por el cumplimiento de la normativa vigente o paccionada, sino también por la observancia de los principios de no discriminación, igualdad de sexo y fomento de una política racional de empleo.</p>
+    <p class="parrafo_2">2. Caso de así convenir a ambas partes, se podrá acordar en el seno de la empresa la utilización por parte de los representantes legales de los trabajadores en la empresa de los medios telemáticos propiedad de la misma, así como las condiciones para su uso.</p>
+    <p class="articulo"><a id="ind_45">Artículo 43. Garantías de los representantes de los trabajadores.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Los miembros del comité de empresa y los delegados de personal tendrán las garantías que se establecen en el artículo 68 del texto refundido de la Ley del Estatuto de los Trabajadores y las que se determinan a continuación:</p>
+    <p class="parrafo_2">a) No se computará dentro del máximo legal de horas mensuales disponibles para el ejercicio de sus funciones de representación, el exceso que sobre el mismo se produzca con motivo de la designación de delegados de personal o miembros de comités de empresa como componentes de comisiones negociadoras de Convenios colectivos en los que sean afectados, y por lo que se refiere a la celebración de sesiones oficiales a través de las cuales transcurran tales negociaciones y cuando la empresa en cuestión se vea afectada por el ámbito de negociación referido.</p>
+    <p class="parrafo">b) Sin rebasar el máximo legal, podrán ser consumidas las horas retribuidas de que disponen los miembros de comités de empresa o delegados de personal, a fin de prever la asistencia de los mismos a cursos de formación organizados por sus sindicatos, institutos de formación u otras entidades.</p>
+    <p class="parrafo_2">2. En las empresas obligadas por el presente Convenio, se podrá negociar la acumulación de un porcentaje de las horas previstas en el artículo 68 TRLET en alguno o algunos de los representantes de los trabajadores.</p>
+    <p class="articulo"><a id="ind_46">Artículo 44. Prácticas antisindicales.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">En cuanto a los supuestos de prácticas que, a juicio de alguna de las partes, quepa calificar de antisindicales, se estará a lo dispuesto en las leyes.</p>
+    <p class="articulo"><a id="ind_47">Artículo 45. Trabajos en pantallas.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Se denominan pantallas de datos y/o de visualización al conjunto terminal-pantalla de rayos catódicos, que permiten una gran información (caracteres o símbolos a gran velocidad), unidas a un teclado numérico y/o alfabético.</p>
+    <p class="parrafo">2. Los locales y puestos de trabajo en los que se utilicen las pantallas de datos han de estar diseñados, equipados, mantenidos y utilizados de tal forma que no causen daños a los usuarios de las mismas.</p>
+    <p class="parrafo">3. El puesto de trabajo, así como el mobiliario principal y auxiliar deberán situarse de modo que eviten cualquier perjuicio a la salud o fatiga adicional a la propia del desempeño de la actividad.</p>
+    <p class="parrafo">4. En la utilización de las citadas pantallas de datos se tendrá especial cuidado en el cumplimiento de las normas vigentes en cada momento.</p>
+    <p class="articulo"><a id="ind_48">Artículo 46. Jubilación obligatoria.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Como medida de fomento del empleo en el ámbito de obligar del presente Convenio, se establece la jubilación obligatoria de los trabajadores una vez cumplida como mínimo la edad de sesenta y cinco años, siempre que en ese momento reúnan los requisitos exigidos por la legislación de la Seguridad Social para tener derecho a la percepción del ciento por ciento de la pensión. En este supuesto de jubilación obligatoria, la empresa, dentro de los seis meses siguientes a la jubilación obligatoria de cada trabajador deberá contratar los servicios de dos trabajadores, de los que, al menos, uno de ellos, deberá ser contratado por tiempo indefinido o, alternativamente, deberá contratar los servicios de un trabajador y convertir en indefinido el contrato temporal que la empresa ya tuviera suscrito con otro trabajador.</p>
+    <p class="parrafo">En el supuesto de jubilación obligatoria aquí pactado, a diferencia del de la jubilación voluntaria, con 15 días, al menos, de antelación, la empresa deberá comunicar por escrito necesariamente tanto al trabajador afectado como a la representación legal de los trabajadores en la empresa, si existiese, la fecha en que se producirá dicha jubilación obligatoria.</p>
+    <p class="parrafo">No obstante lo anteriormente pactado, cuando concurra alguna de las causas previstas en el artículo 52.c) del texto refundido de la Ley del Estatuto de los Trabajadores, la empresa quedará exenta de la obligación de llevar a cabo las contrataciones sustitutivas anteriormente establecidas.</p>
+    <p class="parrafo">2. En contra de lo pactado en el apartado anterior de este artículo, cabe pacto individual por escrito entre empresa y trabajador que posponga dicha jubilación obligatoria.</p>
+    <p class="articulo"><a id="ind_49">Artículo 47. No discriminación en las relaciones laborales. Acoso y violencia en el lugar de trabajo.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Las partes firmantes del presente Convenio, convienen expresamente en recordar a las empresas obligadas por este Convenio que, en las relaciones laborales con sus trabajadores, deberán respetarse las normas de no discriminación previstas en el artículo 17.1 del texto refundido de la Ley del Estatuto de los Trabajadores, o disposición que lo sustituya, con mención especial a la no discriminación por razón de sexo y a la aplicación de la Ley Orgánica para la Igualdad Efectiva de Mujeres y Hombres, en todas sus disposiciones que sean aplicables a las empresas obligadas por el presente Convenio y durante su período de vigencia.</p>
+    <p class="parrafo">2. Las partes firmantes, recomiendan a sus representados la aplicación íntegra del «Acuerdo Marco Europeo sobre acoso y violencia en el lugar de trabajo», propuesta común alcanzada durante la reunión plenaria 15-12-2006.</p>
+    <p class="parrafo">A tal efecto, informan que dicho Acuerdo reconoce que diversas formas de acoso y de violencia, que pueden ser físicas, psicológicas y/o sexuales, pueden afectar a puestos de trabajo.</p>
+    <p class="parrafo">Conforme al citado Acuerdo, cuya aplicación se recomienda, el acoso ocurre cuando uno o más trabajadores, o un directivo, de manera repetitiva y deliberada, abusan, amenazan o humillan a una persona en circunstancias relativas al trabajo. La violencia ocurre cuando uno o más trabajadores o jefes, deliberadamente, violan la dignidad del jefe o del trabajador, afectando a su salud y/o creando un ambiente hostil en el trabajo.</p>
+    <p class="articulo"><a id="ind_50">Artículo 48. Formación a nivel de sector.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. Las partes firmantes del presente Convenio, siendo plenamente conscientes de la trascendencia de la formación tecnológica de los trabajadores del Sector, asumen el contenido íntegro del Acuerdo Nacional de Formación Continua en su IV edición y sucesivas, como ya lo hicieron en su I, II y III, que desarrollará sus efectos en el ámbito funcional del presente Convenio colectivo. El funcionamiento de la constituida Comisión Paritaria Sectorial de Formación Continua se realizará en la forma que la misma acuerde, y la adopción de decisiones requerirá el voto favorable de, al menos, las tres cuartas partes de cada una de las dos representaciones, laboral y empresarial. De dicha Comisión forman parte cuatro representantes de cada una de las dos representaciones, pudiendo también formar parte de ella como asesores, con voz pero sin voto, dos personas por cada una de las dos partes. La Comisión Paritaria Sectorial de Formación Continua prevista en el anterior párrafo queda facultada para desarrollar cuantas iniciativas sean necesarias para la aplicación de dicho Acuerdo Nacional, y queda integrada por las personas y en los términos que constan en el acta que, como anejo I, se une a este Convenio. Al pacto de esta disposición se le confiere carácter normativo a los solos efectos de lo dispuesto en el artículo 86.3 del texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <p class="parrafo">2. La Comisión Paritaria Sectorial de Formación Continua se adaptará a las funciones establecidas en el Real Decreto 395/2007, de 27 de marzo, por el que se regula el subsistema de formación profesional para el empleo, o norma que lo sustituya.</p>
+    <p class="parrafo">Los pactos de este artículo tendrán la vigencia prevista en el último párrafo del artículo 1.2 del presente Convenio.</p>
+    <p class="articulo"><a id="ind_51">Artículo 49. Derecho supletorio y prelación de normas.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. En todas aquellas materias no reguladas en el presente Convenio se estará a lo dispuesto en el texto refundido de la Ley del Estatuto de los Trabajadores, y a lo previsto en las disposiciones de carácter general que sean de aplicación.</p>
+    <p class="parrafo">2. Los pactos contenidos en el presente Convenio sobre las materias en él reguladas serán de preferente aplicación sobre cualesquiera otras disposiciones legales de carácter general que vinieran rigiendo en la materia.</p>
+    <p class="parrafo">3. Haciendo uso de las facultades atribuidas por el artículo 83.2 del texto refundido de la Ley del Estatuto de los Trabajadores a las partes firmantes del presente Convenio, se establece su complementariedad respecto de los restantes Convenios del mismo ámbito funcional cualquiera que fuere su ámbito territorial. Por tanto, el presente Convenio regirá como normativa supletoria, y sustitutiva de la Ordenanza Laboral de Oficinas y Despachos, de los restantes Convenios colectivos del sector, en los aspectos y materias en éstos no previstos, sin perjuicio, en todo caso, de la prohibición de concurrencia que dispone el primer párrafo del artículo 84 del texto refundido de la Ley del Estatuto de los Trabajadores.</p>
+    <p class="articulo"><a id="ind_52">Disposición final primera. Eficacia y concurrencia. Adhesión.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">1. El Convenio colectivo de Empresas de Ingeniería y Oficinas de Estudios Técnicos obliga por todo el tiempo de su vigencia a la totalidad de los empresarios y trabajadores comprendidos dentro de su ámbito de aplicación, según determina el artículo 82.3 del texto refundido de la Ley del Estatuto de los Trabajadores, y no podrá ser afectado en tanto esté en vigor por lo dispuesto en Convenios de ámbito distinto, salvo pacto expreso en él contenido, de acuerdo también con lo previsto en el primer párrafo del artículo 84 del ya citado texto refundido, y en el artículo 37.1 de la Constitución, que garantiza su fuerza vinculante.</p>
+    <p class="parrafo">2. Las representaciones de las empresas y de los trabajadores que a la entrada en vigor de este Convenio se encuentren afectados por otros Convenios colectivos vigentes, al concluir sus respectivas vigencias, podrán adherirse expresamente al presente, de común acuerdo las partes legitimadas para ello, en los términos que determina el artículo 92.1 del ya citado texto refundido de la Ley del Estatuto de los Trabajadores, previa notificación conjunta a las partes signatarias de este Convenio colectivo nacional y a la Dirección General de Trabajo.</p>
+    <p class="parrafo">3. Los Convenios colectivos de igual ámbito funcional a éste, y de inferior ámbito territorial, que no hayan sido revisados en el período del año siguiente al de concluir sus respectivas vigencias, serán automáticamente sustituidos por este Convenio colectivo Nacional de Empresas de Ingeniería y Oficinas de Estudios Técnicos, sin necesidad de ningún tipo de adhesión expresa.</p>
+    <p class="articulo"><a id="ind_53">Disposición final segunda. Pacto derogatorio.</a><a href="#" class="indice">Índice</a></p>
+    <p class="parrafo">El presente Convenio colectivo, dentro de su ámbito, deroga y sustituye totalmente de modo expreso, a partir de la fecha de entrada en vigor, al anterior XV Convenio de Empresas de Ingeniería y Oficinas de Estudios Técnicos, de ámbito nacional, suscrito con fecha 11-3-2008, publicado en el «Boletín Oficial del Estado» de fecha 29 de mayo de 2008 por Resolución de la Dirección General de Trabajo de fecha 14-5-2008 y su revisión salarial publicada con fecha 28-3-2009, sustituyendo, por tanto, a la Ordenanza Laboral de Oficinas y Despachos aprobada por Orden de 31 de octubre de 1972, conforme a lo establecido en el artículo 1 del presente Convenio.</p>
+    <a href="">Volver al Índice</a>
+</article>
+{% render "ECLLaboralBundle:Layout:sidebar" %}
+{% endblock %}

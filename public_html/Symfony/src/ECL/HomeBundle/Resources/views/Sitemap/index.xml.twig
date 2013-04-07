@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<urlset
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
+    <!-- Portada -->
+    <url><loc>{{ url('ECLHomeBundle_homepage') }}</loc></url>
+    {% for page in 2..pages %}
+    <url><loc>{{ url('ECLHomeBundle_homepage', {page: page}) }}</loc></url>
+    {% endfor %}
+    <!-- Articles -->
+    {% for article in articles %}
+    <url>
+        <loc>{{ url('ECLArticlesBundle_homepage', { date: article.date|date('d-m-Y'), uri: article.uri } ) }}</loc>
+        <lastmod>{{ article.date|date('c') }}</lastmod>
+    </url>
+    {% endfor %}
+    <!-- Laboral -->
+    <url><loc>{{ url('ECLLaboralBundle_homepage') }}</loc></url>
+    <url><loc>{{ url('ECLLaboralBundle_convenios') }}</loc></url>
+    <url><loc>{{ url('ECLLaboralBundle_convenios_metal') }}</loc></url>
+    <url><loc>{{ url('ECLLaboralBundle_convenios_consultoria') }}</loc></url>
+    <url><loc>{{ url('ECLLaboralBundle_convenios_despachos') }}</loc></url>
+    <url><loc>{{ url('ECLLaboralBundle_convenios_ingeniera') }}</loc></url>
+    <!-- Social -->
+    <url><loc>{{ url('ECLSocialBundle_homepage') }}</loc></url>
+    <url><loc>{{ url('ECLSocialBundle_softwarelibre') }}</loc></url>
+    <url><loc>{{ url('ECLSocialBundle_softwarelibre_hitosconocmiento') }}</loc></url>
+    <url><loc>{{ url('ECLSocialBundle_softwarelibre_anarquismoycomunidad') }}</loc></url>
+    <url><loc>{{ url('ECLSocialBundle_softwarelibre_jornadasi') }}</loc></url>
+    <!-- Cultura -->
+    <url><loc>{{ url('ECLCultureBundle_homepage') }}</loc></url>
+    <!-- Conocenos -->
+    <url><loc>{{ url('ECLAboutBundle_homepage') }}</loc></url>
+    <!-- Contacto -->
+    <url><loc>{{ url('ECLContactBundle_homepage') }}</loc></url>
+</urlset>

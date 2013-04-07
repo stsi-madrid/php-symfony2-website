@@ -1,0 +1,20 @@
+{% extends 'ECLDefaultBundle::base_backoffice.html.twig' %}
+{% block title %}S.T.S.I. Backoffice | Roles | {{ entity.name }}{% endblock %}
+{% block body_backoffice %}
+<article id="new">
+    <nav id="nav">
+        <ul>
+            <li><a href="{{url('ECLHomeBundle_backoffice')}}">Backoffice</a></li>
+            <li>></li>
+            <li><a href="{{url('ECLDefaultBundle_roles')}}">Roles</a></li>
+            <li>></li>
+            <li><strong>{{ entity.name }}</strong></li>
+        </ul>
+    </nav>
+    <h1 id="title">Editar Rol: {{ entity.name }}</h1>
+    <form action="{{ url('ECLDefaultBundle_roles_update', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>
+        {{ form_widget(edit_form) }}
+        <button type="submit" class="button">Guardar</button>
+    </form>
+</article>
+{% endblock %}

@@ -1,0 +1,7 @@
+ECLCultureBundle_homepage:
+    pattern:  /cultura
+    defaults: { _controller: ECLCultureBundle:Default:index }
+    
+ECLCultureBundle_layout:
+    pattern:  /culture/layout/sidebar
+    defaults: { _controller: ECLCultureBundle:Layout:sidebar }

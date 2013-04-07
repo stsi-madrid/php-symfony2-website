@@ -1,0 +1,46 @@
+{% extends 'ECLDefaultBundle::base_backoffice.html.twig' %}
+{% block title %}S.T.S.I. Backoffice | Usuarios{% endblock %}
+{% block body_backoffice %}
+<article id="list">
+    <nav id="nav">
+        <ul>
+            <li><a href="{{url('ECLHomeBundle_backoffice')}}">Backoffice</a></li>
+            <li>></li>
+            <li><strong>Usuarios</strong></li>
+        </ul>
+    </nav>
+    <h1 id="title">Lista de Usuarios</h1>
+    <a href="{{ url('ECLDefaultBundle_users_new') }}" class="button">nuevo</a>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2"></th>
+                <th>Id</th>
+                <th>Usuario</th>
+                <th>Email</th>
+                <th>Alias</th>
+                <th>Roles</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+            <tr>
+                <td><a href="{{ url('ECLDefaultBundle_users_edit', { 'id': user.id }) }}">editar</a></td>
+                <td><a href="{{ url('ECLDefaultBundle_users_delete', { 'id': user.id }) }}">borrar</a></td>
+                <td>{{ user.id }}</td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.alias }}</td>
+                <td>
+                    {% for rel in relationship %}
+                        {% if rel.getUserId == user.id %}
+                            {{ ' '~roles[rel.getRoleId] }}
+                        {% endif %}
+                    {% endfor %}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</article>
+{% endblock %}

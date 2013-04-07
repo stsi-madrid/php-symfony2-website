@@ -1,0 +1,7 @@
+ECLAboutBundle_homepage:
+    pattern:  /conocenos
+    defaults: { _controller: ECLAboutBundle:Default:index }
+
+ECLAboutBundle_layout:
+    pattern:  /about/layout/sidebar
+    defaults: { _controller: ECLAboutBundle:Layout:sidebar }    

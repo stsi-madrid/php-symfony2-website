@@ -1,0 +1,7 @@
+services:
+    ecl.twig.text_extension:
+        class: ECL\DefaultBundle\Twig\TextExtension
+        arguments:
+           misc_service: {"date" "@date"}
+        tags:
+            - { name: twig.extension }

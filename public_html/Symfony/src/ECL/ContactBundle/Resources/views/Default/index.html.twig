@@ -1,0 +1,25 @@
+{% extends 'ECLDefaultBundle::base_front.html.twig' %}
+{% block title %}S.T.S.I de Madrid CNT-AIT | Contacto{% endblock %}
+{% block description %}El sindicato de les trabajadores y trabajadoras del
+sector del metal y comercio metal de Madrid. Sector de la siderometalurgia.
+Confederación Nacional del Trabajo. CNT Madrid.{% endblock %}
+{% block stylesheets %}
+<link href="{{ asset('bundles/eclhome/css/home.css') }}" rel="stylesheet">
+<link href="{{ asset('bundles/eclcontact/css/contact.css') }}" rel="stylesheet">
+{% endblock %}
+{% block body_front %}
+<article class="main">
+    <h1>Contacta con nosotros</h1>
+    <p>En este página encontrás información bastante completa relativa a nuestra
+    sección y a la Confederación Nacional del Trabajo en general. De todas
+    formas te animamos a que te pases por cualquiera de nuestras permanencias
+    y/o asambleas para conocernos en persona. Recuerda que puedes encontrarnos
+    en la Plaza de Tirso de Molina, 5. 6 dcha.</p>
+    <p>Para cualquier duda que tengas también puedes mandarnos un email a
+    <a href="mailto:informatica.madrid@cnt.es">informatica.madrid@cnt.es</a> o
+    llamarnos al teléfono 91 369 09 72. También puedes seguirnos en nuestra
+    cuenta de Twitter <a href="https://twitter.com/cntmadridinform"
+    target="_blank">@cntmadridinform</a>.</p>
+</article>
+{% render "ECLHomeBundle:Layout:sidebar" %}
+{% endblock %}

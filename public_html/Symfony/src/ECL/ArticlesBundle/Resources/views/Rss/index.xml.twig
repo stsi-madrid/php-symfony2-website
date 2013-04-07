@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Sección de Telecomunicaciones y Servicios Informáticos | Rss</title>
+        <link>http://{{ app.request.host }}</link>
+        <description>Feeds publicados por la Sección de Telecomunicaciones y Servicios Informáticos de Madrid CNT-AIT.</description>
+        <pubDate>{{ "now"|date('r') }}</pubDate>
+        <atom:link href=".xml" rel="self" type="application/rss+xml" />
+        <language>es-ES</language>
+        {% for article in articles %}
+        <item>
+            <title>{{ article.title }}</title>
+            <description>
+                {{ article.summary }}
+            </description>
+            <pubDate>{{ article.date|date('r') }}</pubDate>
+            <link>{{ url('ECLArticlesBundle_homepage', { date: article.date|date('d-m-Y'), uri: article.uri } ) }}</link>
+            <guid>{{ url('ECLArticlesBundle_homepage', { date: article.date|date('d-m-Y'), uri: article.uri } ) }}</guid>
+        </item>
+        {% endfor %}
+    </channel>
+</rss>

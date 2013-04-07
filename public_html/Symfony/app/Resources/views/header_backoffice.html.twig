@@ -1,0 +1,9 @@
+{% extends '::header.html.twig' %}
+{% block body_header %}
+{% if app.user.username  is defined %}
+<ul id="user_action">
+    <li><a href="{{ url('ECLDefaultBundle_users_profile') }}">perfil</a></li>
+    <li><a href="{{ path('logout') }}">logout</a></li>
+</ul>
+{% endif %}
+{% endblock %}

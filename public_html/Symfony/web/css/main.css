@@ -1,0 +1,128 @@
+a
+{
+    color: #090063;
+}
+    a:hover
+    {
+        text-decoration: underline;
+    }
+
+/* --------------- header --------------- */
+
+#header
+{
+    background: url(../imagenes/bandera.jpg) no-repeat;
+    box-shadow: 0 0 25px #000;
+    height: 125px;
+    padding-top: 10px;
+    text-align: center;
+}
+#header h1,
+#header h2,
+#header h3
+{
+    color: #000;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 1px #fff, 0 0 0.5em #fff, 0.15em 0.1em 0.15em #000;    
+}
+    #header h1
+    {
+        font-size: 1.25em;
+    }
+    #header h2,
+    #header h3
+    {
+        font-size: 1.15em;
+        font-weight: normal;
+    }
+#header a
+{
+    color: inherit;
+}
+    #header a:hover
+    {
+        text-shadow: 1px 1px 1px #fff, 0.15em 0.1em 0.15em #000;    
+        text-decoration: none;
+    }
+#header p
+{
+    color: #eee;
+    letter-spacing: 0.04em;
+    font-size: 0.9em;
+    text-align: center;
+}
+    #header p a:hover
+    {
+        text-shadow: none;
+        text-decoration: underline;
+    }
+
+/* --------------- nav --------------- */
+
+#nav
+{
+    font-size: 0.8em;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+    #nav ul
+    {
+        list-style-type: none;
+    }
+        #nav li
+        {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        
+/* --------------- footer --------------- */
+
+#footer
+{
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+#footer h4
+{
+    font-size: 0.8em;
+}
+#map
+{
+    float: left;
+    width: 50%;
+}
+#map h4
+{
+    margin-bottom: 20px;
+}
+#feeds
+{
+    float: right;
+    width: 50%;
+}
+    #feeds h4
+    {
+        margin: 0 0 15px -15px;
+    }
+    #feeds ul
+    {
+        font-size: 0.8em;
+    }
+        #footer li
+        {
+            margin-bottom: 10px;
+        }
+#bottom_info
+{
+    color: #888;
+    font-size: 0.85em;
+    margin-top: 25px;
+    text-align: center;
+}
+    #bottom_info a
+    {
+        color: #888;
+        font-weight: bold;
+    }

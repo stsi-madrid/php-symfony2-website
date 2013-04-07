@@ -1,0 +1,23 @@
+ECLSocialBundle_homepage:
+    pattern:  /social
+    defaults: { _controller: ECLSocialBundle:Default:index }
+    
+ECLSocialBundle_softwarelibre:
+    pattern:  /social/software-libre
+    defaults: { _controller: ECLSocialBundle:Default:softwareLibre }
+    
+ECLSocialBundle_softwarelibre_hitosconocmiento:
+    pattern:  /social/software-libre/hitos-del-conocimiento-libre
+    defaults: { _controller: ECLSocialBundle:Default:softwareLibreHitosConocimiento }
+    
+ECLSocialBundle_softwarelibre_anarquismoycomunidad:
+    pattern:  /social/software-libre/anarquismo-software-libre-y-comunidad
+    defaults: { _controller: ECLSocialBundle:Default:softwareLibreAnarquismoyComunidad }
+    
+ECLSocialBundle_softwarelibre_jornadasi:
+    pattern:  /social/software-libre/i-jornadas
+    defaults: { _controller: ECLSocialBundle:Default:softwareLibreJornadasI }
+    
+ECLSocialBundle_layout:
+    pattern:  /social/layout/sidebar
+    defaults: { _controller: ECLSocialBundle:Layout:sidebar }    

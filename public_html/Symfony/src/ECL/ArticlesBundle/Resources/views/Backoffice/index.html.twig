@@ -1,0 +1,27 @@
+{% extends 'ECLDefaultBundle::base_backoffice.html.twig' %}
+{% block title %}Sección de Telecomunicaciones y Servicios Informáticos{% endblock %}
+{% block body_backoffice %}
+<article id="articles">
+    <nav id="nav">
+        <ul>
+            <li><a href="{{url('ECLHomeBundle_backoffice')}}">Backoffice</a></li>
+            <li>></li>        
+            <li><strong>Artículos</strong></li>
+        </ul>
+    </nav>
+    <a href="{{url('ECLArticlesBundle_backoffice_publicar')}}" class="button">nuevo</a>
+    {% for article in articles %}
+    <article>
+        <h2><a href="{{ url('ECLArticlesBundle_homepage', { date: article.date|date('d-m-Y'), uri: article.uri } ) }}">{{ article.title }}</a></h2>
+        <ul class="edit">
+            <li><a href="{{url('ECLArticlesBundle_backoffice_articles_editar', { id: article.id }) }}">editar</a></li>
+            <li> | </li>
+            <li><a href="{{url('ECLArticlesBundle_backoffice_articles_borrar', { id: article.id })}}">borrar</a></li>
+            <li> | </li>
+        </ul>        
+        <p class="article_info"><time datetime="{{ article.date|date('c') }}">{{ article.date | long_date }}</time></p>
+        <p class="article_summary">{{ article.summary }}</p>
+    </article>
+    {% endfor %}
+</article>
+{% endblock %}

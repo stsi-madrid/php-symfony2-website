@@ -1,0 +1,89 @@
+{% extends 'ECLDefaultBundle::base_front.html.twig' %}
+{% block title %}I Jornadas Software Libre y Anarquismo{% endblock %}
+{% block description %}En la Sección de Teleco. y Servicios Informáticos de
+Madrid organizamos unas jornadas de software libre y anarquismo,
+cuya agenda podéis ver a continuación. Las actividades tendrán lugar en los
+locales de la CNT madrileña (plaza de Tirso de Molina, 5. 2º izq.) los días 16,
+17 y 18 de diciembre.{% endblock %}
+{% block stylesheets %}
+<link href="{{ asset('bundles/eclsocial/css/social.css') }}" rel="stylesheet">
+{% endblock %}
+{% block body_front %}
+<section id="jornadas" class="main">
+    <ul id="menu">
+        <li><a href="{{url('ECLSocialBundle_homepage')}}">Acción Social</a></li>
+        <li><a href="{{url('ECLSocialBundle_softwarelibre')}}">Software Libre</a></li>	
+    </ul>
+    <header>
+        <img id="logo_software_libre" src="{{ asset('bundles/eclsocial/imagenes/software-libre.jpg') }}">
+        <h1>I Jornadas Software Libre y Anarquismo 2011</h1>
+    </header>
+    <p><strong><em>Desde la Sección de Teleco. y Servicios Informáticos de Madrid organizamos estas primeras jornadas de software libre y anarquismo, cuya agenda podéis ver a continuación. Las actividades tendrán lugar en los locales de la CNT madrileña (plaza de Tirso de Molina, 5. 2º izq.) los días 16, 17 y 18 de diciembre.</strong></em></p>
+    <p><a href="{{ url('ECLArticlesBundle_homepage', { date: '07-10-2011', uri:  'jornadas-sobre-software-libre-y-anarquismo'} ) }}">Leer Comunicado de presentación</a></p>
+    <p><a href="{{ asset('bundles/eclsocial/imagenes/cartel-jornadas-imprimir.jpg') }}">Cartel para imprimir</a></p>
+    <h2>AGENDA DE LAS JORNADAS</h2>
+    <h3>Viernes 16 de diciembre</h1>
+    <article>
+        <h1>19:00 - "Evolución del sindicalismo / Situación actual del sector TIC"</h1>
+        <p>Esta primera charla constará de dos partes:</p>
+        <p>La primera, una presentación de la historia del movimiento obrero en España en la que se repasarán los momentos clave. Desde la S.T.S.I. creemos que esto es fundamental para poder entender la actual situación del sindicalismo y de la clase trabajadora.</p>
+        <p>A continuación profundizaremos en el sector de la informática, de reciente creación. Un sector donde reina la precariedad y que, tras el estallido de la burbuja de las .COM, está altamente polarizado en lo que a sueldos se refiere, habiendo un extremo con sueldos bastante altos comparados con el resto de la clase obrera y el otro con sueldos rozando o incluso por debajo del convenio colectivo que aplique, dado que no se dispone de un convenio propio.</p>
+    </article>
+    <article>
+        <h1>20:30 - "Software Libre y Anarquismo" (<a href="{{ asset('bundles/ecldefault/documentos/1/2012/mayo/swlibre-anarquismo.odp') }}">Descarga la presentación</a>)</h1>
+        <p>¿Es el Software Libre un movimiento anarquista? ¿Son tan importantes las libertades que aporta a sus usuarias y usuarios o lo es más la comunidad que se genera? ¿Qué papel juega la economía capitalista en estas comunidades? ¿y la anarquista? Estas son algunas de las preguntas que trataremos de responder en este breve artículo. Para ello revisaremos textos fundacionales, revisionistas, así como la historia de algunas comunidades de Software Libre paradigmáticas.</p>
+    </article>
+    <h3>Sábado 17 de diciembre</h1>
+    <article>
+        <h1>11:00 - "Introducción a FreeBSD" (<a href="{{ asset('bundles/ecldefault/documentos/1/2012/mayo/CharlaFreeBSD.pdf') }}">Descarga la presentación</a>)</h1>
+        <p>FreeBSD es un sistema operativo open source orientado a servidores con una historia
+        de mas de 40 años. Veremos que es un sistema operativo y por qué es importante
+        tenerlo en cuenta. Que ha marcado la historia de este peculiar y desconocido sistema y como
+        se organizan los voluntarios que lo hacen posible.</p>
+        <p>Al completar la visión inicial de que es el sistema y el proyecto, veremos las
+        funcionalidades más distintivas, los últimos desarrollos y mostraremos algunas
+        capturas de pantalla de la versión 9.0 que está a punto de salir.</p>
+    </article>
+    <article>
+        <h1>12:30 - "Rastros Digitales" (<a href="{{ asset('bundles/ecldefault/documentos/1/2012/mayo/rastros_digitales_v1.0.pdf') }}">Descarga la presentación</a>)</h1>
+        <p>Cada vez que usamos nuestros PCs dejamos detrás de nosotros un rastro
+        de información del cual no somos conscientes.</p>
+        <p>En nuestra sociedad actual es necesario saber quienes pueden estar
+        interesados en los datos que vamos dejando y que técnicas usan para
+        recolectar esta información. Y mucho mas importante, que se puede
+        hacer para que no estemos tan expuestos.</p>
+    </article>
+    <article>
+        <h1>17:00 - "Taller: montaje, configuración y reparación de PC's­"</h1>
+        <p>En este taller aprenderemos las normas e instrucciones basicas para montaje, configuración y reparación de PC's. Contenido del taller:</p>
+        <ul>
+            <li>Clase Nº1: Clasificación y reconocimiento de equipos.</li>
+            <li>Clase Nº2: Exploración de componentes y equipos.</li>
+            <li>Clase Nº3: Declaración de dispositivos. Setup.</li>
+            <li>Clase Nº4: Elementos de taller. Conceptos de Electrónica. Mediciones.</li>
+            <li>Clase Nº5: Interconectividad entre dos equipos.­ </li>
+        </ul>
+    </article>
+    <article>
+        <h1>20:00 - "Software Libre para activistas políticos" (<a href="{{ asset('bundles/ecldefault/documentos/1/2012/mayo/CNT-anarch-SL-17122011/17122011.html') }}" target="_blank">Visita la presentación</a>)</h1>
+        <p>Experiencias anteriores nos dicen que ante una charla como la anterior la gente responde muy positivamente, pero a continuación se pierden en el aspecto práctico.</p>
+        <p>Esta charla intentaría, por un lado presentar las amenazas a las que se enfrenta un activista político en lo que a software (y hardware) se refiere (seguridad, privacidad, anonimicidad, etc.) y por otro explicar cómo le puede ayudar el Software libre a mejorar dichos aspectos.</p>
+        <p>Se pondrán ejemplos de sofware concreto, sustitutivo de opciones privativas, y también de "buenas prácticas" para desarrollar su actividad política con efectividad y coherencia.</p>
+        <p>Se analizarán casos prácticos de cómo proyectos políticamente interesantes se han desarticulado precisamente por no prestar la debida atención a estas "buenas prácticas" (ej. wikileaks).</p>
+    </article>
+    <h3>Domingo 18 de diciembre</h1>
+    <article>
+        <h1>11:00 - "Software Libre, un caso práctico de Autonomía Popular" (<a href="{{ asset('bundles/ecldefault/documentos/1/2012/mayo/CNT-anarch-SL-18122011/18122011.html') }}" target="_blank">Visita la presentación</a>)</h1>
+        <p>Intentaré dar mi visión sobre cómo el software libre puede tomarse como un ejemplo de Autonomía popular, una revolución realizada día a día y desde abajo, que ha generado alternativas viables a los modelos corporativos.</p>
+        <p>Se intentará evidenciar la insosteniblilidad de los modelos de software privativo en sus diferentes aspectos (económicos, ambientales, laborales, educativos, etc.) y se describiran las alternativas (con sus aciertos y carencias) del modelo de software libre.</p>
+        <p>También hablaré de por qué los movimientos sociales deberían implicarse más en la adopción y "evangelización" del software libre, adoptándolo no solo como una herramienta indispensable si no también como una causa propia.</p>
+    </article>
+    <article>
+        <h1>19:00 - "Introducción a los Sistemas de Control de Versiones"</h1>
+        <p>Hoy en día es impensable afrontar el desarrollo de una aplicación sin un sistema de control de versiones, más aún si el equipo está formado por varias personas, esta herramienta nos permitirá compartir código, se ocupará por nosotros de mezclar los cambios y como el código está bajo el control de versiones, no hay motivos para temer que la calidad del código se vaya a ver afectada.</p>
+        <p>Esta charla mostrará mediante ejemplos didácticos la operativa habitual de subversion, cómo resolver los conflictos entre programadores, generar tags para almacenar versiones estables y branches para almacenar versiones en desarrollo.</p>
+    </article>
+    <a id="cartel_jornadas" href="{{ asset('bundles/eclsocial/imagenes/cartel-jornadas-imprimir.jpg') }}" title="descargar cartel para imprimir"><img src="{{ asset('bundles/eclsocial/imagenes/cartel-jornadas.jpeg') }}" alt="cartel anarquismo software libre"></a>
+</section>
+{% render "ECLSocialBundle:Layout:sidebar" %}
+{% endblock %}

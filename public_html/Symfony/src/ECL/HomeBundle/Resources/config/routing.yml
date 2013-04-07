@@ -1,0 +1,19 @@
+ECLHomeBundle_homepage:
+    pattern:  /
+    defaults: { _controller: ECLHomeBundle:Default:index }
+
+ECLHomeBundle_articles:
+    pattern:  /noticias/{page}
+    defaults: { _controller: ECLHomeBundle:Default:index, page: null }
+    
+ECLHomeBundle_layout:
+    pattern:  /layout/sidebar
+    defaults: { _controller: ECLHomeBundle:Layout:sidebar }
+    
+ECLHomeBundle_backoffice:
+    pattern:  /backoffice
+    defaults: { _controller: ECLHomeBundle:Backoffice:index }
+    
+ECLHomeBundle_sitemap:
+    pattern:  /sitemap.xml
+    defaults: { _controller: ECLHomeBundle:Sitemap:index }

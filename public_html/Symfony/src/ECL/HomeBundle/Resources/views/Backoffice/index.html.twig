@@ -1,0 +1,12 @@
+{% extends 'ECLDefaultBundle::base_backoffice.html.twig' %}
+{% block title %}S.T.S.I. Backoffice{% endblock %}
+{% block body_backoffice %}
+<nav id="main_menu">
+    <ul>
+        <li><a href="{{url('ECLArticlesBundle_backoffice_articles')}}">Artículos</a></li>
+        <li><a href="{{url('ECLDefaultBundle_files')}}">Ficheros</a></li>
+        {% if role_admin %}<li><a href="{{url('ECLDefaultBundle_users')}}">Usuarios</a></li>{% endif %}
+        {#<li><a href="{{url('ECLDefaultBundle_roles')}}">Roles</a></li>#}
+    </ul>
+</nav>
+{% endblock %}

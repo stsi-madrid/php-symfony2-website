@@ -1,0 +1,7 @@
+parameters:
+#    ecl_culture.example.class: ECL\CultureBundle\Example
+
+services:
+#    ecl_culture.example:
+#        class: %ecl_culture.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

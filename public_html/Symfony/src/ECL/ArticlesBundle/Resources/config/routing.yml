@@ -1,0 +1,27 @@
+ECLArticlesBundle_homepage:
+    pattern:  /articulo/{date}/{uri}
+    defaults: { _controller: ECLArticlesBundle:Default:index }
+    
+ECLArticlesBundle_redirect:
+    pattern:  /noticia/{uri}
+    defaults: { _controller: ECLArticlesBundle:Redirect:index }
+
+ECLArticlesBundle_rss:
+    pattern:  /rss.xml
+    defaults: { _controller: ECLArticlesBundle:Default:rss }
+    
+ECLArticlesBundle_backoffice_articles:
+    pattern:  /backoffice/articulos
+    defaults: { _controller: ECLArticlesBundle:Backoffice:index }
+
+ECLArticlesBundle_backoffice_publicar:
+    pattern:  /backoffice/articulos/publicar
+    defaults: { _controller: ECLArticlesBundle:Backoffice:publicar }
+    
+ECLArticlesBundle_backoffice_articles_borrar:
+    pattern:  /backoffice/articulos/borrar/{id}/{action}
+    defaults: { _controller: ECLArticlesBundle:Backoffice:borrar, action: null }
+    
+ECLArticlesBundle_backoffice_articles_editar:
+    pattern:  /backoffice/articulos/editar/{id}
+    defaults: { _controller: ECLArticlesBundle:Backoffice:editar }

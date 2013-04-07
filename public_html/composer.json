@@ -1,0 +1,9 @@
+{
+    "config": {
+        "vendor-dir": "Symfony/vendor"
+    },
+    "require": {
+       "symfony/symfony": "2.0.*"
+    }
+}
+

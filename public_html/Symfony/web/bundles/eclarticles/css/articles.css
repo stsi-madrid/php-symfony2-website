@@ -1,0 +1,82 @@
+/* --------------- main --------------- */
+
+.main h1
+{
+    font-size: 1.2em;
+    margin-top: 30px;
+    text-shadow: 1px 1px 1px #FFFFFF, 1px 1px 3px #000000;
+}
+#article_data
+{
+    margin-top: 20px;
+}
+#article_content
+{
+    font-size: 0.85em;
+}
+    #article_content img
+    {
+        display: block;
+        border: 4px solid #fff;
+        box-shadow:0 0 10px #000;
+        display:block;
+        margin:30px auto;
+    }
+#article_info
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding-left: 0;
+}
+    #article_info li
+    {
+        display: inline-block;
+    }
+        #article_info a
+        {
+            background-image: url(../imagenes/icons.png);
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+        }
+            #meneame_share
+            {
+                background-position: -20px -20px;
+            }
+            #facebook_share
+            {
+                background-position: -40px 0;
+            }
+            #twitter_share
+            {
+                background-position: 0 0;
+            }
+            #linkedin_share
+            {
+                background-position: 0 0;
+            }
+            #tuenti_share
+            {
+                background-position: 0 -20px;
+            }
+            #digg_share
+            {
+                background-position: -60px 0;
+            }
+            #delicious_share
+            {
+                background-position: -60px -20px;
+            }
+    #more_articles
+    {
+        display: inline-block;
+        height: 20px;
+        margin: 20px 0 0 20px;
+        vertical-align: top;
+    }
+        #more_articles a
+        {
+            display: inline-block;
+            margin: 0 10px;
+        }

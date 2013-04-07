@@ -1,0 +1,7 @@
+<ul id="pages">
+    {% if nav_array.first != null %}<li><a href="{{url('ECLHomeBundle_homepage') }}"><<</a></li>{% endif %}
+    {% if nav_array.previous != null %}<li><a href="{{url('ECLHomeBundle_articles', { page: nav_array.previous } ) }}"><</a></li>{% endif %}
+    <li id="pages_info">{{nav_array.current_page}} de {{nav_array.last_page}}</li>
+    {% if nav_array.next != null %}<li><a href="{{url('ECLHomeBundle_articles', { page: nav_array.next } ) }}">></a></li>{% endif %}
+    {% if nav_array.last != null %}<li><a href="{{url('ECLHomeBundle_articles', { page: nav_array.last } ) }}">>></a></li>{% endif %}
+</ul>

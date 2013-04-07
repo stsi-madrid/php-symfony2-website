@@ -1,0 +1,30 @@
+{% extends 'ECLDefaultBundle::base_front.html.twig' %}
+{% block title %}Software Libre{% endblock %}
+{% block description %}Dossier sobre el Software Libre bajo una perspectiva
+libertaria publicado por CNT Informática y Telecomunicaciones.{% endblock %}
+{% block stylesheets %}
+<link href="{{ asset('bundles/eclsocial/css/social.css') }}" rel="stylesheet">
+{% endblock %}
+{% block body_front %}
+<article class="main">
+    <ul id="menu">
+        <li><a href="{{url('ECLSocialBundle_homepage')}}">Acción Social</a></li>
+        <li><strong>Software Libre</strong></li>	
+    </ul>
+    <header>
+        <h1>Dossier sobre el Software Libre</h1>
+    </header>
+    <p>Desde la sección de Telecomunicaciones y Servicios Informáticos estamos
+    trabajando en un dossier sobre el Software Libre desde una perspectiva
+    anarquista que iremos completando a lo largo de las próximas semanas.</p>
+    <h2>Capitulos</h2>
+    <ul>
+        <li><a href="{{url('ECLSocialBundle_softwarelibre_hitosconocmiento')}}">Algunos
+        Hitos del Conocimiento Libre</a></li>
+        <li><a href="{{url('ECLSocialBundle_softwarelibre_anarquismoycomunidad')}}">Anarquismo,
+        Software Libre y Comunidad</a></li>
+    </ul>
+    <img id="gnu_main" src="{{ asset('bundles/eclsocial/imagenes/black-gnu.png') }}" alt="gnu anarquismo">
+</article>
+{% render "ECLSocialBundle:Layout:sidebar" %}
+{% endblock %}

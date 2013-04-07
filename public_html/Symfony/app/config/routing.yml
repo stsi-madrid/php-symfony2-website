@@ -1,0 +1,36 @@
+ECLArticlesBundle:
+    resource: "@ECLArticlesBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ECLContactBundle:
+    resource: "@ECLContactBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ECLAboutBundle:
+    resource: "@ECLAboutBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ECLCultureBundle:
+    resource: "@ECLCultureBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ECLSocialBundle:
+    resource: "@ECLSocialBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ECLLaboralBundle:
+    resource: "@ECLLaboralBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ECLHomeBundle:
+    resource: "@ECLHomeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ECLDefaultBundle:
+    resource: "@ECLDefaultBundle/Resources/config/routing.yml"
+    prefix:   /
+
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal

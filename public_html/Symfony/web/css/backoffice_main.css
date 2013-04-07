@@ -1,0 +1,230 @@
+#user_action
+{
+    float: right;
+    font-size: 0.9em;
+    list-style-type: none;
+    margin-top: 15px;
+}
+    #user_action li
+    {
+        display: inline-block;
+        margin: 0 5px;
+    }
+#nav
+{
+    margin-left: -10px;
+    text-align: left;
+}
+#title
+{
+    font-size: 1.2em;
+    margin-top: 30px;
+    text-shadow: 1px 1px 1px #FFFFFF, 1px 1px 3px #000000;    
+}
+
+/* -------------- Main Menu -------------- */
+
+#main_menu ul
+{
+    margin: 50px 0;
+    text-align: center;
+}
+    #main_menu li
+    {
+        display: inline-block;
+    }
+        #main_menu a
+        {
+            background-color: #ddd;
+            border: 1px solid #aaa;
+            border-radius: 8px;
+            color: #777;
+            display: block;
+            font-size: 1.5em;
+            margin: 50px 20px;
+            padding: 50px 0;
+            text-align: center;
+            text-shadow: 1px 1px 1px #fff;
+            -webkit-transition: all 1s;
+            -moz-transition: all 1s;
+            -o-transition: all 1s;
+            transition: all 1s;                
+            width: 160px;
+        }
+            #main_menu a:hover
+            {
+                box-shadow: inset 0 0 8px #000;
+                color: #555;
+                text-decoration: none;
+                text-shadow: none;
+            }
+
+/* -------------- Login -------------- */
+
+#login
+{
+    padding: 100px 0;
+    text-align: center;
+}
+    #login label
+    {
+        display: inline-block;
+        text-align: right;
+        width: 110px;
+    }
+    #login input
+    {
+        margin-left: 10px;
+    }
+    #login fieldset
+    {
+        display: block;
+        margin: 20px 0;
+    }
+    #login .button
+    {
+        display: block;
+        margin: 40px auto;
+        width: 100px;
+    }
+
+/* -------------- Lista de Artículos -------------- */
+
+#articles
+{
+    font-size: 0.8em;
+}
+    #articles .button
+    {
+        display: block;
+        margin: 0 0 10px 5px;
+        width: 60px;
+    }
+    #articles h2
+    {
+        font-size: 1em;
+    }
+    #articles .article_info
+    {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    #articles .edit
+    {
+        display: inline-block;
+    }    
+        #articles .edit li
+        {
+            display: inline-block;
+            font-weight: bold;
+        }
+        
+/* -------------- Formulario Artículos -------------- */
+
+#form_article form
+{
+    margin: 20px auto;
+    width: 800px;
+}
+    #form_article label
+    {
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+    #article_form_article_title,
+    #form_article textarea
+    {
+        display: block;
+        margin: 10px 0 15px;
+        width: 100%;
+    }
+        #article_form_article_summary
+        {
+            height: 100px;
+        }
+        #article_form_articles_extend_article_text
+        {
+            height: 400px;
+        }
+        input[type=submit]
+        {
+            display: block;
+            margin: 20px auto 40px;
+            width: 100px;
+        }
+
+/* -------------- Borrar Artículos -------------- */
+
+#remove_article section
+{
+    margin-bottom: 100px;
+    text-align: center;
+}
+    #remove_article p
+    {
+        margin: 50px 0 30px;
+        text-align: center;
+    }
+    #remove_article a
+    {
+        margin: 30px 10px;
+    }
+    
+/* -------------- Roles/Usuarios -------------- */
+
+#list .button
+{
+    display: block;
+    font-size: 0.9em;
+    margin: 20px 0 0 5px;
+    width: 70px;
+}
+#list table
+{
+    font-size: 0.9em;
+    margin: 30px auto 50px;
+}
+#list td,
+#list th
+{
+    padding: 5px 8px;
+    text-align: left;
+}
+#new form
+{
+    font-size: 0.9em;
+    margin: 50px 0 50px;
+    text-align: center;
+}
+    #new label
+    {
+        margin-right: 10px;
+    }
+    #new .button
+    {
+        margin-top: 40px;
+    }
+#data table
+{
+    margin: 50px auto;
+}
+    #data td
+    {
+        padding: 5px 8px;
+        text-align: left;
+    }
+    #data th
+    {
+        padding: 5px 8px;
+        text-align: right;
+    }
+#actions
+{
+    margin-bottom: 50px;
+    text-align: center;
+}
+    #actions li
+    {
+        display: inline-block;
+        margin: 0 10px;
+    }

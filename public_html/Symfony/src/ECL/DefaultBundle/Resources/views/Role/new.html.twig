@@ -1,0 +1,20 @@
+{% extends 'ECLDefaultBundle::base_backoffice.html.twig' %}
+{% block title %}S.T.S.I. Backoffice | Roles | Nuevo{% endblock %}
+{% block body_backoffice %}
+<article id="new">
+    <nav id="nav">
+        <ul>
+            <li><a href="{{url('ECLHomeBundle_backoffice')}}">Backoffice</a></li>
+            <li>></li>
+            <li><a href="{{url('ECLDefaultBundle_roles')}}">Roles</a></li>
+            <li>></li>        
+            <li><strong>Nuevo</strong></li>
+        </ul>
+    </nav>
+    <h1 id="title">Crear Rol</h1>
+    <form action="{{ url('ECLDefaultBundle_roles_create') }}" method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+        <button type="submit" class="button">Crear</button>
+    </form>
+</article>
+{% endblock %}

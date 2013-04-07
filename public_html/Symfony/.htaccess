@@ -1,0 +1,12 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /Symfony/
+
+# Cambiamos la ruta de los ficheros contenidos en front_end
+
+RewriteRule ^(.*)$ /web/$1 [QSA,L]
+# Activa la compresion en el servidor
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 year"
+</IfModule>

@@ -1,0 +1,27 @@
+ECLLaboralBundle_homepage:
+    pattern:  /laboral
+    defaults: { _controller: ECLLaboralBundle:Default:index }
+    
+ECLLaboralBundle_convenios:
+    pattern:  /laboral/convenios
+    defaults: { _controller: ECLLaboralBundle:Default:convenios }    
+    
+ECLLaboralBundle_convenios_metal:
+    pattern:  /laboral/convenios/metal
+    defaults: { _controller: ECLLaboralBundle:Default:convenioMetal }
+    
+ECLLaboralBundle_convenios_consultoria:
+    pattern:  /laboral/convenios/consultoria
+    defaults: { _controller: ECLLaboralBundle:Default:convenioConsultoria }
+    
+ECLLaboralBundle_convenios_despachos:
+    pattern:  /laboral/convenios/oficinas-y-despachos
+    defaults: { _controller: ECLLaboralBundle:Default:convenioDespachos }
+    
+ECLLaboralBundle_convenios_ingeniera:
+    pattern:  /laboral/convenios/empresas-de-ingenieria-y-oficinas-de-estudios-tecnicos
+    defaults: { _controller: ECLLaboralBundle:Default:convenioIngenieria }
+    
+ECLLaboralBundle_layout:
+    pattern:  /laboral/layout/sidebar
+    defaults: { _controller: ECLLaboralBundle:Layout:sidebar }        
