@@ -1,7 +1,5 @@
-website
+Nuestra página web.
 =======
-
-Código fuente de nuestra página web.
 
 Para correr la aplicación en producción es recomendable realizar los siguientes pasos:
 
