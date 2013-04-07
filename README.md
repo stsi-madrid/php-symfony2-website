@@ -10,25 +10,29 @@ Tanto para la instalación del framework como para la gestión de dependencias s
 
 <h2>Getting Started</h2>
 
-    installation & prerequisites
-    
-    1. En el fichero estructura.sql se encuentra la estructura de todas las tablas de la base de datos.
-    
-    2. Hay que crear el fichero public_html/Symfony/app/config/parameters.ini con el siguiente contenido:
-    
-        [parameters]
-        database_driver="pdo_mysql"
-        database_host="servidor_base_datos"
-        database_port="puerto_base_datos"
-        database_name="nombre_base_datos"
-        database_user="usuario_base_datos"
-        database_password="contraseña_base_datos"
-        mailer_transport="smtp"
-        mailer_host="servidor_email"
-        mailer_user="usuario_email"
-        mailer_password="contraseña_email"
-        locale="es"
-        secret=""
+<h3>installation & prerequisites</h3>
+<ol>
+<li>En el fichero estructura.sql se encuentra la estructura de todas las tablas de la base de datos.</li>
+
+<li>Hay que crear el fichero public_html/Symfony/app/config/parameters.ini con el siguiente contenido:
+
+<pre>
+[parameters]
+database_driver="pdo_mysql"
+database_host="servidor_base_datos"
+database_port="puerto_base_datos"
+database_name="nombre_base_datos"
+database_user="usuario_base_datos"
+database_password="contraseña_base_datos"
+mailer_transport="smtp"
+mailer_host="servidor_email"
+mailer_user="usuario_email"
+mailer_password="contraseña_email"
+locale="es"
+secret=""
+</pre>
+</li>
+</ol>
 
 Para correr la aplicación en producción es recomendable realizar los siguientes pasos:
 
