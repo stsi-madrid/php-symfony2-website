@@ -1,15 +1,14 @@
-Nuestra página web.
-=======
+<h1>Nuestra página web<h1>
 
-Overview
+<h2>Overview</h2>
 
-Este es el código fuente de nuestra página web, cualquier sindicato puede aprovecharlo para construir su propia página. Para cualquier cuestión no dudéis en poneros en contacto con nosotros.
+Este es el código fuente de nuestra página web, cualquier sindicato puede aprovecharlo para construir su propia página. Para cualquier cuestión no dudéis poneros en contacto con nosotros.
 
 Para su construcción se ha utilizado el framework Symfony2.0.x (http://symfony.com/), posiblemente el framework PHP más potente y moderno a día de hoy. Hay que tener en cuenta que versiones mayores de este framework aún no estań soportadas en los servidores confederales.
 
 Tanto para la instalación del framework como para la gestión de dependencias se ha utilizado Composer (http://getcomposer.org/). De todas formas, para facilitar la instalación ninguna de las librerías de la carpeta vendors ha sido excluida del repositorio.
 
-Getting Started
+<h2>Getting Started</h2>
 
     installation & prerequisites
     
@@ -29,33 +28,26 @@ Getting Started
         mailer_user="usuario_email"
         mailer_password="contraseña_email"
         locale="es"
-        secret="a6133434a562aef53641e96fa4981b65ba096b2e"
+        secret=""
 
 Para correr la aplicación en producción es recomendable realizar los siguientes pasos:
 
-1. Mover los siguentes ficheros a la carpeta public_html/Symfony:
+<ol>
+<li>Mover los siguentes ficheros a la carpeta public_html/Symfony:
 
-    - public_html/Symfony/web/app.php
-    - public_html/Symfony/web/favicon.ico
-    - public_html/Symfony/web/apple-touch-icon.png
+<ul>
+    <li>public_html/Symfony/web/app.php</li>
+    <li>public_html/Symfony/web/favicon.ico</li>
+    <li>public_html/Symfony/web/apple-touch-icon.png</li>
+</ul>
 
-2. Sustituir el contenido de del fichero public_html/Symfony/app.php por el siguiente:
+</li>
 
-<?php
+<li>Modificar la ruta de los ficheros incluidos en el fichero public_html/Symfony/web/app.php</li>
 
-require_once __DIR__.'/app/bootstrap.php.cache';
-require_once __DIR__.'/app/AppKernel.php';
-//require_once __DIR__.'/../app/AppCache.php';
+<li>Sustituir el contenido del fichero public_html/Symfony/.htaccess por el siguiente:
 
-use Symfony\Component\HttpFoundation\Request;
-
-$kernel = new AppKernel('prod', false);
-$kernel->loadClassCache();
-//$kernel = new AppCache($kernel);
-$kernel->handle(Request::createFromGlobals())->send();
-
-3. Sustituir el contenido del fichero public_html/Symfony/.htaccess por el siguiente:
-
+<pre>
 RewriteEngine on
 RewriteBase /
 RewriteRule ^bundles/(.*) web/bundles/$1
@@ -71,3 +63,6 @@ RewriteRule ^robots.txt web/robots.txt
 # Activa la compresion en el servidor
 ExpiresActive On
 ExpiresDefault "access plus 1 year"
+</pre>
+</li>
+</ol>
