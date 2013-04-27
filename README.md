@@ -1,5 +1,9 @@
 <h1>Nuestra página web<h1>
 
+<h2>License</h2>
+
+This application is licenced under Creative Commons Attribution 3.0 Unported License.
+
 <h2>Overview</h2>
 
 Este es el código fuente de nuestra página web, cualquier sindicato puede aprovecharlo para construir su propia página. Para cualquier cuestión no dudéis poneros en contacto con nosotros.
