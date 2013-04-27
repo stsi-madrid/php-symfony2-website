@@ -2,7 +2,7 @@
 
 <h2>License</h2>
 
-This application is licenced under Creative Commons Attribution 3.0 Unported License.
+This application is licenced under <a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
 
 <h2>Overview</h2>
 
