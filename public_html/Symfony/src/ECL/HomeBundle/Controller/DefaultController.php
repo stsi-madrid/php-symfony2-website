@@ -7,7 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class DefaultController extends Controller
 {
     
-    const ITEMS_PER_PAGE = 8;
+    const ITEMS_PER_PAGE = 11;
     
     public function indexAction($page = null)
     {

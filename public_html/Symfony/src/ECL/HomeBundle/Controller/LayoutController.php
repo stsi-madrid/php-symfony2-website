@@ -13,13 +13,18 @@ class LayoutController extends Controller
     
     public function footerAction()
     {
-        $xml = simplexml_load_file('http://sovmadrid.cnt.es/rss.xml');
-        
+        $xml = simplexml_load_file('http://madrid.cnt.es/rss.php');
+        $items = array();
+
+        for ($i = 0; $i < 9; $i++) {
+            $items[] = $xml->channel->item[$i];
+        }
+
         return $this->render(
             'ECLHomeBundle:Layout:footer.html.twig',
             array(
                 //'feeds' => array()
-                'feeds' => $xml->channel->item
+                'feeds' => $items
             )
         );
     }
