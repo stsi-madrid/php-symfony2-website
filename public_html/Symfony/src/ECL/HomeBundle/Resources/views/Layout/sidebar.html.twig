@@ -10,6 +10,16 @@
     <ul>
         <li>Primer y tercer lunes de cada mes a las 19:15</li>
     </ul>
+    <h3>Secciones de Empresa</h3>
+    {% for section in sections %}
+    <ul>
+        <li><a href="{{url('ECLHomeBundle_section', { section: section.alias})}}">{{ section.username }}</a></li>
+    </ul>
+    {% endfor %}
+    <h3>Tablas Reivindicativas</h3>
+    <ul>
+        <li><a href="{{ url('ECLArticlesBundle_homepage', { date: '14-05-2013', uri: 'propuestas-y-reivindicaciones-de-la-stsi-ante-un-nuevo-convenio-de-consultoria' } ) }}">Nuevo Convenio Consultoria</a></li>
+    </ul>
     <h3>Convenios Colectivos</h3>
     <ul>
         <li><a href="{{url('ECLLaboralBundle_convenios_despachos')}}">Oficinas y Despachos</a></li>
@@ -18,22 +28,19 @@
         <li><a href="{{url('ECLLaboralBundle_convenios_consultoria')}}">Consultoría y estudios de mercado y de la opinión pública</a></li>
     </ul>
     <h3>Campañas</h3>
+    <a href="{{ url('ECLArticlesBundle_homepage', { date: '14-05-2013', uri: 'propuestas-y-reivindicaciones-de-la-stsi-ante-un-nuevo-convenio-de-consultoria' } ) }}" class="campanas">
+        <strong>Campaña por el convenio de Consultoría</strong>
+        Este convenio que ahora llega a su fin afecta
+        a las principales empresas de las Tecnologías de la Información y la
+        Comunicación (TIC) y rige a buena parte de los trabajadores que
+        desarrollamos nuestra labor en este ramo. Nosotros seguimos con nuestras propuestas dentro de esta campaña.
+    </a>    
     <a href="http://informaticamadrid.cnt.es/social/software-libre" class="campanas">
         <strong>Software Libre y Anarquismo</strong>
         Desde la sección de Telecomunicaciones y Servicios Informáticos estamos
         elaborando un pequeño dossier sobre el Software Libre desde
         una perspectiva anarquista el cual actualizamos de manera intermitente.
     </a>		
-    <h3>Solidaridad Confederal</h3>
-    <a href="http://www.iwa-ait.org/?q=es/node/171" class="campanas">
-        <strong>ROCHE despide activista sindical. El uso generalizado de
-        seudocontratados será persergido y condenado</strong>
-        En diciembre, la ZSP-AIT inició un conflicto con Roche Polska. Nuestro
-        compañero está exigiendo su readmisión en el puesto de trabajo y el
-        reconocimiento de su estatus de empleo, incluida la compensación por los
-        beneficios perdidos. Ha habido acciones de solidaridad internacional el
-        8, 15 y 29 de marzo.
-    </a>
     <p id="final">Si nadie trabaja por ti, que nadie decida por ti.</p>
     <h3>Síguenos:</h3>
     <ul id="followus">
